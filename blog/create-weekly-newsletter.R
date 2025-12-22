@@ -71,7 +71,7 @@ create_weekly_qmd <- function(date = NULL, week_end_date = NULL, file_name = NUL
   
   yaml <- sprintf(
 '---
-title: "FIMS Weekly: %s"
+title: "FIMS Weekly - %s"
 date: "%s"
 # Change the following categories accordingly
 categories: 
