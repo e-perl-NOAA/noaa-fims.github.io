@@ -40,14 +40,6 @@ Time: TIME
 Location: VIRTUAL/IN-PERSON
 Online: [Google meet](MEETING LINK)
 -->
-
-<!--
-::: {#photo-code}
-```
-PUT CODE HERE
-```
-:::
--->
         
 :::
 

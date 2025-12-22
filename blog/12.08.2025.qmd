@@ -37,6 +37,7 @@ Location: VIRTUAL/IN-PERSON
 Online: [Google meet](MEETING LINK)
 -->
 
+:::
 
 ::: {#photo-code}
 ```
@@ -56,6 +57,5 @@ testthat::expect_shape(df, c(4, 2))
 :::
 
         
-:::
 
 
