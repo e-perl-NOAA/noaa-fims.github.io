@@ -26,7 +26,7 @@ photo:
   alt-text: "Collaborate and automate with Databot."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "_fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
 - Happy 🦃Thanksgiving Day🦃 to you and your friends and family this holiday season.

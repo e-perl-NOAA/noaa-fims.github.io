@@ -23,7 +23,7 @@ photo:
   text: "Last week I showed the json output for dimensionality, this week I show the tidyverse code to create a tibble from that same information."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "_fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
 - Please welcome 👋 Adrianne Wilson 👋 to the FIMS Team!
