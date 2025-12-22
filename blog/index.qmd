@@ -1,20 +1,25 @@
 ---
-title: FIMS Weekly
+title: Blog
 description: >
-  FIMS weekly blog.
+  FIMS blog.
 listing:
   contents:
     - "*.qmd"
     - "!fims-weekly-template.qmd"
+  template: assets/blog.html
   sort: "date desc"
   type: default
   categories: true
   sort-ui: true
   filter-ui: true
   fields: [date, title, categories]
-  feed:
-    categories: [R]
 page-layout: full
 title-block-banner: false
 comments: false
 ---
+
+```{=html}
+{{#categories}}
+<span class="articleCategory {{. | lower}}">{{. | lower | replace('-', ' ')}}</span>
+{{/categories}}
+```

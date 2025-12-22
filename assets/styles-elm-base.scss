@@ -184,3 +184,32 @@ img.thumbnail-image.card-img {
   width: auto !important;     /* maintain aspect ratio */
   object-fit: unset !important; /* disables cover/crop effect */
 }
+
+.articleCategory {
+  font-size: 15px;
+  line-height: 35px;
+  padding-left: 33px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-bottom: 1.2em; /* Not padding so icons align w/ text */
+  line-height: 1.2rem;
+}
+
+.articleCategory.fims-weekly {
+  background-image: url('blog/images/CategoryFimsWeekly.svg');
+}
+.articleCategory.programming {
+  background-image: url('blog/images/tidyCategoryProgramming.svg');
+}
+.articleCategory.casestudies {
+  background-image: url('blog/images/tidyCategoryCaseStudy.svg');
+}
+.articleCategory.learn {
+  background-image: url('blog/images/tidyCategoryLearn.svg');
+}
+.articleCategory.other {
+  background-image: url('blog/images/tidyCategoryOther.svg');
+}
+.articleCategory.deep-dive {
+  background-image: url('blog/images/tidyCategoryDeepDive.svg');
+}

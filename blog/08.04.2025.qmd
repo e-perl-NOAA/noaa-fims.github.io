@@ -1,10 +1,9 @@
 ---
-title: "August 04–08, 2025"
+title: "FIMS Weekly: August 04–08, 2025"
 date: "August 04, 2025"
 # Change the following categories accordingly
 categories: 
-  - case studies
-  - projections
+  - fims-weekly
 three-big-things:
   bt1: "The case studies will be updated this week to use the latest release. This has been done in dev for a while but just hanging in the ether."
   bt2: "We will be migrating several resources from individual repositories to the FIMS website, e.g., FIMS Weekly newsletter, training repo, doxygen documentation, and potentially the collaborative workflow."

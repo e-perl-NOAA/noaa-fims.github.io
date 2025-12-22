@@ -1,10 +1,9 @@
 ---
-title: "September 08–12, 2025"
+title: "FIMS Weekly: September 08–12, 2025"
 date: "September 08, 2025"
 # Change the following categories accordingly
 categories: 
-  - json
-  - purrr
+  - fims-weekly
 three-big-things:
   bt1: "On Wednesday, the Science Board will be given an update and we will discuss creating a formal FIMS Transition Plan. Thank you Jane for volunteering to attend the presentation to help take notes."
   bt2: "None of the PRs that I wanted to merge in last week happened so merging those is a goal again. Attend Code Club on Tuesday if you are interested in helping write R code to read in the json output."

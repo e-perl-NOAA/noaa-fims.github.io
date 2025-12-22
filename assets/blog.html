@@ -1,0 +1,22 @@
+
+{{#date}}
+  <i class="fas fa-calendar-day fa-fw"></i>&nbsp;&nbsp;{{ .Date.Format "January 01, 2026" }}
+{{/date}}
+      
+{{#tags}}
+<p style="margin-bottom: 0.5em; margin-top: 0.85em;">
+  <i class="fas fa-tags"></i>&nbsp;
+  {{#tags}}
+    {{#unless @first}}, {{/unless}}
+    <a href="/tags/{{ . | slugify }}/">{{.}}</a>
+  {{/tags}}
+</p>
+{{/tags}}
+      
+<p style="margin-top: 0.5em;">
+  <i class="fas fa-user-circle fa-fw"></i>&nbsp;
+  {{#author}}
+    {{#unless @first}}, {{/unless}}
+    {{.}}
+  {{/author}}
+</p>

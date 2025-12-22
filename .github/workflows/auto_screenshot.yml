@@ -27,10 +27,18 @@ jobs:
       - name: Find newly added weekly HTML files
         id: added_html
         run: |
-          ADDED_FILES=$(git diff --name-status HEAD~1 HEAD | awk '/^A/ && $2 ~ /^docs\/fims-weekly\/.*\.html$/ {print $2}')
-          echo "ADDED_FILES=$ADDED_FILES" >> $GITHUB_ENV
-          echo "$ADDED_FILES" > added_html.txt
-          echo "$ADDED_FILES"
+          ADDED_FILES=$(git diff --name-status HEAD~1 HEAD | awk '/^A/ && $2 ~ /^docs\/blog\/.*\.html$/ {print $2}')
+          ADDED_FILES=$(git diff --name-status HEAD~1 HEAD | awk '/^A/ && $2 ~ /^blog\/.*\.qmd$/ {print $2}')
+          MATCHED_FILES=""
+          for file in $ADDED_FILES; do
+              # Checks for indented list item in YAML front matter
+              if grep -Eq '^\s*-\s*fims-weekly\b' "$file"; then
+                  MATCHED_FILES="$MATCHED_FILES $file"
+              fi
+          done
+          echo "ADDED_FILES=$MATCHED_FILES" >> $GITHUB_ENV
+          echo "$MATCHED_FILES" > added_html.txt
+          echo "$MATCHED_FILES"
 
       - name: Screenshot new weekly page
         if: env.ADDED_FILES != ''
