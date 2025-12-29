@@ -444,9 +444,9 @@ window.Quarto = {
 </header>
 
 
-{{#categories}}
-<span class="articleCategory {{. | lower}}">{{. | lower | replace('-', ' ')}}</span>
-{{/categories}}
+$for(categories)$
+  <span class="articleCategory">$categories$</span>
+$endfor$
 
 
 
