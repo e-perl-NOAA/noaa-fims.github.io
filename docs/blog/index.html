@@ -477,14 +477,14 @@ window.Quarto = {
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-<p>{{#date}} <i class="fas fa-calendar-day fa-fw"></i>&nbsp;&nbsp;{{ .Date.Format “January 01, 2026” }} {{/date}}</p>
-{{#tags}}
+<p><span class="math inline">\(if(date)\)</span> <i class="fas fa-calendar-day fa-fw"></i>&nbsp;&nbsp;<span class="math inline">\(date\)</span> <span class="math inline">\(endif\)</span></p>
+<span class="math inline">\(if(tags)\)</span>
 <p style="margin-bottom: 0.5em; margin-top: 0.85em;">
-<i class="fas fa-tags"></i>&nbsp; {{#tags}} {{#unless <span class="citation" data-cites="first">@first</span>}}, {{/unless}} <a href="../tags/{{ . | slugify }}/">{{.}}</a> {{/tags}}
+<i class="fas fa-tags"></i>&nbsp; <span class="math inline">\(for(tags)\)</span> <span class="math inline">\(tags\)</span><span class="math inline">\(sep\)</span>, <span class="math inline">\(endfor\)</span>
 </p>
-<p>{{/tags}}</p>
+<p><span class="math inline">\(endif\)</span></p>
 <p style="margin-top: 0.5em;">
-<i class="fas fa-user-circle fa-fw"></i>&nbsp; {{#author}} {{#unless <span class="citation" data-cites="first">@first</span>}}, {{/unless}} {{.}} {{/author}}
+<i class="fas fa-user-circle fa-fw"></i>&nbsp; <span class="math inline">\(for(author)\)</span> <span class="math inline">\(author\)</span><span class="math inline">\(sep\)</span>, <span class="math inline">\(endfor\)</span>
 </p>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->

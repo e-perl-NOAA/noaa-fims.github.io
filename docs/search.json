@@ -137,7 +137,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "{{#categories}}\n{{. | lower | replace('-', ' ')}}\n{{/categories}}\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Categories\n      \n    \n  \n    \n      \n      \n    \n\n{{#date}}   {{ .Date.Format “January 01, 2026” }} {{/date}}\n{{#tags}}\n\n  {{#tags}} {{#unless @first}}, {{/unless}} {{.}} {{/tags}}\n\n{{/tags}}\n\n  {{#author}} {{#unless @first}}, {{/unless}} {{.}} {{/author}}\n\nNo matching items"
+    "text": "{{#categories}}\n{{. | lower | replace('-', ' ')}}\n{{/categories}}\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Categories\n      \n    \n  \n    \n      \n      \n    \n\n\\(if(date)\\)   \\(date\\) \\(endif\\)\n\\(if(tags)\\)\n\n  \\(for(tags)\\) \\(tags\\)\\(sep\\), \\(endfor\\)\n\n\\(endif\\)\n\n  \\(for(author)\\) \\(author\\)\\(sep\\), \\(endfor\\)\n\nNo matching items"
   },
   {
     "objectID": "blog/12.08.2025.html#fims-announcements",
