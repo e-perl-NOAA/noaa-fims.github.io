@@ -1,17 +1,53 @@
-$if(date)$
-  <i class="fas fa-calendar-day fa-fw"></i>&nbsp;&nbsp;$date$
-$endif$
-
-$if(tags)$
-<p style="margin-bottom: 0.5em; margin-top: 0.85em;">
-  <i class="fas fa-tags"></i>&nbsp;
-  $for(tags)$
-    $tags$$sep$, $endfor$
-</p>
-$endif$
-
-<p style="margin-top: 0.5em;">
-  <i class="fas fa-user-circle fa-fw"></i>&nbsp;
-  $for(author)$
-    $author$$sep$, $endfor$
-</p>
+<div class="listItem">
+  <a class="itemImage project" href="$url$" aria-hidden="true">
+    $if(thumbnail)$
+      <img src="$thumbnail$">
+    $else$
+      $if(categories)$
+        $if(fims-weekly in categories)$
+          <!-- FA newspaper icon for fims-weekly category -->
+          <span class="fa-stack fa-2x" style="width: 75px; height: 75px;">
+            <i class="fas fa-square fa-stack-2x" style="color: #eee;"></i>
+            <i class="fas fa-newspaper fa-stack-1x" style="color: #aaa;"></i>
+          </span>
+        $else$
+          <!-- FA book-bookmark icon for other categories -->
+          <span class="fa-stack fa-2x" style="width: 75px; height: 75px;">
+            <i class="fas fa-square fa-stack-2x" style="color: #eee;"></i>
+            <i class="fas fa-book-bookmark fa-stack-1x" style="color: #aaa;"></i>
+          </span>
+        $endif$
+      $else$
+        <!-- If categories missing, show book-bookmark -->
+        <span class="fa-stack fa-2x" style="width: 75px; height: 75px;">
+          <i class="fas fa-square fa-stack-2x" style="color: #eee;"></i>
+          <i class="fas fa-book-bookmark fa-stack-1x" style="color: #aaa;"></i>
+        </span>
+      $endif$
+    $endif$
+  </a>
+  <div class="itemDetails">
+    <div class="itemHeader">
+      <div class="itemTitle">
+        <a href="$url$">$title$</a>
+      </div>
+      $if(categories)$
+        <div class="itemTag">
+          $for(categories)$
+            <a href="/categories/$categories$">$categories$</a>
+          $endfor$
+        </div>
+      $endif$
+    </div>
+    <div class="itemMeta">
+      <div class="author">$for(author)$$author$$sep$, $endfor$</div>
+      <div class="itemDescription">
+        $if(description)$$description$$endif$
+        <a class="readMore mobile-only" href="$url$">Read more ...</a>
+      </div>
+      <div class="itemDate">
+        <div class="created">$date$</div>
+      </div>
+    </div>
+  </div>
+</div>
