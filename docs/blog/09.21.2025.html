@@ -44,9 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-b60fa282d3239d82d33997d7d1778d69.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c69cad80f909b3c1b00e14911737a1de.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-16ad542f9e2fdf39a8892ccd794d1321.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-c69cad80f909b3c1b00e14911737a1de.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d9a672a4980f3956da5ddee8e660195c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-6141d926a26800a294d2f29254af4426.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-d9a672a4980f3956da5ddee8e660195c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -84,6 +84,35 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../assets/panelset-extras.css">
 <meta property="og:title" content="FIMS Weekly - September 21–26, 2025 – FIMS">
@@ -392,7 +421,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><img src="images/fims_weekly.png" class="img-fluid" alt="FIMS hex icon and noaa logo with text saying FIMS Weekly"></p>
-<p><i class="fa-solid fa-tags"></i> Tags: </p>
+<section id="tags" class="level2">
+<h2 class="anchored" data-anchor-id="tags"><i class="fa-solid fa-tags"></i> Tags:</h2>
+<p><span class="math inline">\(for(categories)\)</span> <span class="math inline">\(if(categories != "fims-weekly" and categories != "deep-dive")\)</span> <span class="math inline">\(categories\)</span><span class="math inline">\(sep\)</span>, <span class="math inline">\(endsep\)</span> <span class="math inline">\(endif\)</span> <span class="math inline">\(endfor\)</span></p>
 <div style="height:3em;">
 
 </div>
@@ -424,6 +455,7 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </div>
+</section>
 <div class="columns">
 <div class="column">
 <section id="fims-announcements" class="level2">
