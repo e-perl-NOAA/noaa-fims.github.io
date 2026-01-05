@@ -539,11 +539,95 @@
     "text": "Get involved \nUsers and developers are welcome to join the Discussions board or submit bug reports using GitHub Issues. Please use the issues under collaborative workflow to make suggestions about the developer guide and the issues under the FIMS software repository for software design and development feedback."
   },
   {
-    "objectID": "about/index.html#release",
-    "href": "about/index.html#release",
-    "title": "About FIMS",
-    "section": "Release",
-    "text": "Release\nThe current release can be found on the FIMS release page. A list of all releases and their corresponding changes can be found on our changelog page."
+    "objectID": "blog/09.15.2025.html#fims-announcements",
+    "href": "blog/09.15.2025.html#fims-announcements",
+    "title": "FIMS Weekly - September 15–19, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\n50 days until the CIE Review"
+  },
+  {
+    "objectID": "blog/09.15.2025.html#upcoming-events",
+    "href": "blog/09.15.2025.html#upcoming-events",
+    "title": "FIMS Weekly - September 15–19, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\nTuesday, Cleanup\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, FIMS and RTMB\nFIMS Tutorial Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
+  },
+  {
+    "objectID": "blog/09.15.2025.html#photo-of-the-week",
+    "href": "blog/09.15.2025.html#photo-of-the-week",
+    "title": "FIMS Weekly - September 15–19, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nThanks to Bai’s recent PR that revamped the lists of lists for running a model into a tibble the amount of code needed to run a default model is even less. Check out the revamped fims-demo-minimal below!\n\ndata_4_model &lt;- FIMSFrame(data1)\n# Create parameters\nparameters &lt;- data_4_model |&gt;\n  create_default_configurations() |&gt;\n  create_default_parameters(data = data_4_model)\n# Run the  model with optimization\nfit &lt;- parameters |&gt;\n  initialize_fims(data = data_4_model) |&gt;\n  fit_fims(optimize = TRUE)"
+  },
+  {
+    "objectID": "blog/09.29.2025.html#fims-announcements",
+    "href": "blog/09.29.2025.html#fims-announcements",
+    "title": "FIMS Weekly - September 29–October 03, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\n36 more days until the CIE Review\nMeg and Ian have made excellent progress on FIMSdiags, complete with a pkgdown site"
+  },
+  {
+    "objectID": "blog/09.29.2025.html#upcoming-events",
+    "href": "blog/09.29.2025.html#upcoming-events",
+    "title": "FIMS Weekly - September 29–October 03, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\nTuesday, tests\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, cleanup\nFIMS Seaside Chat Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet\n\n\n\nWednesday, October 01\nFIMS Implementation Team Meeting (CIE Review)\nTime: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H Location: Virtual Online: Google meet"
+  },
+  {
+    "objectID": "blog/09.29.2025.html#photo-of-the-week",
+    "href": "blog/09.29.2025.html#photo-of-the-week",
+    "title": "FIMS Weekly - September 29–October 03, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nI am truly impressed by the perseverance of Elizabeth Perl 😮. She was able to get our doxygen site to render with the same headers as our noaa-fims.github.io site. This was no easy feat, and it looks beautiful. If you have any suggestions feel free to fill out an issue."
+  },
+  {
+    "objectID": "blog/11.24.2025.html#fims-announcements",
+    "href": "blog/11.24.2025.html#fims-announcements",
+    "title": "FIMS Weekly - November 24–28, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nHappy 🦃Thanksgiving Day🦃 to you and your friends and family this holiday season.\nThe FIMS CIE Review has been rescheduled to April 21–23, 2026."
+  },
+  {
+    "objectID": "blog/11.24.2025.html#upcoming-events",
+    "href": "blog/11.24.2025.html#upcoming-events",
+    "title": "FIMS Weekly - November 24–28, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\nTuesday,\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
+  },
+  {
+    "objectID": "blog/11.24.2025.html#photo-of-the-week",
+    "href": "blog/11.24.2025.html#photo-of-the-week",
+    "title": "FIMS Weekly - November 24–28, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nA few months ago, Posit introduced Databot to help explore your data. This is not really of direct interest to FIMS but I think the concept is. Our figures and tables should with a FIMS data object should be relatively similar where we build a command such as summarize() to give similar summaries."
+  },
+  {
+    "objectID": "blog/12.08.2025.html#fims-announcements",
+    "href": "blog/12.08.2025.html#fims-announcements",
+    "title": "FIMS Weekly - December 08–12, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nConsider attending the CAPAM workshop on tuna models this week."
+  },
+  {
+    "objectID": "blog/12.08.2025.html#upcoming-events",
+    "href": "blog/12.08.2025.html#upcoming-events",
+    "title": "FIMS Weekly - December 08–12, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS"
+  },
+  {
+    "objectID": "blog/12.08.2025.html#photo-of-the-week",
+    "href": "blog/12.08.2025.html#photo-of-the-week",
+    "title": "FIMS Weekly - December 08–12, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nA new expectation expect_shape() is available from {testthat} which checks the dimensions of the object of interest, e.g., number of rows or number of columns! This function could be helpful for FIMS where we expect the model results to have a certain number of rows.\n\ntestthat::expect_shape()\n\nargs(testthat::expect_shape)\n# function (object, ..., nrow, ncol, dim)\n\nmat &lt;- matrix(1:6, nrow = 2, ncol = 3)\n# Passes: mat has 2 rows and 3 columns\ntestthat::expect_shape(mat, c(2, 3))\n\ndf &lt;- data.frame(a = 1:4, b = 5:8)\n# Passes: df has 4 rows and 2 columns\ntestthat::expect_shape(df, c(4, 2))"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nFIMS Weekly - December 15–19, 2025\n\n\n\nfims-weekly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFIMS Weekly - December 08–12, 2025\n\n\n\nfims-weekly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFIMS Weekly - December 01–05, 2025\n\n\n\nfims-weekly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFIMS Weekly - November 24–28, 2025\n\n\n\nfims-weekly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFIMS Weekly - November 17–21, 2025\n\n\n\nfims-weekly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFIMS Weekly - September 29–October 03, 2025\n\n\n\nfims-weekly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFIMS Weekly - September 21–26, 2025\n\n\n\nfims-weekly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFIMS Weekly - September 15–19, 2025\n\n\n\nfims-weekly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFIMS Weekly - September 08–12, 2025\n\n\n\nfims-weekly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFIMS Weekly - September 01–05, 2025\n\n\n\nfims-weekly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFIMS Weekly - August 25–29, 2025\n\n\n\nfims-weekly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFIMS Weekly - August 18–22, 2025\n\n\n\nfims-weekly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFIMS Weekly - August 11–15, 2025\n\n\n\nfims-weekly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFIMS Weekly - August 04–08, 2025\n\n\n\nfims-weekly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFIMS Weekly - July 28–August 1, 2025\n\n\n\nfims-weekly\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFIMS Weekly - July 21–25, 2025\n\n\n\nfims-weekly\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "contact/contributors.html",
