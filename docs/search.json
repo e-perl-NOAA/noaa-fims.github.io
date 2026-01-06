@@ -133,13 +133,6 @@
     "text": "v0.1.0.0 (release notes)\nThis is the first version of the Fisheries Integrated Modeling System (FIMS). At this stage, FIMS can be used to estimate a simple age-structured population model such as case 0 in Li et al. (2021)’s manuscript. Please refer to the collaborative workflow for a description of the model functionality and completeness. Documentation can be found here.\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/commits/v0.1.0"
   },
   {
-    "objectID": "blog/12.15.2025.html#tags",
-    "href": "blog/12.15.2025.html#tags",
-    "title": "FIMS Weekly - December 15–19, 2025",
-    "section": " Tags:",
-    "text": "Tags:\n?meta:filtered_categories\n\n\n\n\n\n\n\nTHREE BIG THINGS THIS WEEK\n\n\n\nThanks to Meg for reporting a :bug: last week, we will have a new release of 0.7.0 hopefully today, i.e., 0.7.1 that fixes the json and the R code to read that json in.\nMatthew has picked back up the length-based selectivity work and is hoping to get this wrapped up soon and in a new release.\nThe projections branch will be rebased to dev and a vignette will be created to help socialize how to do projections. If you are interested in helping with this please reach out on the Pull Request.\n\n\n\n\nHELPFUL RESOURCES\n\n\n\nFIMS Outreach Activities\nNMFS Open Science Calendar\nImplementation Team Notes\nFIMS FAQs\nNOAA-FIMS Discussions\nGitHub Trainings"
-  },
-  {
     "objectID": "blog/12.15.2025.html#fims-announcements",
     "href": "blog/12.15.2025.html#fims-announcements",
     "title": "FIMS Weekly - December 15–19, 2025",
@@ -159,13 +152,6 @@
     "title": "FIMS Weekly - December 15–19, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nHas anyone heard of {fastverse} before? It appears to be a {tidyverse} style group of packages built on C++ code that is meant for quick analyses of data, unlike traditional tidyverse packages that are known to be easy to understand but slow. See the code below for installation and feel free to start a Discussion on GitHub about the packages if they seem useful, especially as our input and output data frames become larger.\n\n# Install the CRAN version\ninstall.packages(\"fastverse\")\n\n# Install (Windows/Mac binaries) from R-universe\ninstall.packages(\"fastverse\", repos = \"https://fastverse.r-universe.dev\")\n\n# Install from GitHub (requires compilation)\nremotes::install_github(\"fastverse/fastverse\")"
-  },
-  {
-    "objectID": "blog/12.01.2025.html#tags",
-    "href": "blog/12.01.2025.html#tags",
-    "title": "FIMS Weekly - December 01–05, 2025",
-    "section": " Tags:",
-    "text": "Tags:\n?meta:filtered_categories\n\n\n\n\n\n\n\nTHREE BIG THINGS THIS WEEK\n\n\n\nOur number one goal this week is to get a new release out, which involves trudging through the 13 open Pull Requests and prioritizing which ones will be a part of 0.8.0 and need rebased and which ones will wait for the next release.\nBai is working hard on sorting out the differences between FIMS and other software in an effort to ramp up the testing in FIMS.\nEffort on the Surplus Production Model is ramping back up. Again, testing has revealed differences between FIMS and other frameworks that needs to be sorted out.\n\n\n\n\nHELPFUL RESOURCES\n\n\n\nFIMS Outreach Activities\nNMFS Open Science Calendar\nImplementation Team Notes\nFIMS FAQs\nNOAA-FIMS Discussions\nGitHub Trainings"
   },
   {
     "objectID": "blog/12.01.2025.html#fims-announcements",
@@ -189,13 +175,6 @@
     "text": "PHOTO OF THE WEEK\nThank you to Alex and Peter for helping fix up the FIMS cheat sheet last week. Below is a screen shot of the updates made with respect to what the table of parameters looks like."
   },
   {
-    "objectID": "blog/11.17.2025.html#tags",
-    "href": "blog/11.17.2025.html#tags",
-    "title": "FIMS Weekly - November 17–21, 2025",
-    "section": " Tags:",
-    "text": "Tags:\n?meta:filtered_categories\n\n\n\n\n\n\n\nTHREE BIG THINGS THIS WEEK\n\n\n\nWelcome back all! Last week was spent catching up on emails and getting reorientated, where this week we will be working towards getting a release out within the next two weeks. Thank you to Bai, Adrianne, and Nathan for keeping the lights on.\nWe will no longer be having our Seaside Chats on Thursdays. Instead, we will be scheduling calls that work with people’s schedules based on need. We encourage everyone to schedule these types of calls within the FIMS community based on your own needs. Just remember to add them to the FIMS calendar.\nThe CIE Review will be rescheduled for next Spring. Before the review we will ensure that all work done in preparation for the review is solid and that the documentation has been vetted with new users to ensure that it is understandable to non-developers.\n\n\n\n\nHELPFUL RESOURCES\n\n\n\nFIMS Outreach Activities\nNMFS Open Science Calendar\nImplementation Team Notes\nFIMS FAQs\nNOAA-FIMS Discussions\nGitHub Trainings"
-  },
-  {
     "objectID": "blog/11.17.2025.html#fims-announcements",
     "href": "blog/11.17.2025.html#fims-announcements",
     "title": "FIMS Weekly - November 17–21, 2025",
@@ -215,13 +194,6 @@
     "title": "FIMS Weekly - November 17–21, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nAs we update our website to be the best ‘community playbook’ that it can be, we will be adding some icons to titles to help users of all types navigate the pages. Look for each of the icons throughout this site based on which type of information you are looking for.\n\n Developer  New User  Power User  Receiver of Results"
-  },
-  {
-    "objectID": "blog/09.21.2025.html#tags",
-    "href": "blog/09.21.2025.html#tags",
-    "title": "FIMS Weekly - September 21–26, 2025",
-    "section": " Tags:",
-    "text": "Tags:\n?meta:filtered_categories\n\n\n\n\n\n\n\nTHREE BIG THINGS THIS WEEK\n\n\n\nA new release of FIMS will come out this week that contains the PRs brought in last week thanks to Bai and Eric as well as improvements to the documentation thanks to those that showed up to Code Club and the extra design document meetings. Everyone’s work is greatly appreciated. Check out the issues listed in the CIE cleanup milestone for more tasks to work on.\nOnce a bug in the likelihood calculations is fixed in dev-json-caa, this branch will be merged into dev. By the end of the day today though it will be rebased and Nathan can branch off it to start adding projections and Meg and Ian can use it for their diagnostic work.\nThe case studies are mid-stream in an update to use {asar} and {stockplotr} for plotting. Thanks to help from Kyle and Sam we have two case studies nearly complete and we hope to get some help porting over the remaining ones this week.\n\n\n\n\nHELPFUL RESOURCES\n\n\n\nFIMS Outreach Activities\nNMFS Open Science Calendar\nImplementation Team Notes\nFIMS FAQs\nNOAA-FIMS Discussions\nGitHub Trainings"
   },
   {
     "objectID": "blog/09.21.2025.html#fims-announcements",
@@ -245,13 +217,6 @@
     "text": "PHOTO OF THE WEEK\ndoxygen use to be so foreign to me and I wished we could just use roxygen😒. Now, I feel more at home with doxygen and have even learned some tips (see below) to making it better and feel more roxygen like✅.\n\n// To make a table of contents in a .md file\n[TOC]\n\n// Copy documentation from another function\n@copydoc MyFunctionName\n\n// Link to a function or file\n`FunctionName()` `my_file.hpp`\n\n// Insert an inline or block equation\n\\f$a-b=c/f$\n\\f[ \\text{best} = \\alpha - \\beta \\f]"
   },
   {
-    "objectID": "blog/09.08.2025.html#tags",
-    "href": "blog/09.08.2025.html#tags",
-    "title": "FIMS Weekly - September 08–12, 2025",
-    "section": " Tags:",
-    "text": "Tags:\n?meta:filtered_categories\n\n\n\n\n\n\n\nTHREE BIG THINGS THIS WEEK\n\n\n\nOn Wednesday, the Science Board will be given an update and we will discuss creating a formal FIMS Transition Plan. Thank you Jane for volunteering to attend the presentation to help take notes.\nNone of the PRs that I wanted to merge in last week happened so merging those is a goal again. Attend Code Club on Tuesday if you are interested in helping write R code to read in the json output.\nBy the end of the day on Wednesday there will be a prioritized list of issues that need completed before October 01, 2025 because they are needed for the documentation that will be sent to the CIE Reviewers.\n\n\n\n\nHELPFUL RESOURCES\n\n\n\nFIMS Outreach Activities\nNMFS Open Science Calendar\nImplementation Team Notes\nFIMS FAQs\nNOAA-FIMS Discussions\nGitHub Trainings"
-  },
-  {
     "objectID": "blog/09.08.2025.html#fims-announcements",
     "href": "blog/09.08.2025.html#fims-announcements",
     "title": "FIMS Weekly - September 08–12, 2025",
@@ -271,13 +236,6 @@
     "title": "FIMS Weekly - September 08–12, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nLast week I showed the json output for dimensionality, this week I show the tidyverse code to create a tibble from that same information.\n\n#' Covert the dimension information from a FIMS json output into a tibble\n#'\n#' Dimensions in the json output are stored as a list of length two, with the\n#' header information containing the name of the dimension and the dimensions\n#' containing integers specifying the length for each dimension. The result\n#' helps interpret how the FIMS output is structured given it is dimension\n#' folded into a single vector in the json output.\n#'\n#' @param data A list containing the header and dimensions information from a\n#'   FIMS json output object.\n#' @return\n#' A tibble containing ordered rows for each combination of the dimensions.\n#' @examples\n#' dummy_dimensions &lt;- list(\n#'   header = list(\"nyears\", \"nages\"),\n#'   dimensions = list(30L, 12L)\n#' )\n#' dimensions_to_tibble(dummy_dimensions)\ndimensions_to_tibble &lt;- function(data) {\n  # Create names that are informative for columns b/c nyears is not helpful\n  better_names &lt;- unlist(data[[\"header\"]]) |&gt;\n    gsub(pattern = \"^n(.+)s$\", replacement = \"\\\\1_ids\")\n  names(data[[\"dimensions\"]]) &lt;- better_names\n  # Create the returned tibble by first sequencing from 1:n for each dimension\n  data[[\"dimensions\"]] |&gt;\n    purrr::map(seq) |&gt;\n    expand.grid() |&gt;\n    tibble::as_tibble() |&gt;\n    dplyr::arrange(!!! rlang::syms(better_names))\n}"
-  },
-  {
-    "objectID": "blog/08.25.2025.html#tags",
-    "href": "blog/08.25.2025.html#tags",
-    "title": "FIMS Weekly - August 25–29, 2025",
-    "section": " Tags:",
-    "text": "Tags:\n?meta:filtered_categories\n\n\n\n\n\n\n\nTHREE BIG THINGS THIS WEEK\n\n\n\nBai is busy revamping the way users interact with the model parameters as lists of lists has gotten unwieldy.\nMatthew and Andrea are working on different parts of the model using feature branches off of the latest dev branch that has a draft of the Surplus Production Model (SPM).\nThis Thursday (see below) will be our first tutorial session to give new users a glimpse into how to run a FIMS model. Please share this information wide and far.\n\n\n\n\nHELPFUL RESOURCES\n\n\n\nFIMS Outreach Activities\nNMFS Open Science Calendar\nImplementation Team Notes\nFIMS FAQs\nNOAA-FIMS Discussions\nGitHub Trainings"
   },
   {
     "objectID": "blog/08.25.2025.html#fims-announcements",
@@ -301,13 +259,6 @@
     "text": "PHOTO OF THE WEEK\nI recently learned about Deep Wiki where you can view a Wiki about any repository that is available on GitHub. I looked to see what Deep Wiki had to say about FIMS and first found it was not indexed but all it took to change that was proving my email. Within minutes, FIMS had its own page. Several diagrams were generated but the one that I thought was the most helpful (see below) summarized what is available in the main branch for the C++ code. I think this image will be extremely helpful as FIMS becomes more complex. I just wish I knew how we can create it dynamically ☹️"
   },
   {
-    "objectID": "blog/08.11.2025.html#tags",
-    "href": "blog/08.11.2025.html#tags",
-    "title": "FIMS Weekly - August 11–15, 2025",
-    "section": " Tags:",
-    "text": "Tags:\n?meta:filtered_categories\n\n\n\n\n\n\n\nTHREE BIG THINGS THIS WEEK\n\n\n\nSorry for the late FIMS Weekly but I have been sick 🤕 and just haven’t been able to muster enough 🔥to get one together. I am doing better today but still don’t have much of a voice so there is no seaside chat this week.\nv0.6.3 will be released this week, thanks to Andrea finding an intermittent bug when using TMBad on Windows regarding how we were implementing operators in fims_math.hpp.\nLots of work is co-occurring in several branches, I will be missing some in the following list but I hope this helps people get a pulse 💓 on what is going on: (a) Matthew - dev-length-selectivity-rebased trying to find 🐛 in length likelihood, (b) Alex - dev-dbl-norm implementing double normal selectivity, (c) Andrea - dev-osa adding one-step-ahead residuals, (d) Nathan & Andrea - dev-projections-[nathan|andrea] projections, (e) Bai - dev-refactor-nested-parameter-list updating R side of model input, and (f) Kathryn - in ghactions4r allowing /document to work.\n\n\n\n\nHELPFUL RESOURCES\n\n\n\nFIMS Outreach Activities\nNMFS Open Science Calendar\nImplementation Team Notes\nFIMS FAQs\nNOAA-FIMS Discussions\nGitHub Trainings"
-  },
-  {
     "objectID": "blog/08.11.2025.html#fims-announcements",
     "href": "blog/08.11.2025.html#fims-announcements",
     "title": "FIMS Weekly - August 11–15, 2025",
@@ -327,13 +278,6 @@
     "title": "FIMS Weekly - August 11–15, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nDuring our GitHub training with Microsoft, Bai asked a ❓about git worktrees that kind of blew my mind. I had yet to understand the full question or the response but last week with the new version of VS Code that was released it started to make sense. VS Code now has support for git worktrees, where worktrees let you check out multiple branches at once within a single clone. This stops the need for having multiple clones of the same repository on a single computer. IMO this is genius. I am constantly making bogus commits or stashing things that I later forgot that I stashed so I can check out a different branch, do one thing, and then switch back to the other branch. Or worse yet, I am on a branch and want to see a file in a different branch so I go online copy and paste the raw text from the “other” branch that I am interested in and then put it in a new file in VS Code. All of these alternates are suboptimal and have led to 🧨, which is obviously not good. I am excited to check out the use of worktrees and if it goes well maybe we can get Jonathan to do a GitHub training on them. First, I had to click on the three dots to the right of “SOURCE CONTROL” and add “Repositories” to what was being shown in my “SOURCE CONTROL” section of VS Code. Second, I clicked the three dots to the left of REPOSITORIES/FIMS, where I currently have dev-fix-exp-TMBad checked out, which brought up a list where I selected Worktrees -&gt; Create Worktree and let me select an additional branch. I chose dev. Now you can see dev is a worktree in the list under FIMS. This is as far as I have gotten in my 🛣️."
-  },
-  {
-    "objectID": "blog/07.28.2025.html#tags",
-    "href": "blog/07.28.2025.html#tags",
-    "title": "FIMS Weekly - July 28–August 1, 2025",
-    "section": " Tags:",
-    "text": "Tags:\n?meta:filtered_categories\n\n\n\n\n\n\n\nTHREE BIG THINGS THIS WEEK\n\n\n\nWriting tests 🧪 for length-based selectivity and finding the remaining 🐛.\nMeg and Ian are working on FIMSdiags. If you are interested in joining them, watch the FIMS Calendar for meetings or ask Meg specifically to be invited.\nProjections and reference points are in the works. An update will be presented at the next FIMS Implementation Team Meeting.\n\n\n\n\nHELPFUL RESOURCES\n\n\n\nFIMS Outreach Activities\nNMFS Open Science Calendar\nImplementation Team Notes\nFIMS FAQs\nNOAA-FIMS Discussions\nGitHub Trainings"
   },
   {
     "objectID": "blog/07.28.2025.html#fims-announcements",
@@ -427,13 +371,6 @@
     "text": "PHOTO OF THE WEEK\nR-opensci has guidance on writing tests for packages submitted that Bai is looking into. But, it was pretty mind blowing to learn that there is a way to add comments to a commit message that can invoke “extended” tests, i.e., tests that do not need to be run on every commit. It was nice to know that others have been thinking about this as FIMS has struggled to find a resource or advice on what to do, see Discussion #870. Feel free to add any thoughts about the system below or other insights to running large tests on the Discussion board. Thank you in advance for taking the time to contribute 😊."
   },
   {
-    "objectID": "blog/08.04.2025.html#tags",
-    "href": "blog/08.04.2025.html#tags",
-    "title": "FIMS Weekly - August 04–08, 2025",
-    "section": " Tags:",
-    "text": "Tags:\n?meta:filtered_categories\n\n\n\n\n\n\n\nTHREE BIG THINGS THIS WEEK\n\n\n\nThe case studies will be updated this week to use the latest release. This has been done in dev for a while but just hanging in the ether.\nWe will be migrating several resources from individual repositories to the FIMS website, e.g., FIMS Weekly newsletter, training repo, doxygen documentation, and potentially the collaborative workflow.\nPlease ensure that your affiliation in the FIMS manuscript is correct, which will be submitted to ICES Journal of Marine Science at the beginning of next week.\n\n\n\n\nHELPFUL RESOURCES\n\n\n\nFIMS Outreach Activities\nNMFS Open Science Calendar\nImplementation Team Notes\nFIMS FAQs\nNOAA-FIMS Discussions\nGitHub Trainings"
-  },
-  {
     "objectID": "blog/08.04.2025.html#fims-announcements",
     "href": "blog/08.04.2025.html#fims-announcements",
     "title": "FIMS Weekly - August 04–08, 2025",
@@ -453,13 +390,6 @@
     "title": "FIMS Weekly - August 04–08, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nDuring last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example:\n Tags: R, TMB, testing\n\n{\n  \"@context\": \"https://schema.org/\",\n  \"@type\": \"Dataset\",\n  \"name\": \"Human Genome Assembly GRCh38\",\n  \"description\": \"The latest full reference genome assembly of the human genome, a product of the Genome Reference Consortium.\",\n  \"url\": \"https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.26/\",\n  \"identifier\": \"GCF_000001405.26\",\n  \"creator\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Genome Reference Consortium\"\n  },\n  \"citation\": \"Kallberg, M. et al. (2014). GRCh38: The human reference genome update. Nucleic Acids Research.\",\n  \"keywords\": [\n    \"Human Genome\",\n    \"GRCh38\",\n    \"Genomics\",\n    \"Reference Assembly\"\n  ],\n  \"license\": \"https://creativecommons.org/licenses/by/4.0/\",\n  \"datePublished\": \"2013-12-17\",\n  \"distribution\": [\n    {\n      \"@type\": \"DataDownload\",\n      \"name\": \"GRCh38 FASTA file\",\n      \"contentUrl\": \"ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.26_GRCh38/GCF_000001405.26_GRCh38_genomic.fna.gz\",\n      \"encodingFormat\": \"application/x-fasta\"\n    }\n  ],\n  \"measurementTechnique\": \"Next-Generation Sequencing\",\n  \"inLanguage\": \"en\"\n}"
-  },
-  {
-    "objectID": "blog/08.18.2025.html#tags",
-    "href": "blog/08.18.2025.html#tags",
-    "title": "FIMS Weekly - August 18–22, 2025",
-    "section": " Tags:",
-    "text": "Tags:\n?meta:filtered_categories\n\n\n\n\n\n\n\nTHREE BIG THINGS THIS WEEK\n\n\n\nExtra attention will be on the json output this week as we look to add the Surplus Production Model and finish the implementation of model families.\nA README for how to run and implement new 🧪s is now available thanks to Bai, this will be merged into dev this week.\nPlease ensure that your CReDiT statements in the FIMS manuscript are correct by Friday the 22nd.\n\n\n\n\nHELPFUL RESOURCES\n\n\n\nFIMS Outreach Activities\nNMFS Open Science Calendar\nImplementation Team Notes\nFIMS FAQs\nNOAA-FIMS Discussions\nGitHub Trainings"
   },
   {
     "objectID": "blog/08.18.2025.html#fims-announcements",
@@ -483,13 +413,6 @@
     "text": "PHOTO OF THE WEEK\nThanks to my GitHub Project Board mentors, Andrea and Kathryn, I have revitalized the Issue Triage Board and I will be working on getting the, currently, 104 un-triaged issues assigned to someone or placed in the parking lot. It took me a while but I think Project Boards might be growing on me."
   },
   {
-    "objectID": "blog/09.01.2025.html#tags",
-    "href": "blog/09.01.2025.html#tags",
-    "title": "FIMS Weekly - September 01–05, 2025",
-    "section": " Tags:",
-    "text": "Tags:\n?meta:filtered_categories\n\n\n\n\n\n\n\nTHREE BIG THINGS THIS WEEK\n\n\n\nWe are working on three pull requests right now, revamped model-specification interface, revamped json output, and addition of the surplus production model. The goal is to get at least two of the three merged this week and get dev cleaned up so it is passing tests.\nKyle and Kelli are working on using {asar} and {stockplotr} for the case studies to increase consistency.\nWe could use some help increasing the documentation of FIMS, for example Ian and Meg asked me last week about clear() which is minimally documented in the C++ code but not documented in R where it is actually used and exported.\n\n\n\n\nHELPFUL RESOURCES\n\n\n\nFIMS Outreach Activities\nNMFS Open Science Calendar\nImplementation Team Notes\nFIMS FAQs\nNOAA-FIMS Discussions\nGitHub Trainings"
-  },
-  {
     "objectID": "blog/09.01.2025.html#fims-announcements",
     "href": "blog/09.01.2025.html#fims-announcements",
     "title": "FIMS Weekly - September 01–05, 2025",
@@ -509,13 +432,6 @@
     "title": "FIMS Weekly - September 01–05, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nBelow is a glimpse of what the new json output looks like, where dimensions are provided both in name and in length. Please contact Matthew if you have feedback on this structure.\n\n{\n                    \"name\": \"age_to_length_conversion\",\n                    \"dimensionality\": {\n                        \"header\": [\n                            \"year\",\n                            \"length\"\n                        ],\n                        \"dimensions\": [\n                            31,\n                            24\n                        ]\n                    },\n                    \"values\": [\n                        1.26174e-16,\n                        8.38582e-11,\n                        2.29736e-06,\n                        0.00274388,\n                        0.163077,"
-  },
-  {
-    "objectID": "blog/09.15.2025.html#tags",
-    "href": "blog/09.15.2025.html#tags",
-    "title": "FIMS Weekly - September 15–19, 2025",
-    "section": " Tags:",
-    "text": "Tags:\n?meta:filtered_categories\n\n\n\n\n\n\n\nTHREE BIG THINGS THIS WEEK\n\n\n\nAfter two weeks of not merging in any PRs, I switched it up and merged in Bai’s first so now we just have one outstanding PR left, which we have made a lot of progress on but still need some more progress to get it into dev. Mainly, matching the TMB estimates of uncertainty with the estimates tibble.\nThis week is going to be documentation week. Please see the FIMS calendar for co-working sessions to help out with converting some Google Docs to markdown files.\nThere are lots of issues marked under the CIE Review Milestone. Please feel free to sign up for any that you can accomplish by September 30, 2025.\n\n\n\n\nHELPFUL RESOURCES\n\n\n\nFIMS Outreach Activities\nNMFS Open Science Calendar\nImplementation Team Notes\nFIMS FAQs\nNOAA-FIMS Discussions\nGitHub Trainings"
   },
   {
     "objectID": "blog/09.15.2025.html#fims-announcements",
@@ -539,13 +455,6 @@
     "text": "PHOTO OF THE WEEK\nThanks to Bai’s recent PR that revamped the lists of lists for running a model into a tibble the amount of code needed to run a default model is even less. Check out the revamped fims-demo-minimal below!\n\ndata_4_model &lt;- FIMSFrame(data1)\n# Create parameters\nparameters &lt;- data_4_model |&gt;\n  create_default_configurations() |&gt;\n  create_default_parameters(data = data_4_model)\n# Run the  model with optimization\nfit &lt;- parameters |&gt;\n  initialize_fims(data = data_4_model) |&gt;\n  fit_fims(optimize = TRUE)"
   },
   {
-    "objectID": "blog/09.29.2025.html#tags",
-    "href": "blog/09.29.2025.html#tags",
-    "title": "FIMS Weekly - September 29–October 03, 2025",
-    "section": " Tags:",
-    "text": "Tags:\n?meta:filtered_categories\n\n\n\n\n\n\n\nTHREE BIG THINGS THIS WEEK\n\n\n\nNathan will be working on rebasing/moving the projections code to a new branch based off of dev-json-caa-rebased\nThere are tests that are failing in dev-json-caa-rebased that need to be fixed before it can move into dev see Issue #997\nA lot of progress has been made to update the case studies in dev-wtatage-from-SS3. Still to do is to update the renv file, update the data for type, e.g., ‘age_comp’, and use the input tibble instead of lists of lists.\n\n\n\n\nHELPFUL RESOURCES\n\n\n\nFIMS Outreach Activities\nNMFS Open Science Calendar\nImplementation Team Notes\nFIMS FAQs\nNOAA-FIMS Discussions\nGitHub Trainings"
-  },
-  {
     "objectID": "blog/09.29.2025.html#fims-announcements",
     "href": "blog/09.29.2025.html#fims-announcements",
     "title": "FIMS Weekly - September 29–October 03, 2025",
@@ -567,13 +476,6 @@
     "text": "PHOTO OF THE WEEK\nI am truly impressed by the perseverance of Elizabeth Perl 😮. She was able to get our doxygen site to render with the same headers as our noaa-fims.github.io site. This was no easy feat, and it looks beautiful. If you have any suggestions feel free to fill out an issue."
   },
   {
-    "objectID": "blog/11.24.2025.html#tags",
-    "href": "blog/11.24.2025.html#tags",
-    "title": "FIMS Weekly - November 24–28, 2025",
-    "section": " Tags:",
-    "text": "Tags:\n?meta:filtered_categories\n\n\n\n\n\n\n\nTHREE BIG THINGS THIS WEEK\n\n\n\nThis week’s Code Club will be our first installment of a 3-hour time window for coding. You can think of this as a monthly hackathon now instead of our weekly sessions. We will work on (1) reviewing the outstanding Pull Requests to dev, (2) writing a log statement for the newest version that is about to be released, and (3) updating the cheat sheet given the changes to the R interface. Breakout rooms will allow you to work on things in a quiet space or in small groups if desired.\nWith the shortened week because of the holiday, I am not certain we will be able to get a release out but we will at least work towards that goal.\nNow that the ICES Methods Group Working Group is over, we will resume forward progress on the Surplus Production Model, which will be our second release from now.\n\n\n\n\nHELPFUL RESOURCES\n\n\n\nFIMS Outreach Activities\nNMFS Open Science Calendar\nImplementation Team Notes\nFIMS FAQs\nNOAA-FIMS Discussions\nGitHub Trainings"
-  },
-  {
     "objectID": "blog/11.24.2025.html#fims-announcements",
     "href": "blog/11.24.2025.html#fims-announcements",
     "title": "FIMS Weekly - November 24–28, 2025",
@@ -593,13 +495,6 @@
     "title": "FIMS Weekly - November 24–28, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nA few months ago, Posit introduced Databot to help explore your data. This is not really of direct interest to FIMS but I think the concept is. Our figures and tables should with a FIMS data object should be relatively similar where we build a command such as summarize() to give similar summaries."
-  },
-  {
-    "objectID": "blog/12.08.2025.html#tags",
-    "href": "blog/12.08.2025.html#tags",
-    "title": "FIMS Weekly - December 08–12, 2025",
-    "section": " Tags:",
-    "text": "Tags:\n?meta:filtered_categories\n\n\n\n\n\n\n\nTHREE BIG THINGS THIS WEEK\n\n\n\nv0.7.0 will be released this week, thanks to Matthew for finishing up the model families code and Bai and Adrianne for working on cleanup tasks while the rest of us were away from our desks.\nThe code for projections just needs a vignette, which will be worked on this week, then we can release this PR next week hopefully.\nImplementation of ‘epics’ in the issue tracker will start this week in an effort to help communicate the timeline. Epics are essentially parent issues that help link small issues to a larger feature.\n\n\n\n\nHELPFUL RESOURCES\n\n\n\nFIMS Outreach Activities\nNMFS Open Science Calendar\nImplementation Team Notes\nFIMS FAQs\nNOAA-FIMS Discussions\nGitHub Trainings"
   },
   {
     "objectID": "blog/12.08.2025.html#fims-announcements",
