@@ -10,6 +10,9 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/deep-dive.html",
+      "/blog/learn.html",
+      "/blog/other.html",
       "/blog/12.15.2025.html",
       "/blog/12.08.2025.html",
       "/blog/12.01.2025.html",
@@ -25,7 +28,8 @@
       "/blog/08.11.2025.html",
       "/blog/08.04.2025.html",
       "/blog/07.28.2025.html",
-      "/blog/07.21.2025.html"
+      "/blog/07.21.2025.html",
+      "/blog/blog_template.html"
     ]
   },
   {
