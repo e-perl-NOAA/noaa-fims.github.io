@@ -4,6 +4,9 @@ date: "August 11, 2025"
 # Change the following categories accordingly
 categories: 
   - fims-weekly
+  - releases
+  - git/GitHub
+  - VSCode
 three-big-things:
   bt1: "Sorry for the late FIMS Weekly but I have been sick 🤕 and just haven’t been able to muster enough 🔥to get one together. I am doing better today but still don’t have much of a voice so there is no seaside chat this week."
   bt2: "v0.6.3 will be released this week, thanks to Andrea finding an intermittent bug when using TMBad on Windows regarding how we were implementing operators in fims_math.hpp."

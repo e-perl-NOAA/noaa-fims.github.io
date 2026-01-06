@@ -4,6 +4,8 @@ date: "August 04, 2025"
 # Change the following categories accordingly
 categories: 
   - fims-weekly
+  - case studies
+  - projections
 three-big-things:
   bt1: "The case studies will be updated this week to use the latest release. This has been done in dev for a while but just hanging in the ether."
   bt2: "We will be migrating several resources from individual repositories to the FIMS website, e.g., FIMS Weekly newsletter, training repo, doxygen documentation, and potentially the collaborative workflow."

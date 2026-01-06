@@ -4,6 +4,8 @@ date: "September 01, 2025"
 # Change the following categories accordingly
 categories: 
   - fims-weekly
+  - json
+  - projections
 three-big-things:
   bt1: "We are working on three pull requests right now, revamped model-specification interface, revamped json output, and addition of the surplus production model. The goal is to get at least two of the three merged this week and get dev cleaned up so it is passing tests."
   bt2: "Kyle and Kelli are working on using {asar} and {stockplotr} for the case studies to increase consistency."
