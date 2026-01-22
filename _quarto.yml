@@ -3,10 +3,10 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
-    - "sites/*.qmd"
+    - "resources/*.qmd"
     - "about/*.qmd"
-    - "changelog/*.qmd"
     - "blog/*.qmd"
+    - "contact/*.qmd"
 
   resources:
     - images/
@@ -38,7 +38,7 @@ website:
           - text: calendar
             href: about/calendar.qmd
           - text: changelog
-            href: changelog/FIMS_CHANGELOG.qmd
+            href: about/FIMS_CHANGELOG.qmd
           - text: acknowledgements
             href: about/acknowledgements.qmd
       - text: blog
