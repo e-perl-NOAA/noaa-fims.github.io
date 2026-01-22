@@ -46,9 +46,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-f65e3bcd2178eeb2fa8cf445c0f028c0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-0113f06f84865c1418040a62358139f1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-d58be3c25b5a9eb89c7defefeee786cc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-0113f06f84865c1418040a62358139f1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e94193814b69eb4e043238c709490121.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-6f724a20ec1ac6566caa1e66fd1dea4f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-e94193814b69eb4e043238c709490121.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -86,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-date','listing-description','listing-author','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-subtitle','listing-date','listing-author','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
@@ -146,7 +146,7 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../assets/panelset-extras.css">
-<link rel="alternate" type="application/rss+xml" title="FIMS" href="index.xml" data-external="1"><meta property="og:title" content="FIMS Weekly – FIMS">
+<meta property="og:title" content="FIMS Weekly – FIMS">
 <meta property="og:description" content="FIMS weekly blog.">
 <meta property="og:site_name" content="FIMS">
 </head>
@@ -325,7 +325,7 @@ window.Quarto = {
     <img src="../images/FIMS_logo3.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">FIMS <small>v0.7.0</small></span>
+    <span class="navbar-title">FIMS <small><strong>?env:VERSION</strong></small></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -356,7 +356,7 @@ window.Quarto = {
  <span class="dropdown-text">calendar</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../changelog/FIMS_CHANGELOG.html">
+    <a class="dropdown-item" href="../changelog/FIMS_CHANGELOG.qmd">
  <span class="dropdown-text">changelog</span></a>
   </li>  
         <li>
@@ -366,21 +366,28 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="../fims-weekly/index.html" aria-current="page"> 
-<span class="menu-text">fims weekly</span></a>
+    <a class="nav-link" href="../blog/index.qmd"> 
+<span class="menu-text">blog</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../projects/index.html"> 
-<span class="menu-text">projects</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">resources</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="../resources/resources.html">
+ <span class="dropdown-text">resources</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../packages/index.html"> 
-<span class="menu-text">packages</span></a>
+        <li>
+    <a class="dropdown-item" href="../resources/packages.html">
+ <span class="dropdown-text">R packages</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../sites/sites_index.html"> 
-<span class="menu-text">resources</span></a>
+        <li>
+    <a class="dropdown-item" href="../resources/projects.html">
+ <span class="dropdown-text">projects</span></a>
   </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-contact" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">contact</span>
@@ -415,7 +422,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(21)</span></div><div class="category" data-category="YmFzaA==">bash <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2FzZSUyMHN0dWRpZXM=">case studies <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29kZXNwYWNlcw==">codespaces <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29tbXVuaXR5JTIwcGxheWJvb2s=">community playbook <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGlhZ25vc3RpY3M=">diagnostics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZG9jdW1lbnRhdGlvbg==">documentation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ZG94eWdlbg==">doxygen <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RFNFTQ==">DSEM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Z2l0JTJGR2l0SHVi">git/GitHub <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aW50ZXJmYWNl">interface <span class="quarto-category-count">(1)</span></div><div class="category" data-category="anNvbg==">json <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UG9zaXQ=">Posit <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHJvamVjdGlvbnM=">projections <span class="quarto-category-count">(5)</span></div><div class="category" data-category="cHVycnI=">purrr <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cmVsZWFzZXM=">releases <span class="quarto-category-count">(7)</span></div><div class="category" data-category="c2NoZWR1bGU=">schedule <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2VsZWN0aXZpdHk=">selectivity <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U3VycGx1cyUyMFByb2R1Y3Rpb24=">Surplus Production <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dGVzdGluZw==">testing <span class="quarto-category-count">(6)</span></div><div class="category" data-category="dHJhaW5pbmc=">training <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dHJhaW5pbmdz">trainings <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dmlnbmV0dGVz">vignettes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VlNDb2Rl">VSCode <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(21)</span></div><div class="category" data-category="YmFzaA==">bash <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2FzZSUyMHN0dWRpZXM=">case studies <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29kZXNwYWNlcw==">codespaces <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29tbXVuaXR5JTIwcGxheWJvb2s=">community playbook <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGlhZ25vc3RpY3M=">diagnostics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZG9jdW1lbnRhdGlvbg==">documentation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ZG94eWdlbg==">doxygen <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RFNFTQ==">DSEM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Zmltcy13ZWVrbHk=">fims-weekly <span class="quarto-category-count">(16)</span></div><div class="category" data-category="Z2l0JTJGR2l0SHVi">git/GitHub <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aW50ZXJmYWNl">interface <span class="quarto-category-count">(1)</span></div><div class="category" data-category="anNvbg==">json <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UG9zaXQ=">Posit <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHJvamVjdGlvbnM=">projections <span class="quarto-category-count">(5)</span></div><div class="category" data-category="cHVycnI=">purrr <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cmVsZWFzZXM=">releases <span class="quarto-category-count">(7)</span></div><div class="category" data-category="c2NoZWR1bGU=">schedule <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2VsZWN0aXZpdHk=">selectivity <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U3VycGx1cyUyMFByb2R1Y3Rpb24=">Surplus Production <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dGVzdGluZw==">testing <span class="quarto-category-count">(6)</span></div><div class="category" data-category="dHJhaW5pbmc=">training <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dHJhaW5pbmdz">trainings <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dmlnbmV0dGVz">vignettes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VlNDb2Rl">VSCode <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -444,6 +451,30 @@ window.Quarto = {
 </header>
 
 
+<!-- The section below creates a collpase/expand all button -->
+<div id="expand-collapse-buttons" style="margin-bottom: 20px;">
+<p><button onclick="expandAll()" class="btn btn-primary">Expand All</button> <button onclick="collapseAll()" class="btn btn-secondary">Collapse All</button></p>
+</div>
+<script>
+function expandAll() {
+  const details = document.querySelectorAll('details');
+  details.forEach((detail) => {
+    detail.setAttribute('open', 'true');
+  });
+}
+
+function collapseAll() {
+  const details = document.querySelectorAll('details');
+  details.forEach((detail) => {
+    detail.removeAttribute('open');
+  });
+}
+</script>
+<!--
+<details>
+<summary><strong>What you want in the area that you click to drop down</strong></summary>
+<\details>
+-->
 
 
 
@@ -475,352 +506,540 @@ window.Quarto = {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1765756800000" data-listing-file-modified-sort="1767642169543" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
+<div class="quarto-post image-right" data-index="0" data-categories="cmVsZWFzZXMlMkN0ZXN0aW5n" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1769109194415" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/12.15.2025.html" class="no-external">FIMS Weekly - December 15–19, 2025</a>
+<a href="../fims-weekly/01.19.2026.html" class="no-external">January 19–23, 2026</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/01.19.2026.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cmVsZWFzZXM='); return false;">releases</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dGVzdGluZw=='); return false;">testing</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../fims-weekly/01.19.2026.html" class="no-external">
+<div class="listing-date">
+Jan 19, 2026
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="dHJhaW5pbmdz" data-listing-date-sort="1768176000000" data-listing-file-modified-sort="1769109194415" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../fims-weekly/01.12.2026.html" class="no-external">January 12–16, 2026</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/01.12.2026.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHJhaW5pbmdz'); return false;">trainings</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../fims-weekly/01.12.2026.html" class="no-external">
+<div class="listing-date">
+Jan 12, 2026
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="U3VycGx1cyUyMFByb2R1Y3Rpb24lMkNEU0VNJTJDY29kZXNwYWNlcw==" data-listing-date-sort="1767571200000" data-listing-file-modified-sort="1769109194415" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="85">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../fims-weekly/01.04.2026.html" class="no-external">January 05–09, 2026</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/01.04.2026.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3VycGx1cyUyMFByb2R1Y3Rpb24='); return false;">Surplus Production</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RFNFTQ=='); return false;">DSEM</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kZXNwYWNlcw=='); return false;">codespaces</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../fims-weekly/01.04.2026.html" class="no-external">
+<div class="listing-date">
+Jan 5, 2026
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="cmVsZWFzZXMlMkN0cmFpbmluZw==" data-listing-date-sort="1766966400000" data-listing-file-modified-sort="1769109194416" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="93">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../fims-weekly/12.29.2025.html" class="no-external">December 29, 2025–January 02, 2026</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/12.29.2025.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cmVsZWFzZXM='); return false;">releases</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dHJhaW5pbmc='); return false;">training</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../fims-weekly/12.29.2025.html" class="no-external">
+<div class="listing-date">
+Dec 29, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="cmVsZWFzZXMlMkNSJTJDYmFzaA==" data-listing-date-sort="1766361600000" data-listing-file-modified-sort="1769109194416" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../fims-weekly/12.22.2025.html" class="no-external">December 22–26, 2025</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/12.22.2025.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cmVsZWFzZXM='); return false;">releases</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YmFzaA=='); return false;">bash</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../fims-weekly/12.22.2025.html" class="no-external">
+<div class="listing-date">
+Dec 22, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcyUyQ1I=" data-listing-date-sort="1765756800000" data-listing-file-modified-sort="1769109194416" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../fims-weekly/12.15.2025.html" class="no-external">FIMS Weekly - December 15–19, 2025</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/12.15.2025.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('cmVsZWFzZXM='); return false;">releases</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
 </div>
-<div class="delink listing-description"><a href="../blog/12.15.2025.html" class="no-external">
-Thanks to Meg for reporting a :bug: last week, we will have a new release of 0.7.0 hopefully today, i.e., 0.7.1 that fixes the json and the R code to read that json in.
-</a></div>
 </div>
 <div class="metadata">
-<a href="../blog/12.15.2025.html" class="no-external">
+<a href="../fims-weekly/12.15.2025.html" class="no-external">
 <div class="listing-date">
 Dec 15, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1765152000000" data-listing-file-modified-sort="1767642169543" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="67">
+<div class="quarto-post image-right" data-index="6" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcyUyQ3Byb2plY3Rpb25z" data-listing-date-sort="1765152000000" data-listing-file-modified-sort="1769109194416" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="67">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/12.08.2025.html" class="no-external">FIMS Weekly - December 08–12, 2025</a>
+<a href="../fims-weekly/12.08.2025.html" class="no-external">FIMS Weekly - December 08–12, 2025</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/12.08.2025.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('cmVsZWFzZXM='); return false;">releases</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHJvamVjdGlvbnM='); return false;">projections</div>
+
 </div>
-<div class="delink listing-description"><a href="../blog/12.08.2025.html" class="no-external">
-v0.7.0 will be released this week, thanks to Matthew for finishing up the model families code and Bai and Adrianne for working on cleanup tasks while the rest of us were…
-</a></div>
 </div>
 <div class="metadata">
-<a href="../blog/12.08.2025.html" class="no-external">
+<a href="../fims-weekly/12.08.2025.html" class="no-external">
 <div class="listing-date">
 Dec 8, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1764547200000" data-listing-file-modified-sort="1767642169543" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
+<div class="quarto-post image-right" data-index="7" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5n" data-listing-date-sort="1764547200000" data-listing-file-modified-sort="1769109194416" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/12.01.2025.html" class="no-external">FIMS Weekly - December 01–05, 2025</a>
+<a href="../fims-weekly/12.01.2025.html" class="no-external">FIMS Weekly - December 01–05, 2025</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/12.01.2025.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('dGVzdGluZw=='); return false;">testing</div>
+
 </div>
-<div class="delink listing-description"><a href="../blog/12.01.2025.html" class="no-external">
-Our number one goal this week is to get a new release out, which involves trudging through the 13 open Pull Requests and prioritizing which ones will be a part of 0.8.0 and…
-</a></div>
 </div>
 <div class="metadata">
-<a href="../blog/12.01.2025.html" class="no-external">
+<a href="../fims-weekly/12.01.2025.html" class="no-external">
 <div class="listing-date">
 Dec 1, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1763942400000" data-listing-file-modified-sort="1767642169543" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="quarto-post image-right" data-index="8" data-categories="Zmltcy13ZWVrbHklMkNQb3NpdCUyQ3JlbGVhc2Vz" data-listing-date-sort="1763942400000" data-listing-file-modified-sort="1769109194416" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/11.24.2025.html" class="no-external">FIMS Weekly - November 24–28, 2025</a>
+<a href="../fims-weekly/11.24.2025.html" class="no-external">FIMS Weekly - November 24–28, 2025</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/11.24.2025.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('UG9zaXQ='); return false;">Posit</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cmVsZWFzZXM='); return false;">releases</div>
+
 </div>
-<div class="delink listing-description"><a href="../blog/11.24.2025.html" class="no-external">
-This week’s Code Club will be our first installment of a 3-hour time window for coding. You can think of this as a monthly hackathon now instead of our weekly sessions. We…
-</a></div>
 </div>
 <div class="metadata">
-<a href="../blog/11.24.2025.html" class="no-external">
+<a href="../fims-weekly/11.24.2025.html" class="no-external">
 <div class="listing-date">
 Nov 24, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1763337600000" data-listing-file-modified-sort="1767642169543" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="76">
+<div class="quarto-post image-right" data-index="9" data-categories="Zmltcy13ZWVrbHklMkNjb21tdW5pdHklMjBwbGF5Ym9vayUyQ3NjaGVkdWxl" data-listing-date-sort="1763337600000" data-listing-file-modified-sort="1769109194416" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="76">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/11.17.2025.html" class="no-external">FIMS Weekly - November 17–21, 2025</a>
+<a href="../fims-weekly/11.17.2025.html" class="no-external">FIMS Weekly - November 17–21, 2025</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/11.17.2025.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('Y29tbXVuaXR5JTIwcGxheWJvb2s='); return false;">community playbook</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2NoZWR1bGU='); return false;">schedule</div>
+
 </div>
-<div class="delink listing-description"><a href="../blog/11.17.2025.html" class="no-external">
-Welcome back all! Last week was spent catching up on emails and getting reorientated, where this week we will be working towards getting a release out within the next two…
-</a></div>
 </div>
 <div class="metadata">
-<a href="../blog/11.17.2025.html" class="no-external">
+<a href="../fims-weekly/11.17.2025.html" class="no-external">
 <div class="listing-date">
 Nov 17, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1759104000000" data-listing-file-modified-sort="1767642169542" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="73">
+<div class="quarto-post image-right" data-index="10" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5nJTJDZG9jdW1lbnRhdGlvbiUyQ2RveHlnZW4=" data-listing-date-sort="1759104000000" data-listing-file-modified-sort="1769109194416" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="73">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/09.29.2025.html" class="no-external">FIMS Weekly - September 29–October 03, 2025</a>
+<a href="../fims-weekly/09.29.2025.html" class="no-external">FIMS Weekly - September 29–October 03, 2025</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/09.29.2025.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('dGVzdGluZw=='); return false;">testing</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9jdW1lbnRhdGlvbg=='); return false;">documentation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG94eWdlbg=='); return false;">doxygen</div>
+
 </div>
-<div class="delink listing-description"><a href="../blog/09.29.2025.html" class="no-external">
-Nathan will be working on rebasing/moving the projections code to a new branch based off of dev-json-caa-rebased
-</a></div>
 </div>
 <div class="metadata">
-<a href="../blog/09.29.2025.html" class="no-external">
+<a href="../fims-weekly/09.29.2025.html" class="no-external">
 <div class="listing-date">
 Sep 29, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1758412800000" data-listing-file-modified-sort="1767642169542" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="135">
+<div class="quarto-post image-right" data-index="11" data-categories="Zmltcy13ZWVrbHklMkNkb3h5Z2Vu" data-listing-date-sort="1758412800000" data-listing-file-modified-sort="1769109194416" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="135">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/09.21.2025.html" class="no-external">FIMS Weekly - September 21–26, 2025</a>
+<a href="../fims-weekly/09.21.2025.html" class="no-external">FIMS Weekly - September 21–26, 2025</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/09.21.2025.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('ZG94eWdlbg=='); return false;">doxygen</div>
+
 </div>
-<div class="delink listing-description"><a href="../blog/09.21.2025.html" class="no-external">
-A new release of FIMS will come out this week that contains the PRs brought in last week thanks to Bai and Eric as well as improvements to the documentation thanks to those…
-</a></div>
 </div>
 <div class="metadata">
-<a href="../blog/09.21.2025.html" class="no-external">
+<a href="../fims-weekly/09.21.2025.html" class="no-external">
 <div class="listing-date">
 Sep 21, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1757894400000" data-listing-file-modified-sort="1767642169542" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66">
+<div class="quarto-post image-right" data-index="12" data-categories="Zmltcy13ZWVrbHklMkN2aWduZXR0ZXM=" data-listing-date-sort="1757894400000" data-listing-file-modified-sort="1769109194416" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="66">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/09.15.2025.html" class="no-external">FIMS Weekly - September 15–19, 2025</a>
+<a href="../fims-weekly/09.15.2025.html" class="no-external">FIMS Weekly - September 15–19, 2025</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/09.15.2025.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('dmlnbmV0dGVz'); return false;">vignettes</div>
+
 </div>
-<div class="delink listing-description"><a href="../blog/09.15.2025.html" class="no-external">
-After two weeks of not merging in any PRs, I switched it up and merged in Bai’s first so now we just have one outstanding PR left, which we have made a lot of progress on…
-</a></div>
 </div>
 <div class="metadata">
-<a href="../blog/09.15.2025.html" class="no-external">
+<a href="../fims-weekly/09.15.2025.html" class="no-external">
 <div class="listing-date">
 Sep 15, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1757289600000" data-listing-file-modified-sort="1767642169542" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="248">
+<div class="quarto-post image-right" data-index="13" data-categories="Zmltcy13ZWVrbHklMkNqc29uJTJDcHVycnI=" data-listing-date-sort="1757289600000" data-listing-file-modified-sort="1769109194416" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="248">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/09.08.2025.html" class="no-external">FIMS Weekly - September 08–12, 2025</a>
+<a href="../fims-weekly/09.08.2025.html" class="no-external">FIMS Weekly - September 08–12, 2025</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/09.08.2025.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('anNvbg=='); return false;">json</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHVycnI='); return false;">purrr</div>
+
 </div>
-<div class="delink listing-description"><a href="../blog/09.08.2025.html" class="no-external">
-On Wednesday, the Science Board will be given an update and we will discuss creating a formal FIMS Transition Plan. Thank you Jane for volunteering to attend the…
-</a></div>
 </div>
 <div class="metadata">
-<a href="../blog/09.08.2025.html" class="no-external">
+<a href="../fims-weekly/09.08.2025.html" class="no-external">
 <div class="listing-date">
 Sep 8, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1756684800000" data-listing-file-modified-sort="1767642169542" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="458">
+<div class="quarto-post image-right" data-index="14" data-categories="Zmltcy13ZWVrbHklMkNqc29uJTJDcHJvamVjdGlvbnM=" data-listing-date-sort="1756684800000" data-listing-file-modified-sort="1769109194415" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="458">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/09.01.2025.html" class="no-external">FIMS Weekly - September 01–05, 2025</a>
+<a href="../fims-weekly/09.01.2025.html" class="no-external">FIMS Weekly - September 01–05, 2025</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/09.01.2025.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('anNvbg=='); return false;">json</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHJvamVjdGlvbnM='); return false;">projections</div>
+
 </div>
-<div class="delink listing-description"><a href="../blog/09.01.2025.html" class="no-external">
-We are working on three pull requests right now, revamped model-specification interface, revamped json output, and addition of the surplus production model. The goal is to…
-</a></div>
 </div>
 <div class="metadata">
-<a href="../blog/09.01.2025.html" class="no-external">
+<a href="../fims-weekly/09.01.2025.html" class="no-external">
 <div class="listing-date">
 Sep 1, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1756080000000" data-listing-file-modified-sort="1767642169542" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="33">
+<div class="quarto-post image-right" data-index="15" data-categories="Zmltcy13ZWVrbHklMkNkb2N1bWVudGF0aW9uJTJDaW50ZXJmYWNl" data-listing-date-sort="1756080000000" data-listing-file-modified-sort="1769109194415" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="33">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/08.25.2025.html" class="no-external">FIMS Weekly - August 25–29, 2025</a>
+<a href="../fims-weekly/08.25.2025.html" class="no-external">FIMS Weekly - August 25–29, 2025</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/08.25.2025.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9jdW1lbnRhdGlvbg=='); return false;">documentation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('aW50ZXJmYWNl'); return false;">interface</div>
+
 </div>
-<div class="delink listing-description"><a href="../blog/08.25.2025.html" class="no-external">
-Bai is busy revamping the way users interact with the model parameters as lists of lists has gotten unwieldy.
-</a></div>
 </div>
 <div class="metadata">
-<a href="../blog/08.25.2025.html" class="no-external">
+<a href="../fims-weekly/08.25.2025.html" class="no-external">
 <div class="listing-date">
 Aug 25, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1755475200000" data-listing-file-modified-sort="1767642169542" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="88">
+<div class="quarto-post image-right" data-index="16" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5n" data-listing-date-sort="1755475200000" data-listing-file-modified-sort="1769109194415" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="88">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/08.18.2025.html" class="no-external">FIMS Weekly - August 18–22, 2025</a>
+<a href="../fims-weekly/08.18.2025.html" class="no-external">FIMS Weekly - August 18–22, 2025</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/08.18.2025.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('dGVzdGluZw=='); return false;">testing</div>
+
 </div>
-<div class="delink listing-description"><a href="../blog/08.18.2025.html" class="no-external">
-Extra attention will be on the json output this week as we look to add the Surplus Production Model and finish the implementation of model families.
-</a></div>
 </div>
 <div class="metadata">
-<a href="../blog/08.18.2025.html" class="no-external">
+<a href="../fims-weekly/08.18.2025.html" class="no-external">
 <div class="listing-date">
 Aug 18, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1754870400000" data-listing-file-modified-sort="1767642169542" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
+<div class="quarto-post image-right" data-index="17" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcyUyQ2dpdCUyRkdpdEh1YiUyQ1ZTQ29kZQ==" data-listing-date-sort="1754870400000" data-listing-file-modified-sort="1769109194415" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/08.11.2025.html" class="no-external">FIMS Weekly - August 11–15, 2025</a>
+<a href="../fims-weekly/08.11.2025.html" class="no-external">FIMS Weekly - August 11–15, 2025</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/08.11.2025.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('cmVsZWFzZXM='); return false;">releases</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Z2l0JTJGR2l0SHVi'); return false;">git/GitHub</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VlNDb2Rl'); return false;">VSCode</div>
+
 </div>
-<div class="delink listing-description"><a href="../blog/08.11.2025.html" class="no-external">
-Sorry for the late FIMS Weekly but I have been sick 🤕 and just haven’t been able to muster enough 🔥to get one together. I am doing better today but still don’t have much…
-</a></div>
 </div>
 <div class="metadata">
-<a href="../blog/08.11.2025.html" class="no-external">
+<a href="../fims-weekly/08.11.2025.html" class="no-external">
 <div class="listing-date">
 Aug 11, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1754265600000" data-listing-file-modified-sort="1767642169542" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="227">
+<div class="quarto-post image-right" data-index="18" data-categories="Zmltcy13ZWVrbHklMkNjYXNlJTIwc3R1ZGllcyUyQ3Byb2plY3Rpb25z" data-listing-date-sort="1754265600000" data-listing-file-modified-sort="1769109194415" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="227">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/08.04.2025.html" class="no-external">FIMS Weekly - August 04–08, 2025</a>
+<a href="../fims-weekly/08.04.2025.html" class="no-external">FIMS Weekly - August 04–08, 2025</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/08.04.2025.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('Y2FzZSUyMHN0dWRpZXM='); return false;">case studies</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHJvamVjdGlvbnM='); return false;">projections</div>
+
 </div>
-<div class="delink listing-description"><a href="../blog/08.04.2025.html" class="no-external">
-The case studies will be updated this week to use the latest release. This has been done in dev for a while but just hanging in the ether.
-</a></div>
 </div>
 <div class="metadata">
-<a href="../blog/08.04.2025.html" class="no-external">
+<a href="../fims-weekly/08.04.2025.html" class="no-external">
 <div class="listing-date">
 Aug 4, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1753660800000" data-listing-file-modified-sort="1767642169542" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="72">
+<div class="quarto-post image-right" data-index="19" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5nJTJDc2VsZWN0aXZpdHklMkNkaWFnbm9zdGljcyUyQ3Byb2plY3Rpb25z" data-listing-date-sort="1753660800000" data-listing-file-modified-sort="1769109194415" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/07.28.2025.html" class="no-external">FIMS Weekly - July 28–August 1, 2025</a>
+<a href="../fims-weekly/07.28.2025.html" class="no-external">FIMS Weekly - July 28–August 1, 2025</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/07.28.2025.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('dGVzdGluZw=='); return false;">testing</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2VsZWN0aXZpdHk='); return false;">selectivity</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGlhZ25vc3RpY3M='); return false;">diagnostics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHJvamVjdGlvbnM='); return false;">projections</div>
+
 </div>
-<div class="delink listing-description"><a href="../blog/07.28.2025.html" class="no-external">
-Writing tests 🧪 for length-based selectivity and finding the remaining 🐛.
-</a></div>
 </div>
 <div class="metadata">
-<a href="../blog/07.28.2025.html" class="no-external">
+<a href="../fims-weekly/07.28.2025.html" class="no-external">
 <div class="listing-date">
 Jul 28, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1753056000000" data-listing-file-modified-sort="1767642169542" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="353">
+<div class="quarto-post image-right" data-index="20" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5nJTJDc2VsZWN0aXZpdHklMkNwcm9qZWN0aW9ucw==" data-listing-date-sort="1753056000000" data-listing-file-modified-sort="1769109194415" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="345">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/07.21.2025.html" class="no-external">FIMS Weekly - July 21–25, 2025</a>
+<a href="../fims-weekly/07.21.2025.html" class="no-external">FIMS Weekly - July 21–25, 2025</a>
 </h3>
+<div class="listing-subtitle">
+<a href="../fims-weekly/07.21.2025.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('dGVzdGluZw=='); return false;">testing</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2VsZWN0aXZpdHk='); return false;">selectivity</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHJvamVjdGlvbnM='); return false;">projections</div>
+
 </div>
-<div class="delink listing-description"><a href="../blog/07.21.2025.html" class="no-external">
-<i class="fa-solid fa-tags"></i> Tags: R, TMB, testing
-</a></div>
 </div>
 <div class="metadata">
-<a href="../blog/07.21.2025.html" class="no-external">
+<a href="../fims-weekly/07.21.2025.html" class="no-external">
 <div class="listing-date">
 Jul 21, 2025
 </div>

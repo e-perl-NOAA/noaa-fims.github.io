@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>FIMS Packages – FIMS</title>
+<title>FIMS R Packages – FIMS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -45,9 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-f65e3bcd2178eeb2fa8cf445c0f028c0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-0113f06f84865c1418040a62358139f1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-d58be3c25b5a9eb89c7defefeee786cc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-0113f06f84865c1418040a62358139f1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e94193814b69eb4e043238c709490121.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-6f724a20ec1ac6566caa1e66fd1dea4f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-e94193814b69eb4e043238c709490121.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -146,7 +146,7 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../assets/panelset-extras.css">
-<meta property="og:title" content="FIMS Packages – FIMS">
+<meta property="og:title" content="FIMS R Packages – FIMS">
 <meta property="og:image" content="https://noaa-fims.github.io/images/FIMS_hexlogo.png">
 <meta property="og:site_name" content="FIMS">
 <meta property="og:image:height" content="615">
@@ -327,7 +327,7 @@ window.Quarto = {
     <img src="../images/FIMS_logo3.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">FIMS <small>v0.7.0</small></span>
+    <span class="navbar-title">FIMS <small><strong>?env:VERSION</strong></small></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -358,7 +358,7 @@ window.Quarto = {
  <span class="dropdown-text">calendar</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../changelog/FIMS_CHANGELOG.html">
+    <a class="dropdown-item" href="../changelog/FIMS_CHANGELOG.qmd">
  <span class="dropdown-text">changelog</span></a>
   </li>  
         <li>
@@ -368,21 +368,28 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../fims-weekly/index.html"> 
-<span class="menu-text">fims weekly</span></a>
+    <a class="nav-link" href="../blog/index.qmd"> 
+<span class="menu-text">blog</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../projects/index.html"> 
-<span class="menu-text">projects</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">resources</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="../resources/resources.html">
+ <span class="dropdown-text">resources</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../packages/index.html" aria-current="page"> 
-<span class="menu-text">packages</span></a>
+        <li>
+    <a class="dropdown-item" href="../resources/packages.html">
+ <span class="dropdown-text">R packages</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../sites/sites_index.html"> 
-<span class="menu-text">resources</span></a>
+        <li>
+    <a class="dropdown-item" href="../resources/projects.html">
+ <span class="dropdown-text">projects</span></a>
   </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-contact" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">contact</span>
@@ -422,7 +429,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">FIMS Packages</h1>
+<h1 class="title">FIMS R Packages</h1>
 </div>
 
 
@@ -464,7 +471,7 @@ FIMS
 
 </div>
 </a><div class="card-text listing-description delink"><a href="https://noaa-fims.github.io/" class="quarto-grid-link">
-</a><p><a href="https://noaa-fims.github.io/" class="quarto-grid-link">The primary package of FIMS <br> - </a><a href="https://noaa-fims.github.io/">Link to website</a> <br> - <a href="https://github.com/noaa-fims/fims">Link to repository</a></p>
+</a><p><a href="https://noaa-fims.github.io/" class="quarto-grid-link">The primary package of FIMS <br> - </a><a href="https://noaa-fims.github.io/">Website</a> <br> - <a href="https://github.com/noaa-fims/fims">Repository</a></p>
 </div>
 </div>
 </div>
@@ -472,7 +479,9 @@ FIMS
 <div class="g-col-1" data-index="1" data-categories="ZXhwZXJpbWVudGFs">
 <a href="https://noaa-fims.github.io/FIMSdiags/" class="quarto-grid-link">
 </a><div class="quarto-grid-item card h-100 card-left"><a href="https://noaa-fims.github.io/FIMSdiags/" class="quarto-grid-link">
-
+<p class="card-img-top">
+<img loading="lazy" src="../images/FIMSdiags_placeholder.png" class="thumbnail-image card-img" style="height: 250px;">
+</p>
 </a><div class="card-body post-contents"><a href="https://noaa-fims.github.io/FIMSdiags/" class="quarto-grid-link">
 <h5 class="no-anchor card-title listing-title">
 FIMSdiags
@@ -483,7 +492,7 @@ FIMSdiags
 
 </div>
 </a><div class="card-text listing-description delink"><a href="https://noaa-fims.github.io/FIMSdiags/" class="quarto-grid-link">
-</a><p><a href="https://noaa-fims.github.io/FIMSdiags/" class="quarto-grid-link">Run common diagnostic analyses on FIMS models <br> - </a><a href="https://noaa-fims.github.io/FIMSdiags/">Link to website</a> <br> - [Link to…</p>
+</a><p><a href="https://noaa-fims.github.io/FIMSdiags/" class="quarto-grid-link">Run common diagnostic analyses on FIMS models <br> - </a><a href="https://noaa-fims.github.io/FIMSdiags/">Website</a> <br> - <a href="https://github.com/NOAA-FIMS/FIMSdiags">Repository</a></p>
 </div>
 </div>
 </div>

@@ -6,12 +6,12 @@
       version="2.0">
 <channel>
 <title>FIMS</title>
-<link>https://noaa-fims.github.io/sites/sites_index.html#category=R</link>
-<atom:link href="https://noaa-fims.github.io/sites/sites_index-r.xml" rel="self" type="application/rss+xml"/>
-<description>Websites associated with FIMS.
+<link>https://noaa-fims.github.io/resources/resources.html#category=R</link>
+<atom:link href="https://noaa-fims.github.io/resources/resources-r.xml" rel="self" type="application/rss+xml"/>
+<description>Resources for getting started and developing FIMS.
 </description>
-<generator>quarto-1.8.26</generator>
-<lastBuildDate>Mon, 05 Jan 2026 19:44:23 GMT</lastBuildDate>
+<generator>quarto-1.8.27</generator>
+<lastBuildDate>Thu, 22 Jan 2026 19:13:49 GMT</lastBuildDate>
 <item>
   <title>&lt;i class=&quot;fab fa-r-project&quot;&gt;&lt;/i&gt; FIMS R Documentation</title>
   <link>https://noaa-fims.github.io/</link>
@@ -19,7 +19,7 @@
 </description>
   <category>R</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Mon, 05 Jan 2026 19:44:23 GMT</pubDate>
+  <pubDate>Thu, 22 Jan 2026 19:13:49 GMT</pubDate>
 </item>
 <item>
   <title>FIMSdiags</title>
@@ -29,7 +29,7 @@
   <category>R</category>
   <category>diagnostics</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Mon, 05 Jan 2026 19:44:23 GMT</pubDate>
+  <pubDate>Thu, 22 Jan 2026 19:13:49 GMT</pubDate>
 </item>
 <item>
   <title>FIMSRTMB</title>
@@ -39,7 +39,7 @@
   <category>R</category>
   <category>TMB</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Mon, 05 Jan 2026 19:44:23 GMT</pubDate>
+  <pubDate>Thu, 22 Jan 2026 19:13:49 GMT</pubDate>
 </item>
 </channel>
 </rss>

@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Websites associated with FIMS.">
 
-<title>Resources – FIMS</title>
+<title>FIMS Change Log – FIMS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,8 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../images/FIMS_hexlogo.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -46,9 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-f65e3bcd2178eeb2fa8cf445c0f028c0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-0113f06f84865c1418040a62358139f1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-d58be3c25b5a9eb89c7defefeee786cc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-0113f06f84865c1418040a62358139f1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e94193814b69eb4e043238c709490121.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-6f724a20ec1ac6566caa1e66fd1dea4f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-e94193814b69eb4e043238c709490121.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,35 +73,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 <script>
@@ -115,43 +83,14 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../assets/panelset-extras.css">
-<link rel="alternate" type="application/rss+xml" title="FIMS" href="sites_index.xml" data-external="1"><meta property="og:title" content="Resources – FIMS">
-<meta property="og:description" content="Websites associated with FIMS.">
+<meta property="og:title" content="FIMS Change Log – FIMS">
+<meta property="og:description" content="">
 <meta property="og:site_name" content="FIMS">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -325,7 +264,7 @@ window.Quarto = {
     <img src="../images/FIMS_logo3.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">FIMS <small>v0.7.0</small></span>
+    <span class="navbar-title">FIMS <small><strong>?env:VERSION</strong></small></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -356,7 +295,7 @@ window.Quarto = {
  <span class="dropdown-text">calendar</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../changelog/FIMS_CHANGELOG.html">
+    <a class="dropdown-item" href="../changelog/FIMS_CHANGELOG.qmd">
  <span class="dropdown-text">changelog</span></a>
   </li>  
         <li>
@@ -366,21 +305,28 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../fims-weekly/index.html"> 
-<span class="menu-text">fims weekly</span></a>
+    <a class="nav-link" href="../blog/index.qmd"> 
+<span class="menu-text">blog</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../projects/index.html"> 
-<span class="menu-text">projects</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">resources</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="../resources/resources.html">
+ <span class="dropdown-text">resources</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../packages/index.html"> 
-<span class="menu-text">packages</span></a>
+        <li>
+    <a class="dropdown-item" href="../resources/packages.html">
+ <span class="dropdown-text">R packages</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../sites/sites_index.html" aria-current="page"> 
-<span class="menu-text">resources</span></a>
+        <li>
+    <a class="dropdown-item" href="../resources/projects.html">
+ <span class="dropdown-text">projects</span></a>
   </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-contact" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">contact</span>
@@ -410,29 +356,22 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(19)</span></div><div class="category" data-category="QVNBUA==">ASAP <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QyUyQiUyQg==">C++ <span class="quarto-category-count">(6)</span></div><div class="category" data-category="ZGlhZ25vc3RpY3M=">diagnostics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZG9jdW1lbnRhdGlvbg==">documentation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Z2l0aHVi">github <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UmNwcA==">Rcpp <span class="quarto-category-count">(8)</span></div><div class="category" data-category="U1Mz">SS3 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VE1C">TMB <span class="quarto-category-count">(2)</span></div><div class="category" data-category="dHJhaW5pbmc=">training <span class="quarto-category-count">(6)</span></div><div class="category" data-category="V0hBTQ==">WHAM <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Resources</h1>
-</div>
-
-<div>
-  <div class="description">
-    <p>Websites associated with FIMS.</p>
-  </div>
+<h1 class="title">FIMS Change Log</h1>
 </div>
 
 
-<div class="quarto-title-meta column-page-left">
+
+<div class="quarto-title-meta">
 
     
   
@@ -444,420 +383,126 @@ window.Quarto = {
 </header>
 
 
+<section id="v0.7.0-release-notes" class="level2">
+<h2 class="anchored" data-anchor-id="v0.7.0-release-notes">v0.7.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.7.0">release notes</a>)</h2>
+</section>
+<section id="whats-changed" class="level2">
+<h2 class="anchored" data-anchor-id="whats-changed">What’s Changed</h2>
+<ul>
+<li>Turns on the code for model families that allows for more model types in the future than just the catch-at-age model that is currently implemented through the use of FisheryModelBase, which is a unified parent class for all model families. Moved derived quantities (e.g., numbers at age, spawning biomass, catch at age) from Fleet and Population objects into FisheryModelBase. Refactored Population and Fleet classes to be trait only objects.</li>
+<li>Converts nested list of lists used for model control to a tibble with one line per parameter that can be un-nested and nested.</li>
+<li>Increased the documentation of FIMS by using formulas in doxygen, building the doxygen on the NOAA-FIMS github.io site instead of its own web page, writing more information in the testing README, etc.</li>
+<li>Removes seasonality logic given it was not being used.</li>
+<li>Removes date columns in input data in exchange for timing.</li>
+<li>Uses {stockplotr} for the figures in the “fims-demo” vignette.</li>
+</ul>
+<p><strong>Full Changelog</strong>: https://github.com/NOAA-FIMS/FIMS/compare/v0.6.3…v0.7.0</p>
+<hr>
+</section>
+<section id="v0.6.3-release-notes" class="level2">
+<h2 class="anchored" data-anchor-id="v0.6.3-release-notes">v0.6.3 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.6.3">release notes</a>)</h2>
+<ul>
+<li>Fix bugs in fims_math.hpp by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/946">#946</a></li>
+</ul>
+<hr>
+</section>
+<section id="v0.6.2-release-notes" class="level2">
+<h2 class="anchored" data-anchor-id="v0.6.2-release-notes">v0.6.2 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.6.2">release notes</a>)</h2>
+<ul>
+<li>Fix TMBad windows make file by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/935">#935</a></li>
+<li>Fix bug with uninitialized unfished_biomass by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/935">#935</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: https://github.com/NOAA-FIMS/FIMS/compare/v0.6.1…v0.6.2</p>
+<hr>
+</section>
+<section id="v0.6.1-release-notes" class="level2">
+<h2 class="anchored" data-anchor-id="v0.6.1-release-notes">v0.6.1 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.6.1">release notes</a>)</h2>
+<p>Thanks to work from <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span>, <span class="citation" data-cites="msupernaw">@msupernaw</span>, and <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> for investigating the bug that has been persistent since v0.3.0 leading to failed builds on R-universe. This fix, implemented by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span>, allows for user and operating system information to be found on more operating systems then we had previously implemented.</p>
+<hr>
+</section>
+<section id="v0.6.0-release-notes" class="level2">
+<h2 class="anchored" data-anchor-id="v0.6.0-release-notes">v0.6.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.6.0">release notes</a>)</h2>
+<p>Clang-formatted code to initialize the changes needed for model families. Other than the changes to the names of a few derived quantities and the ungrouped output of <code>get_estimates()</code> users should not see any differences between v0.6.0 and v0.5.3.</p>
+<hr>
+</section>
+<section id="v0.5.3-release-notes" class="level2">
+<h2 class="anchored" data-anchor-id="v0.5.3-release-notes">v0.5.3 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.5.3">release notes</a>)</h2>
+<p>Hotfix to 0.5.2 to fix bug in <code>reshape_output()</code> where there are now fewer rows in the results from <code>get_estimates()</code> because the output from FIMS (via the json file) is now better matched to the output from TMB. Thanks to <span class="citation" data-cites="KyleShertzer-NOAA">@KyleShertzer-NOAA</span> for having a plot of selectivity in the scamp case study that was not working correctly anymore, which led to finding this 🐛.</p>
+<hr>
+</section>
+<section id="v0.5.1-release-notes" class="level2">
+<h2 class="anchored" data-anchor-id="v0.5.1-release-notes">v0.5.1 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.5.0.1">release notes</a>)</h2>
+<p>Hotfix to v0.5.0 to fix pr-commands.yml file, which was leading to a failed GitHub action and emails being sent out to everyone without meaning.</p>
+<hr>
+</section>
+<section id="v0.5.0-release-notes" class="level2">
+<h2 class="anchored" data-anchor-id="v0.5.0-release-notes">v0.5.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.5.0">release notes</a>)</h2>
+<p>Release 0.5.0 contains two major features, random effects for the power user and a fits tibble found in the results, e.g., get_fits(fit). See below or the commit messages for more details. - Switch to TMBad from CppAD - Checks that length data has the correct dimension in R - Adds SB to model output - Adds README files to the C++ code - Exports logit functions to R - Functionality was also added to the workflows to allow for better maintenance of the software via GitHub actions</p>
+<hr>
+</section>
+<section id="v0.4.0-release-notes" class="level2">
+<h2 class="anchored" data-anchor-id="v0.4.0-release-notes">v0.4.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.4.0">release notes</a>)</h2>
+<p>Release 0.4.0 contains two major features, allowance of catch-per-unit-effort data for fisheries and more information in the estimates tibble found in the results, e.g., <code>get_estimates(fit)</code>. See below for more details. - Allows for CPUE data and landings within a single fleet and changes the composition data to be separate from the catch. If there are catches, compositions are based on F, if you have survey compositions those are scaled by q, and you can also have composition data without catch or CPUE and those match the population. - Fixes bug in <code>finalize()</code> where variables were going out of scope by using a shared pointer and RealVector, which allows for estimates tibble to return more. Output is integrated between json and TMB using <code>reshape_tmb_estimates()</code>, <code>reshape_json_estimates()</code>, and <code>reshape_json_derived_quantities()</code>. ParameterVector are now set using <code>resize()</code> and <code>purrr::walk()</code> rather than <code>methods::new()</code>. - Increases code coverage - Restructures R tests using <code>use_testthat_template()</code> - Starts to use Rcpp::Rcerr instead of Rcpp::Rcout - Skips parallel and distribution rcpp test - Adds <code>FIMS_dmultinom()</code> distribution to match TMB - Fixes bug in <code>get_number_of_parameters()</code>. - Uses static_cast<type>([-0-9.]+) to wrap constant variables. - Fixes cmake_minimum_required to use a range and updates googletest version. - Adds minimal fims-demo vignette. - Removes unused estimated_log_M and estimated_log_init_naa from inst/include/interface/rcpp/rcpp_objects/rcpp_population.hpp. - Adds gdb to the devcontainer.json file. - Fixes broken model comparison project links. - Adds dependabot.yml file to update GitHub actions. - Combine <code>initialize_comp()</code> functions.</type></p>
+<hr>
+</section>
+<section id="v0.3.0.1-release-notes" class="level2">
+<h2 class="anchored" data-anchor-id="v0.3.0.1-release-notes">v0.3.0.1 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.3.0.1">release notes</a>)</h2>
+<p>Fixes errors in the R code found while working on the case studies.</p>
+<ul>
+<li><code>cli::cli_abort()</code> messages were not formatted correctly when using pluralism capability</li>
+<li>uncertainty in the multinomial is multiplied by value within the wrapper functions, which lead to non -999 values. Now, if a -999 is present, it is multiplied by 1 and if not then value is multiplied by uncertainty.</li>
+</ul>
+<hr>
+</section>
+<section id="v0.3.0-release-notes" class="level2">
+<h2 class="anchored" data-anchor-id="v0.3.0-release-notes">v0.3.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.3.0">release notes</a>)</h2>
+</section>
+<section id="whats-changed-1" class="level2">
+<h2 class="anchored" data-anchor-id="whats-changed-1">What’s Changed</h2>
+<p>Summary of high level/breaking changes:</p>
+<ul>
+<li>Fits to length data using an age-to-length-conversion matrix, <code>data1</code> includes the necessary information needed to fit to both ages and lengths.</li>
+<li>Adds C++ ParameterVector to allow for the estimation of time-varying parameters.</li>
+<li>Implements R wrapper functions to facilitate</li>
+<li>creating the input model specifications with <code>create_default_*()</code>, <code>update_parameters()</code>, and <code>initialize_*()</code>;</li>
+<li>adding -999 to the missing fleet, year, age, length, etc. combinations;</li>
+<li>running the model with a user-supplied argument of n_of_loops, where the default is three, to restart the optimizer from the previous run of nlmimb;</li>
+<li>summarizing the output with the <code>FIMSFit()</code> function and class.</li>
+<li>Implements a switch for global verbosity within FIMS through the use of {cli} messages and warnings.</li>
+<li>Updates the logging system complete with a vignette about how to use it, the logging system can be used for both R and C++ errors, warnings, and information.</li>
+<li>Creates the initial infrastructure to implement random effects with density functions.</li>
+<li>Implements a helper function to get the parameter names from the C++ code and populate the results with those names.</li>
+<li>Makes lpdf_vec return 0 if data is missing.</li>
+</ul>
+<p>More detail: See the <a href="https://github.com/NOAA-FIMS/FIMS/commit/2338d23eda72676ba3ac79dc8007ecec600979a6">commit message for this release</a> or the <strong>full changelog</strong>: https://github.com/NOAA-FIMS/FIMS/compare/v0.2.0…v0.3.0.</p>
+<hr>
+</section>
+<section id="v0.2.0-release-notes" class="level2">
+<h2 class="anchored" data-anchor-id="v0.2.0-release-notes">v0.2.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.2.0">release notes</a>)</h2>
+</section>
+<section id="whats-changed-2" class="level2">
+<h2 class="anchored" data-anchor-id="whats-changed-2">What’s Changed</h2>
+<p>Summary of high level/breaking changes: - Added a <code>pkgdown</code> site for FIMS - Add code cov tests and site link - Remove recruitment bias correction and adjustment because we plan to use <code>TMB</code> (<a href="https://github.com/NOAA-FIMS/FIMS/issues/185">#185</a>) - Improve logging coverage and separate logs into multiple files - Put recruitment deviations on the log scale when input - Report more values with standard errors - Code cleanup, documentation, and consistency improvements - Remove rapidjson dependence - Add <code>start_year</code> and <code>end_year</code> as slots to FIMSFrame - Make <code>log_obs_error</code> a vector - Load the Rcpp module upon package install so components don’t need to be prefaced by <code>fims$</code> - Refactor vectors to use <code>fims::Vector</code> class - Add Newton steps to FIMS integration test to improve convergence in integration test</p>
+<p>More detail: - Update issue forms by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/426">#426</a> - Update DESCRIPTION to match release number by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/425">#425</a> - resolved issues causing warnings by <span class="citation" data-cites="MOshima-PIFSC">@MOshima-PIFSC</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/430">#430</a> - #307: export age comp function by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/438">#438</a> - 368 convert fims to a pkgdown site by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/437">#437</a> - #242 fix codecov calc and upload by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/436">#436</a> - 391 feature find a file parser for c++ tests by <span class="citation" data-cites="msupernaw">@msupernaw</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/434">#434</a> - fix: deploying pkgdown by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/448">#448</a> - fix: remove set() by <span class="citation" data-cites="KyleShertzer-NOAA">@KyleShertzer-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/451">#451</a> - Update DESCRIPTION by <span class="citation" data-cites="peterkuriyama-NOAA">@peterkuriyama-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/435">#435</a> - Remove bias correction/adjustment by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/452">#452</a> - doc: error and progress logging for information.hpp by <span class="citation" data-cites="nathanvaughan-NOAA">@nathanvaughan-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/424">#424</a> - fix: refactor parameter constructor by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/455">#455</a> - doc: logit_steep correction by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/463">#463</a> - refactor add_tmb_to_fims_internal by <span class="citation" data-cites="msupernaw">@msupernaw</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/459">#459</a> - Created get-gtest-codecov to create coverage.xml report for issue #242 by <span class="citation" data-cites="MOshima-PIFSC">@MOshima-PIFSC</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/470">#470</a> - #441: fix reviewer checklist build trigger, edit checklist by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/474">#474</a> - 377 refactor call report f from modelhpp instead of fleet and population by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/466">#466</a> - Changed <t> to <type> by <span class="citation" data-cites="MOshima-PIFSC">@MOshima-PIFSC</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/487">#487</a> - 411 refactor naming convention of member and local variables in the fleet class by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/476">#476</a> - Remove test data from fims deterministic folder by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/481">#481</a> - Update GHA workflows to enforce FIMS installation by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/489">#489</a> - renamed dimension folded indices to be clearer by <span class="citation" data-cites="peterkuriyama-NOAA">@peterkuriyama-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/480">#480</a> - rm acomp/index nll tests objects by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/491">#491</a> - Delete test files by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/492">#492</a> - fix: update windows-2019 to windows-latest by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/495">#495</a> - Create multiple namespaces in FIMS by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/479">#479</a> - fix: use expect_equal() for deterministic tests by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/496">#496</a> - fix: build trigger only on pr being opened by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/498">#498</a> - 407 updating log files by <span class="citation" data-cites="nathanvaughan-NOAA">@nathanvaughan-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/499">#499</a> - Name refactoring for tests, growth, and median by <span class="citation" data-cites="nathanvaughan-NOAA">@nathanvaughan-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/503">#503</a> - Fix the test for population.CalculateRecruitment() by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/508">#508</a> - fix: update run google test to use windows latest by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/511">#511</a> - refactor: move duplicated code into the test fixture section by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/497">#497</a> - Fims concurrent by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/520">#520</a> - Remove third party library rapidjson by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/519">#519</a> - Make Doxygen comment style the same by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/518">#518</a> - refactor recruitment deviations to log space by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/514">#514</a> - add documentation to test-fims-estimation by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/515">#515</a> - Added start_year and end_year as slots to FIMSFrame by <span class="citation" data-cites="kellijohnson-NOAA">@kellijohnson-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/501">#501</a> - New 464 load module by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/526">#526</a> - make log_obs_error a vector by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/532">#532</a> - Fims vector by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/517">#517</a> - Release mq by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/533">#533</a></type></t></p>
+</section>
+<section id="new-contributors" class="level2">
+<h2 class="anchored" data-anchor-id="new-contributors">New Contributors</h2>
+<ul>
+<li><span class="citation" data-cites="peterkuriyama-NOAA">@peterkuriyama-NOAA</span> made their first contribution in <a href="https://github.com/NOAA-FIMS/FIMS/pull/435">#435</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: https://github.com/NOAA-FIMS/FIMS/compare/v0.1.0…v0.2.0</p>
+<hr>
+</section>
+<section id="v0.1.0.0-release-notes" class="level2">
+<h2 class="anchored" data-anchor-id="v0.1.0.0-release-notes">v0.1.0.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.1.0">release notes</a>)</h2>
+<p>This is the first version of the Fisheries Integrated Modeling System (FIMS). At this stage, FIMS can be used to estimate a simple age-structured population model such as case 0 in Li et al.&nbsp;(2021)’s manuscript. Please refer to the <a href="https://noaa-fims.github.io/collaborative_workflow/">collaborative workflow</a> for a description of the model functionality and completeness. Documentation can be found <a href="https://noaa-fims.github.io/FIMS-docs/">here</a>.</p>
+<p><strong>Full Changelog</strong>: https://github.com/NOAA-FIMS/FIMS/commits/v0.1.0</p>
+<hr>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title" data-direction="asc">
-        Title
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-categories="V0hBTSUyQ1NTMyUyQ0FTQVAlMkNUTUI=">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://noaa-fims.github.io/case-studies/" class="no-external">🔍 FIMS case studies</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('V0hBTQ=='); return false;">WHAM</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U1Mz'); return false;">SS3</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QVNBUA=='); return false;">ASAP</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('VE1C'); return false;">TMB</div>
-
-</div>
-<div class="delink listing-description"><a href="https://noaa-fims.github.io/case-studies/" class="no-external">
-<p>Test cases, based on regional assessments, to illustrate use of FIMS.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://noaa-fims.github.io/case-studies/" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="1" data-categories="Ug==">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://noaa-fims.github.io/FIMS/" class="no-external"><i class="fab fa-r-project"></i> FIMS R Documentation</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-</div>
-<div class="delink listing-description"><a href="https://noaa-fims.github.io/FIMS/" class="no-external">
-<p>Packagedown site for FIMS package.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://noaa-fims.github.io/FIMS/" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="2" data-categories="QyUyQiUyQg==">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../doxygen/index.html" class="no-external"><i class="fa-solid fa-plus"></i> FIMS C++ Documentation</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QyUyQiUyQg=='); return false;">C++</div>
-
-</div>
-<div class="delink listing-description"><a href="../doxygen/index.html" class="no-external">
-<p>Documentation for FIMS C++ functions, written using doxygen.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../doxygen/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="3" data-categories="QyUyQiUyQiUyQ3RyYWluaW5n">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://cplusplus.com/doc/" class="no-external">cplusplus.com</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QyUyQiUyQg=='); return false;">C++</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dHJhaW5pbmc='); return false;">training</div>
-
-</div>
-<div class="delink listing-description"><a href="https://cplusplus.com/doc/" class="no-external">
-<p>A fast-paced, self-teaching tutorial covering the modern concepts of C++.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://cplusplus.com/doc/" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="4" data-categories="QyUyQiUyQiUyQ3RyYWluaW5n">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://www.geeksforgeeks.org/cpp/c-plus-plus/" class="no-external">geeksforgeeks.org</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QyUyQiUyQg=='); return false;">C++</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dHJhaW5pbmc='); return false;">training</div>
-
-</div>
-<div class="delink listing-description"><a href="https://www.geeksforgeeks.org/cpp/c-plus-plus/" class="no-external">
-<p>Free online tutorials for many computer programming languages, including C++.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://www.geeksforgeeks.org/cpp/c-plus-plus/" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="5" data-categories="QyUyQiUyQiUyQ3RyYWluaW5n">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://www.learncpp.com/cpp-tutorial/" class="no-external">learncpp.com</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QyUyQiUyQg=='); return false;">C++</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dHJhaW5pbmc='); return false;">training</div>
-
-</div>
-<div class="delink listing-description"><a href="https://www.learncpp.com/cpp-tutorial/" class="no-external">
-<p>Skill up with free C++ tutorials.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://www.learncpp.com/cpp-tutorial/" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="6" data-categories="QyUyQiUyQiUyQ3RyYWluaW5n">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://www.positioniseverything.net/category/coding/c/" class="no-external">positioniseverything.net</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QyUyQiUyQg=='); return false;">C++</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dHJhaW5pbmc='); return false;">training</div>
-
-</div>
-<div class="delink listing-description"><a href="https://www.positioniseverything.net/category/coding/c/" class="no-external">
-<p>The latest coding and computing news &amp; tips for C++.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://www.positioniseverything.net/category/coding/c/" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="7" data-categories="QyUyQiUyQiUyQ2RvY3VtZW50YXRpb24=">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://learn.microsoft.com/en-us/cpp/standard-library/cpp-standard-library-reference?view=msvc-170" class="no-external">docs.microsoft.com</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QyUyQiUyQg=='); return false;">C++</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZG9jdW1lbnRhdGlvbg=='); return false;">documentation</div>
-
-</div>
-<div class="delink listing-description"><a href="https://learn.microsoft.com/en-us/cpp/standard-library/cpp-standard-library-reference?view=msvc-170" class="no-external">
-<p>Documentation for the C++ Standard Library, which contains functions that perform services such as input and output and provide efficient implementations of frequently used operations.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://learn.microsoft.com/en-us/cpp/standard-library/cpp-standard-library-reference?view=msvc-170" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="8" data-categories="UmNwcCUyQ3RyYWluaW5n">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://www.rcpp.org/" class="no-external">rcpp.org</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmNwcA=='); return false;">Rcpp</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dHJhaW5pbmc='); return false;">training</div>
-
-</div>
-<div class="delink listing-description"><a href="https://www.rcpp.org/" class="no-external">
-<p>Numerous examples, as well as extensive documentation, to facilitate the use of Rcpp.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://www.rcpp.org/" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="9" data-categories="UmNwcCUyQ2dpdGh1YiUyQ2RvY3VtZW50YXRpb24=">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://github.com/RcppCore/Rcpp" class="no-external">github.com/RcppCore</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmNwcA=='); return false;">Rcpp</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Z2l0aHVi'); return false;">github</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZG9jdW1lbnRhdGlvbg=='); return false;">documentation</div>
-
-</div>
-<div class="delink listing-description"><a href="https://github.com/RcppCore/Rcpp" class="no-external">
-<p>Source code for Rcpp.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://github.com/RcppCore/Rcpp" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="10" data-categories="UmNwcCUyQ3RyYWluaW5n">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://www.mjdenny.com/Rcpp_Intro.html" class="no-external">mjdenny.com</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmNwcA=='); return false;">Rcpp</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dHJhaW5pbmc='); return false;">training</div>
-
-</div>
-<div class="delink listing-description"><a href="https://www.mjdenny.com/Rcpp_Intro.html" class="no-external">
-<p>A tutorial that was originally presented as part of a 3-day intensive Data Science Workshop at UMass Amherst in June 2015 on using Rcpp.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://www.mjdenny.com/Rcpp_Intro.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="11" data-categories="U1Mz">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://noaa-fims.github.io/r4MAS/" class="no-external">r4MAS</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('U1Mz'); return false;">SS3</div>
-
-</div>
-<div class="delink listing-description"><a href="https://noaa-fims.github.io/r4MAS/" class="no-external">
-<p>Package to translate stock synthesis input files into MAS inputs</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://noaa-fims.github.io/r4MAS/" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="12" data-categories="UiUyQ2RpYWdub3N0aWNz">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://noaa-fims.github.io/FIMSdiags/" class="no-external">FIMSdiags</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGlhZ25vc3RpY3M='); return false;">diagnostics</div>
-
-</div>
-<div class="delink listing-description"><a href="https://noaa-fims.github.io/FIMSdiags/" class="no-external">
-<p>R package to run model diagnostics on FIMS models</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://teuder.github.io/rcpp4everyone_en/" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="13" data-categories="UiUyQ1RNQg==">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://cran.rstudio.com/web/packages/Rcpp/vignettes/Rcpp-modules.pdf" class="no-external">Exposing C++ functions and classes with Rcpp modules</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('VE1C'); return false;">TMB</div>
-
-</div>
-<div class="delink listing-description"><a href="https://noaa-fims.github.io/FIMSRTMB/" class="no-external">
-<p>The repository for development of the RTMB branch of FIMS</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://noaa-fims.github.io/FIMSRTMB/" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="14" data-categories="UmNwcA==">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="http://adv-r.had.co.nz/Rcpp.html" class="no-external">Rcpp in Advanced R</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmNwcA=='); return false;">Rcpp</div>
-
-</div>
-<div class="delink listing-description"><a href="http://adv-r.had.co.nz/Rcpp.html" class="no-external">
-<p>High performance functions with Rcpp within the Advanced R online resource by Hadley Wickham</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="http://adv-r.had.co.nz/Rcpp.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="15" data-categories="UmNwcA==">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://www.jstatsoft.org/article/view/v040i08" class="no-external">Rcpp: Seamless R and C++ Integration</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmNwcA=='); return false;">Rcpp</div>
-
-</div>
-<div class="delink listing-description"><a href="https://www.jstatsoft.org/article/view/v040i08" class="no-external">
-</a><p><a href="https://www.jstatsoft.org/article/view/v040i08" class="no-external">“Eddelbuettel, D., &amp; Francois, R. (2011). Rcpp: Seamless R and C++ Integration. Journal of Statistical Software, 40(8), 1–18. </a><a href="https://www.jstatsoft.org/article/view/v040i08">10.18637/jss.v040.i08</a>”</p>
-</div>
-</div>
-<div class="metadata">
-<a href="https://www.jstatsoft.org/article/view/v040i08" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="16" data-categories="UmNwcA==">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://teuder.github.io/rcpp4everyone_en/" class="no-external">Rcpp for everyone</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmNwcA=='); return false;">Rcpp</div>
-
-</div>
-<div class="delink listing-description"><a href="https://teuder.github.io/rcpp4everyone_en/" class="no-external">
-<p><code>Rcpp</code> for everyone by Masaki E. Tsuda focuses on providing necessary information to users who are not familiar with C++</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://teuder.github.io/rcpp4everyone_en/" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="17" data-categories="UmNwcA==">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://cran.rstudio.com/web/packages/Rcpp/vignettes/Rcpp-modules.pdf" class="no-external">Exposing C++ functions and classes with Rcpp modules</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmNwcA=='); return false;">Rcpp</div>
-
-</div>
-<div class="delink listing-description"><a href="https://cran.rstudio.com/web/packages/Rcpp/vignettes/Rcpp-modules.pdf" class="no-external">
-<p>‘Exposing C++ functions and classes with Rcpp modules’ by Dirk Eddelbuettel and Romain François focuses on Rcpp modules that allow programmers to expose C++ functions and classes to R with relative ease</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://cran.rstudio.com/web/packages/Rcpp/vignettes/Rcpp-modules.pdf" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="18" data-categories="UmNwcA==">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://dirk.eddelbuettel.com/code/rcpp/Rcpp-quickref.pdf" class="no-external">Rcpp quick reference</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmNwcA=='); return false;">Rcpp</div>
-
-</div>
-<div class="delink listing-description"><a href="https://dirk.eddelbuettel.com/code/rcpp/Rcpp-quickref.pdf" class="no-external">
-<p>A short pdf produced by the authors of the Rcpp package that is analogous to a tidyverse cheat sheet</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://dirk.eddelbuettel.com/code/rcpp/Rcpp-quickref.pdf" class="no-external">
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   // Select all anchor tags with href starting with http (external links only)
