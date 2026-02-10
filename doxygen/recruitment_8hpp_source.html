@@ -178,7 +178,7 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('recruitment_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -203,20 +203,30 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 </div>
 
-<div><div class="header">
-  <div class="headertitle"><div class="title">FIMS </div></div>
+<div class="header">
+  <div class="headertitle"><div class="title">recruitment.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_inst_2include_2common_2MAIN"></a> <img src="https://img.shields.io/github/v/release/NOAA-FIMS/FIMS" alt="GitHub release (latest by date)" class="inline"/></p>
-<p>This site contains C++ source code documentation for the Fisheries Integrated Modeling System (FIMS). Other forms of documentation are linked from the main documentation site at <a href="https://noaa-fims.github.io/FIMS/articles/fims-documentation.html">https://noaa-fims.github.io/FIMS/articles/fims-documentation.html</a>.</p>
-<p><b>Copyright</b></p>
-<p>This file is part of the NOAA, National Marine Fisheries Service Fisheries Integrated Modeling System project. See <a href="https://github.com/NOAA-FIMS/FIMS?tab=GPL-3.0-1-ov-file">LICENSE</a> in the source folder for reuse information. </p>
-</div></div><!-- PageDoc -->
-</div><!-- contents -->
+<a href="recruitment_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef FIMS_POPULATION_DYNAMICS_RECRUITMENT_HPP</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define FIMS_POPULATION_DYNAMICS_RECRUITMENT_HPP</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="recruitment__base_8hpp.html">functors/recruitment_base.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="sr__beverton__holt_8hpp.html">functors/sr_beverton_holt.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="log__devs_8hpp.html">functors/log_devs.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="log__r_8hpp.html">functors/log_r.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif </span><span class="comment">/* FIMS_POPULATION_DYNAMICS_RECRUITMENT_HPP */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="alog__devs_8hpp_html"><div class="ttname"><a href="log__devs_8hpp.html">log_devs.hpp</a></div><div class="ttdoc">Incorporates error using the log recruitment deviations approach.</div></div>
+<div class="ttc" id="alog__r_8hpp_html"><div class="ttname"><a href="log__r_8hpp.html">log_r.hpp</a></div><div class="ttdoc">Incorporates error using the log recruitment approach.</div></div>
+<div class="ttc" id="arecruitment__base_8hpp_html"><div class="ttname"><a href="recruitment__base_8hpp.html">recruitment_base.hpp</a></div><div class="ttdoc">Serves as the parent class where recruitment functions are called.</div></div>
+<div class="ttc" id="asr__beverton__holt_8hpp_html"><div class="ttname"><a href="sr__beverton__holt_8hpp.html">sr_beverton_holt.hpp</a></div><div class="ttdoc">Calls the Beverton–Holt stock–recruitment function from fims_math and does the calculation.</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="dir_920884c6b3b2f0be94e27d51660adee5.html">inst</a></li><li class="navelem"><a class="el" href="dir_2b5d1a398a9eec011391d543f21db223.html">include</a></li><li class="navelem"><a class="el" href="dir_65a4bdb85444efa1ebe02557c74bf51a.html">population_dynamics</a></li><li class="navelem"><a class="el" href="dir_e37de6988527f326a4d5f60f689d8e02.html">recruitment</a></li><li class="navelem"><a class="el" href="recruitment_8hpp.html">recruitment.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

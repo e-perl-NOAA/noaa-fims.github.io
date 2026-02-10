@@ -178,7 +178,7 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('init_8hpp.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -203,20 +203,85 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 </div>
 
-<div><div class="header">
-  <div class="headertitle"><div class="title">FIMS </div></div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">init.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_inst_2include_2common_2MAIN"></a> <img src="https://img.shields.io/github/v/release/NOAA-FIMS/FIMS" alt="GitHub release (latest by date)" class="inline"/></p>
-<p>This site contains C++ source code documentation for the Fisheries Integrated Modeling System (FIMS). Other forms of documentation are linked from the main documentation site at <a href="https://noaa-fims.github.io/FIMS/articles/fims-documentation.html">https://noaa-fims.github.io/FIMS/articles/fims-documentation.html</a>.</p>
-<p><b>Copyright</b></p>
-<p>This file is part of the NOAA, National Marine Fisheries Service Fisheries Integrated Modeling System project. See <a href="https://github.com/NOAA-FIMS/FIMS?tab=GPL-3.0-1-ov-file">LICENSE</a> in the source folder for reuse information. </p>
-</div></div><!-- PageDoc -->
+
+<p>An interface to dynamically load the functions.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;R_ext/Rdynload.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+</div>
+<p><a href="init_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ab00dfa917c09fa552d226ebbb99e7c21" id="r_ab00dfa917c09fa552d226ebbb99e7c21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8hpp.html#ab00dfa917c09fa552d226ebbb99e7c21">_rcpp_module_boot_fims</a> ()</td></tr>
+<tr class="memdesc:ab00dfa917c09fa552d226ebbb99e7c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: Handles the initialization of the fims rcpp module.  <br /></td></tr>
+<tr class="separator:ab00dfa917c09fa552d226ebbb99e7c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add719baf213d3976fb31c220eb9285e0" id="r_add719baf213d3976fb31c220eb9285e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8hpp.html#add719baf213d3976fb31c220eb9285e0">R_init_FIMS</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">DllInfo</a> *<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">dll</a>)</td></tr>
+<tr class="memdesc:add719baf213d3976fb31c220eb9285e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIMS shared object initializer.  <br /></td></tr>
+<tr class="separator:add719baf213d3976fb31c220eb9285e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An interface to dynamically load the functions. </p>
+<dl class="section copyright"><dt>Copyright</dt><dd>This file is part of the NOAA, National Marine Fisheries Service Fisheries Integrated Modeling System project. See LICENSE in the source folder for reuse information. </dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="ab00dfa917c09fa552d226ebbb99e7c21" name="ab00dfa917c09fa552d226ebbb99e7c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab00dfa917c09fa552d226ebbb99e7c21">&#9670;&#160;</a></span>_rcpp_module_boot_fims()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">SEXP</a> _rcpp_module_boot_fims </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TODO: Handles the initialization of the fims rcpp module. </p>
+<dl class="section return"><dt>Returns</dt><dd>SEXP </dd></dl>
+
+</div>
+</div>
+<a id="add719baf213d3976fb31c220eb9285e0" name="add719baf213d3976fb31c220eb9285e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add719baf213d3976fb31c220eb9285e0">&#9670;&#160;</a></span>R_init_FIMS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a> R_init_FIMS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">DllInfo</a> *&#160;</td>
+          <td class="paramname"><em>dll</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FIMS shared object initializer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dll</td><td>TODO: provide a brief description. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="init_8hpp.html">init.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
