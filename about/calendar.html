@@ -86,6 +86,7 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../assets/panelset-extras.css">
 <meta property="og:title" content="FIMS Calendar – FIMS">
+<meta property="og:description" content="">
 <meta property="og:site_name" content="FIMS">
 </head>
 
@@ -259,8 +260,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/FIMS_logo3.png" alt="" class="navbar-logo light-content">
-    <img src="../images/FIMS_logo3.png" alt="" class="navbar-logo dark-content">
+    <img src="../images/FIMS_logo3.png" alt="FIMS logo" class="navbar-logo light-content">
+    <img src="../images/FIMS_logo3.png" alt="FIMS logo" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">FIMS <small>v0.8.1</small></span>
@@ -342,7 +343,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/NOAA-FIMS"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/NOAA-FIMS"> <i class="bi bi-github" role="img" aria-label="github icon">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -362,6 +363,28 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<!-- Skip to main content link for keyboard accessibility -->
+<a href="#quarto-content" class="skip-link">Skip to main content</a>
+<style>
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  text-decoration: none;
+  z-index: 10000;
+  border-radius: 0 0 4px 0;
+  font-weight: bold;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid #4896a1; /* Using FIMS blue */
+  outline-offset: 2px;
+}
+</style>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -382,7 +405,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<iframe src="https://calendar.google.com/calendar/embed?src=c_6eluv1h8o830k7vt8ctcs6ghto%40group.calendar.google.com&amp;ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
+<p>FIMS has both reoccurring meetings, e.g., FIMS Code Club and FIMS Implementation Team Meeting, and one-off meetings each month. See the calendar below for meeting descriptions and links to running notes for each meeting. Additionally, if the meeting is public, there will be a hyperlink in the description containing the google meet link so you can join in on the fun. Feel free to let us know (see the <a href="../contact/index.html">contact page</a>) if there are meetings that you are interested in joining but links are not provided; unless it is an Implementation Team Meeting, which is currently limited to <a href="../contact/contributors.html#core-developers">Implementation Team Members</a> only.</p>
+<iframe src="https://calendar.google.com/calendar/embed?src=c_6eluv1h8o830k7vt8ctcs6ghto%40group.calendar.google.com&amp;ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no" title="FIMS Community Calendar">
 </iframe>
 
 
@@ -396,6 +420,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!link.href.includes(window.location.hostname)) {
       link.setAttribute('target', '_blank');
       link.setAttribute('rel', 'noopener');
+      
     }
   });
 });
@@ -823,7 +848,7 @@ document.addEventListener("DOMContentLoaded", function() {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a class="link-dark" href="https://github.com/NOAA-FIMS" title="github" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark" href="https://noaa-fims.r-universe.dev" title="r-project" target="_blank" rel="noopener"><i class="fab fa-r-project"></i></a></p>
+<p><a class="link-dark" href="https://github.com/NOAA-FIMS" title="FIMS on GitHub" aria-label="Visit FIMS on GitHub" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i></a> <a class="link-dark" href="https://noaa-fims.r-universe.dev" title="FIMS R Universe" aria-label="Visit FIMS R Universe repository" target="_blank" rel="noopener"><i class="fab fa-r-project" aria-hidden="true"></i></a></p>
 </div>
   </div>
 </footer>

@@ -321,8 +321,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/FIMS_logo3.png" alt="" class="navbar-logo light-content">
-    <img src="../images/FIMS_logo3.png" alt="" class="navbar-logo dark-content">
+    <img src="../images/FIMS_logo3.png" alt="FIMS logo" class="navbar-logo light-content">
+    <img src="../images/FIMS_logo3.png" alt="FIMS logo" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">FIMS <small>v0.8.1</small></span>
@@ -404,7 +404,7 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/NOAA-FIMS"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/NOAA-FIMS"> <i class="bi bi-github" role="img" aria-label="github icon">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -426,6 +426,28 @@ window.Quarto = {
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
+<!-- Skip to main content link for keyboard accessibility -->
+<a href="#quarto-content" class="skip-link">Skip to main content</a>
+<style>
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  text-decoration: none;
+  z-index: 10000;
+  border-radius: 0 0 4px 0;
+  font-weight: bold;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid #4896a1; /* Using FIMS blue */
+  outline-offset: 2px;
+}
+</style>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -501,7 +523,7 @@ window.Quarto = {
 <div class="quarto-post image-left" data-index="1" data-categories="Ug==">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="https://noaa-fims.github.io/FIMS/" class="no-external"><i class="fab fa-r-project"></i> FIMS R Documentation</a>
+<a href="https://noaa-fims.github.io/FIMS/" class="no-external"><i class="fab fa-r-project" aria-hidden="true"></i> FIMS R Documentation</a>
 </h3>
 <div class="listing-categories">
 
@@ -520,19 +542,19 @@ window.Quarto = {
 <div class="quarto-post image-left" data-index="2" data-categories="QyUyQiUyQg==">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../doxygen/index.html" class="no-external"><i class="fa-solid fa-plus"></i> FIMS C++ Documentation</a>
+<a href="https://noaa-fims.github.io/FIMS/doxygen/index.html" class="no-external"><i class="fa-solid fa-plus" aria-hidden="true"></i> FIMS C++ Documentation</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('QyUyQiUyQg=='); return false;">C++</div>
 
 </div>
-<div class="delink listing-description"><a href="../doxygen/index.html" class="no-external">
+<div class="delink listing-description"><a href="https://noaa-fims.github.io/FIMS/doxygen/index.html" class="no-external">
 <p>Documentation for FIMS C++ functions, written using doxygen.</p>
 </a></div>
 </div>
 <div class="metadata">
-<a href="../doxygen/index.html" class="no-external">
+<a href="https://noaa-fims.github.io/FIMS/doxygen/index.html" class="no-external">
 </a>
 </div>
 </div>
@@ -873,6 +895,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!link.href.includes(window.location.hostname)) {
       link.setAttribute('target', '_blank');
       link.setAttribute('rel', 'noopener');
+      
     }
   });
 });
@@ -1300,7 +1323,7 @@ document.addEventListener("DOMContentLoaded", function() {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a class="link-dark" href="https://github.com/NOAA-FIMS" title="github" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark" href="https://noaa-fims.r-universe.dev" title="r-project" target="_blank" rel="noopener"><i class="fab fa-r-project"></i></a></p>
+<p><a class="link-dark" href="https://github.com/NOAA-FIMS" title="FIMS on GitHub" aria-label="Visit FIMS on GitHub" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i></a> <a class="link-dark" href="https://noaa-fims.r-universe.dev" title="FIMS R Universe" aria-label="Visit FIMS R Universe repository" target="_blank" rel="noopener"><i class="fab fa-r-project" aria-hidden="true"></i></a></p>
 </div>
   </div>
 </footer>
