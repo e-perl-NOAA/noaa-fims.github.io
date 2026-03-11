@@ -61,3 +61,48 @@
     width: 100px;
   }
 }
+
+/* Container must be relative so hotspots stay inside it */
+.fims-graphic-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Adjust to your website's layout */
+  margin: 0 auto;
+}
+
+.fims-graphic-container img {
+  width: 100%;
+  display: block;
+}
+
+/* Base styling for the invisible boxes */
+.hotspot {
+  position: absolute;
+  cursor: pointer;
+  /* Uncomment the next line temporarily while you position them so you can see the boxes! */
+  /* border: 2px solid red; background: rgba(255,0,0,0.2); */
+}
+
+/* Example positioning: Top left user button */
+#hs-user1 {
+  top: 5%;
+  left: 10%;
+  width: 20%;
+  height: 10%;
+}
+
+/* Example positioning: Top middle user button */
+#hs-user2 {
+  top: 5%;
+  left: 40%;
+  width: 20%;
+  height: 10%;
+}
+
+/* Example positioning: Top right user button */
+#hs-user3 {
+  top: 5%;
+  left: 70%;
+  width: 20%;
+  height: 10%;
+}

@@ -34,34 +34,9 @@ listing:
             FIMS calendar.
           display-order: 4
     sort: "display-order"
-  - id: fims-resources-listing
-    type: grid
-    max-items: 9
-    page-size: 3
-    categories: false
-    sort-ui: false
-    filter-ui: false
-    fields: [title, description]
-    contents:
-        - path: resources/resources.qmd
-          title: 🔍 FIMS resources
-          description: >
-            Case studies, C++ tutorial, etc. 
-        - path: resources/packages.qmd
-          title: <i class="fab fa-r-project" aria-hidden="true"></i> FIMS packages
-          description: >
-            Packagedown site for FIMS package.
-        - path: https://noaa-fims.github.io/FIMS/doxygen/index.html
-          title: <i class="fa-solid fa-plus" aria-hidden="true"></i> FIMS Doxygen
-          description: >
-            Doxygen documentation for FIMS C++ functions.
-        - path: resources/projects.qmd
-          title: <i class="fa-solid fa-folder-open" aria-hidden="true"></i> FIMS projects
-          description: >
-            Current and related FIMS projects.
-          
 header-includes: >
   <link rel="stylesheet" href="assets/index.css">
+  <script src="assets/scripts.js" defer></script>
 resources:
   - assets/index.css
   - images/case_study.jpg
@@ -140,7 +115,13 @@ resources:
 ::: {#fims-about-listing}
 :::
 
-## useful FIMS resources
+## FIMS User Pathways Option 1
 
-::: {#fims-resources-listing}
-:::
+```{=html}
+<div class="fims-graphic-container">
+  <img id="fims-main-img" src="images/fims-user0.png" alt="FIMS Pathways">
+
+  <div class="hotspot" id="hs-user1" onclick="changeImage('images/fims-user1.png')"></div>
+  <div class="hotspot" id="hs-user2" onclick="changeImage('images/fims-user2.png')"></div>
+</div>
+```
