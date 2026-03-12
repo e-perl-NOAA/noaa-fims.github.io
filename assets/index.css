@@ -98,32 +98,72 @@
 
 /* Example positioning: Top left user button */
 #hs-user1 {
-  top: 12%;
+  top: 13%;
   left: 15%;
-  width: 12%;
+  width: 11%;
   height: 30%;
 }
 
 /* Example positioning: Top middle user button */
 #hs-user2 {
   top: 12%;
-  left: 63%;
-  width: 12%;
+  left: 60%;
+  width: 11%;
   height: 30%;
 }
 
 /* Example positioning: Top middle user button */
 #hs-user3 {
   top: 12%;
-  left: 28%;
-  width: 12%;
+  left: 25%;
+  width: 11%;
   height: 30%;
 }
 
 /* Example positioning: Top middle user button */
 #hs-user4 {
   top: 12%;
-  left: 40%;
-  width: 12%;
+  left: 37%;
+  width: 11%;
   height: 30%;
+}
+
+/* Since anchor tags <a> are inline elements by default, 
+  we just ensure they behave like blocks so the width/height works perfectly. 
+*/
+a.hotspot {
+  display: block; 
+  position: absolute;
+  cursor: pointer;
+  /* Uncomment the next line temporarily while you position them so you can see the boxes! */
+  border: 2px solid red; background: rgba(255,0,0,0.2);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  
+  /* Optional: Add slightly rounded corners if it fits your graphic better */
+  border-radius: 8px;
+}
+
+a.hotspot:hover {
+  /* This creates a semi-transparent white highlight. 
+     Change the 255, 255, 255 (white) or 0.3 (opacity) to fit your design */
+  background-color: rgba(255, 255, 255, 0.3); 
+  
+  /* Optional: Adds a soft glow effect around the edges of the box */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Positioning for the "Login screen" box in the bottom left */
+#link-pkgdown {
+  top: 65%; /* Pushes it down to the bottom section of the image */
+  left: 8%;
+  width: 17%;
+  height: 20%;
+}
+
+/* Positioning for the "Lab-results page" box */
+#link-intro-demo {
+  top: 65%;
+  left: 30%;
+  width: 17%;
+  height: 20%;
 }
