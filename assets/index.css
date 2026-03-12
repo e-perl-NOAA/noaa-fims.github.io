@@ -101,7 +101,7 @@
 /* Example positioning: Top left user button */
 #hs-user1 {
   top: 13%;
-  left: 16%;
+  left: 15%;
   width: 11%;
   height: 30%;
 }
@@ -109,7 +109,7 @@
 /* Example positioning: Top middle user button */
 #hs-user2 {
   top: 13%;
-  left: 63%;
+  left: 62%;
   width: 11%;
   height: 30%;
 }
@@ -117,15 +117,15 @@
 /* Example positioning: Top middle user button */
 #hs-user3 {
   top: 13%;
-  left: 27%;
+  left: 28%;
   width: 11%;
   height: 30%;
 }
 
 /* Example positioning: Top middle user button */
 #hs-user4 {
-  top: 32%;
-  left: 39%;
+  top: 13%;
+  left: 37%;
   width: 11%;
   height: 30%;
 }
@@ -157,15 +157,15 @@ a.hotspot:hover {
 /* Positioning for the "Login screen" box in the bottom left */
 #link-pkgdown {
   top: 60%; /* Pushes it down to the bottom section of the image */
-  left: 8%;
+  left: 15%;
   width: 19%;
-  height: 25%;
+  height: 30%;
 }
 
 /* Positioning for the "Lab-results page" box */
 #link-intro-demo {
   top: 60%;
-  left: 30%;
+  left: 32%;
   width: 19%;
-  height: 25%;
+  height: 30%;
 }
