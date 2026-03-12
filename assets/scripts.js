@@ -1,9 +1,6 @@
-// Add 'images/' to the file paths in your preloader array
+// The preloader stays exactly the same
 const preloadedImages = [];
-const imageList = [
-  'images/fims-user1.png', 
-  'images/fims-user2.png', 
-];
+const imageList = ['images/fims-user1.png', 'images/fims-user2.png'];
 
 imageList.forEach(src => {
   const img = new Image();
@@ -11,7 +8,13 @@ imageList.forEach(src => {
   preloadedImages.push(img);
 });
 
-// The swap function stays exactly the same!
-function changeImage(newSrc) {
-  document.getElementById('fims-main-img').src = newSrc;
+// UPGRADED SWAP FUNCTION
+function changeImage(newSrc, newAltText) {
+  const mainImage = document.getElementById('fims-main-img');
+  
+  // 1. Swap the picture
+  mainImage.src = newSrc;
+  
+  // 2. Swap the alt text for screen readers!
+  mainImage.alt = newAltText; 
 }
