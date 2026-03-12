@@ -80,29 +80,34 @@
   position: absolute;
   cursor: pointer;
   /* Uncomment the next line temporarily while you position them so you can see the boxes! */
-  /* border: 2px solid red; background: rgba(255,0,0,0.2); */
+  border: 2px solid red; background: rgba(255,0,0,0.2);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  
+  /* Optional: Add slightly rounded corners if it fits your graphic better */
+  border-radius: 8px;
+}
+
+.hotspot:hover {
+  /* This creates a semi-transparent white highlight. 
+     Change the 255, 255, 255 (white) or 0.3 (opacity) to fit your design */
+  background-color: rgba(255, 255, 255, 0.3); 
+  
+  /* Optional: Adds a soft glow effect around the edges of the box */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /* Example positioning: Top left user button */
 #hs-user1 {
-  top: 5%;
-  left: 10%;
-  width: 20%;
-  height: 10%;
+  top: 15%;
+  left: 15%;
+  width: 5%;
+  height: 20%;
 }
 
 /* Example positioning: Top middle user button */
 #hs-user2 {
   top: 5%;
-  left: 40%;
-  width: 20%;
-  height: 10%;
-}
-
-/* Example positioning: Top right user button */
-#hs-user3 {
-  top: 5%;
-  left: 70%;
-  width: 20%;
-  height: 10%;
+  left: 60%;
+  width: 15%;
+  height: 20%;
 }
