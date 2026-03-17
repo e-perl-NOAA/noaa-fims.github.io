@@ -1,6 +1,6 @@
 // The preloader stays exactly the same
 const preloadedImages = [];
-const imageList = ['images/fims-user1.png', 'images/fims-user2.png'];
+const imageList = ['images/fims-user1.png', 'images/fims-user2.png', 'images/fims-user3.png', 'images/fims-user4.png', 'images/fims-user5.png'];
 
 imageList.forEach(src => {
   const img = new Image();
