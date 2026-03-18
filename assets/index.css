@@ -101,37 +101,37 @@
 /* Positioning of user type buttons */
 #hs-user1 {
   top: 10%;
-  left: 5%;
-  width: 15%;
-  height: 40%;
+  left: 4%;
+  width: 16%;
+  height: 39%;
 }
 
 #hs-user2 {
   top: 10%;
-  left: 21%;
-  width: 15%;
-  height: 40%;
+  left: 23%;
+  width: 16%;
+  height: 39%;
 }
 
 #hs-user3 {
   top: 10%;
-  left: 42%;
-  width: 15%;
-  height: 40%;
+  left: 41%;
+  width: 16%;
+  height: 39%;
 }
 
 #hs-user4 {
   top: 10%;
-  left: 53%;
-  width: 15%;
-  height: 40%;
+  left: 62%;
+  width: 16%;
+  height: 39%;
 }
 
 #hs-user5 {
   top: 10%;
-  left: 65%;
-  width: 15%;
-  height: 40%;
+  left: 75%;
+  width: 16%;
+  height: 39%;
 }
 
 /* Since anchor tags <a> are inline elements by default, 
@@ -159,45 +159,54 @@ a.hotspot:hover,
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
+/* Hidden until JS enables them */
+.fims-graphic-container a.link-hotspot {
+  display: none;
+}
+
+.fims-graphic-container a.link-hotspot.is-visible {
+  display: block; /* typical for absolutely-positioned hotspots */
+}
+
 /* ALL INTERESTED BUTTON LINKS POSITIONING */
 /* Positioning for FAQ */
 #link-faq-interested {
-  top: 61%; /* Pushes it down to the bottom section of the image */
+  top: 58%; /* Pushes it down to the bottom section of the image */
   left: 3%;
-  width: 17%;
-  height: 32%;
+  width: 18%;
+  height: 34%;
 }
 
 /* Positioning for FIMS Planning GitHub page */
 #link-planning-interested {
-  top: 61%;
-  left: 25%;
-  width: 17%;
-  height: 32%;
+  top: 58%;
+  left: 20%;
+  width: 18%;
+  height: 34%;
 }
 
 /* Positioning for Intro GitHub discussion board */
 #link-intro-gh-interested {
-  top: 61%;
+  top: 58%;
   left: 35%;
-  width: 17%;
-  height: 32%;
+  width: 18%;
+  height: 34%;
 }
 
 /* Positioning for FIMS calendar */
 #link-calendar-interested {
-  top: 61%;
-  left: 50%;
-  width: 17%;
-  height: 32%;
+  top: 58%;
+  left: 60%;
+  width: 18%;
+  height: 34%;
 }
 
 /* Positioning for FIMS blog */
 #link-blog-interested {
-  top: 61%;
-  left: 50%;
-  width: 17%;
-  height: 32%;
+  top: 58%;
+  left: 75%;
+  width: 18%;
+  height: 34%;
 }
 
 

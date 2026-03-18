@@ -18,3 +18,31 @@ function changeImage(newSrc, newAltText) {
   // 2. Swap the alt text for screen readers!
   mainImage.alt = newAltText; 
 }
+
+
+function setVisibleLinksForState(state) {
+  const links = document.querySelectorAll(".fims-graphic-container a.link-hotspot");
+
+  links.forEach(a => {
+    const showOn = (a.dataset.showOn || "").trim();  // e.g. "user1 user2"
+    const allowed = showOn.split(/\s+/).filter(Boolean);
+    const shouldShow = allowed.includes(state);
+
+    a.classList.toggle("is-visible", shouldShow);
+
+    // Accessibility: keep hidden links out of screen readers + tab order
+    if (shouldShow) {
+      a.removeAttribute("aria-hidden");
+      a.removeAttribute("tabindex");
+    } else {
+      a.setAttribute("aria-hidden", "true");
+      a.setAttribute("tabindex", "-1");
+    }
+  });
+}
+
+function stateFromImageSrc(src) {
+  // expecting ".../images/fims-user3.png" -> "user3"
+  const m = src.match(/fims-user(\d+)\.png$/);
+  return m ? `user${m[1]}` : null;
+}
