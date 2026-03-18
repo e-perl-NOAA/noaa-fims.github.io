@@ -169,6 +169,10 @@ a.hotspot:hover,
 }
 
 .fims-graphic-container a.link-hotspot.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+
+  /* debug styling optional */
   outline: 2px solid red;
   background: rgba(255,0,0,0.15);
 }
