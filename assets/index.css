@@ -115,21 +115,21 @@
 
 #hs-user3 {
   top: 10%;
-  left: 41%;
+  left: 42%;
   width: 16%;
   height: 39%;
 }
 
 #hs-user4 {
   top: 10%;
-  left: 62%;
+  left: 61%;
   width: 16%;
   height: 39%;
 }
 
 #hs-user5 {
   top: 10%;
-  left: 75%;
+  left: 80%;
   width: 16%;
   height: 39%;
 }
@@ -159,13 +159,18 @@ a.hotspot:hover,
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-/* Hidden until JS enables them */
+/* Make sure link hotspots are box-like and clickable when enabled */
 .fims-graphic-container a.link-hotspot {
-  display: none;
+  position: absolute;          /* if your hotspot system relies on absolute positioning */
+  display: block;              /* important for empty <a> tags */
+  opacity: 0;                  /* hidden by default */
+  pointer-events: none;        /* not clickable while hidden */
+  /* keep whatever width/height/top/left you already set elsewhere */
 }
 
 .fims-graphic-container a.link-hotspot.is-visible {
-  display: block; /* typical for absolutely-positioned hotspots */
+  outline: 2px solid red;
+  background: rgba(255,0,0,0.15);
 }
 
 /* ALL INTERESTED BUTTON LINKS POSITIONING */
