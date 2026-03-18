@@ -183,39 +183,39 @@ a.hotspot:hover,
   top: 58%; /* Pushes it down to the bottom section of the image */
   left: 3%;
   width: 18%;
-  height: 37%;
+  height: 38%;
 }
 
 /* Positioning for FIMS Planning GitHub page */
 #link-planning-interested {
   top: 58%;
   left: 21%;
-  width: 18%;
-  height: 37%;
+  width: 19%;
+  height: 38%;
 }
 
 /* Positioning for Intro GitHub discussion board */
 #link-intro-gh-interested {
   top: 58%;
-  left: 40%;
+  left: 41%;
   width: 18%;
-  height: 37%;
+  height: 38%;
 }
 
 /* Positioning for FIMS calendar */
 #link-calendar-interested {
   top: 58%;
-  left: 62%;
+  left: 61%;
   width: 18%;
-  height: 37%;
+  height: 38%;
 }
 
 /* Positioning for FIMS blog */
 #link-blog-interested {
   top: 58%;
-  left: 80%;
+  left: 79%;
   width: 18%;
-  height: 37%;
+  height: 38%;
 }
 
 
