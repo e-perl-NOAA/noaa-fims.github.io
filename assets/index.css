@@ -222,32 +222,39 @@ a.hotspot:hover,
 /* ALL NEW BUTTON LINKS POSITIONING */
 /* Positioning for Intro GitHub discussion board */
 #link-intro-gh-newuser {
-  top: 61%; /* Pushes it down to the bottom section of the image */
+  top: 58%; /* Pushes it down to the bottom section of the image */
   left: 3%;
-  width: 17%;
-  height: 32%;
+  width: 18%;
+  height: 38%;
 }
 
 /* Positioning for FIMS Intro vignette*/
 #link-intro-demo-newuser {
-  top: 61%;
-  left: 25%;
-  width: 17%;
-  height: 32%;
+  top: 58%;
+  left: 21%;
+  width: 19%;
+  height: 38%;
+}
+
+#link-fims-packages-newuser {
+  top: 58%;
+  left: 41%;
+  width: 18%;
+  height: 38%;
 }
 
 /* Positioning for FIMS blog */
 #link-blog-newuser {
-  top: 61%;
-  left: 35%;
-  width: 17%;
-  height: 32%;
+  top: 58%;
+  left: 61%;
+  width: 18%;
+  height: 38%;
 }
 
 /* Positioning for FIMS calendar */
 #link-calendar-newuser {
-  top: 61%;
-  left: 50%;
-  width: 17%;
-  height: 32%;
+  top: 58%;
+  left: 79%;
+  width: 18%;
+  height: 38%;
 }
