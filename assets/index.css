@@ -79,19 +79,21 @@
 .hotspot {
   position: absolute;
   cursor: pointer;
-  
   background: transparent; 
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
-  
   /* Optional: Add slightly rounded corners if it fits your graphic better */
   border-radius: 8px;
+}
+
+.hotspot.is-visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .hotspot:hover {
   /* This creates a semi-transparent white highlight. 
      Change the 255, 255, 255 (white) or 0.3 (opacity) to fit your design */
   background-color: rgba(255, 255, 255, 0.3); 
-  
   /* Optional: Adds a soft glow effect around the edges of the box */
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
