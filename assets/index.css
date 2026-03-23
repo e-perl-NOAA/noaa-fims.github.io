@@ -93,12 +93,19 @@
   border-radius: 8px;
 }
 
+.hotspot,
+.hotspot:visited,
+.hotspot:focus,
+.hotspot:focus-visible,
+.hotspot:active {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* only show highlight on hover */
 .hotspot:hover {
-  /* This creates a semi-transparent white highlight. 
-     Change the 255, 255, 255 (white) or 0.3 (opacity) to fit your design */
-  background-color: rgba(255, 255, 255, 0.3); 
-  /* Optional: Adds a soft glow effect around the edges of the box */
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
 }
 
 /* Positioning of user type buttons */
