@@ -79,15 +79,18 @@
 .hotspot {
   position: absolute;
   cursor: pointer;
+
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+
   background: transparent; 
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
   /* Optional: Add slightly rounded corners if it fits your graphic better */
   border-radius: 8px;
-}
-
-.hotspot.is-visible {
-  opacity: 1;
-  pointer-events: auto;
 }
 
 .hotspot:hover {
