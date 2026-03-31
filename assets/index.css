@@ -356,3 +356,53 @@ a.hotspot:hover,
   width: 18%;
   height: 38%;
 }
+
+
+/* --- FIMS packages: make listing look like "hex cards" --- */
+.fims-packages-page .quarto-listing-container .card {
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.08);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+  height: 100%;
+}
+
+.fims-packages-page .quarto-listing-container .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.fims-packages-page .quarto-listing-container .card img {
+  /* Quarto listing image */
+  object-fit: contain;
+  padding: 18px;
+  background: white;
+}
+
+/* Center the image area (hex) */
+.fims-packages-page .quarto-listing-container .card .card-img-top,
+.fims-packages-page .quarto-listing-container .card .card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Title styling like a package name */
+.fims-packages-page .quarto-listing-container .card .card-title {
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+/* Description spacing */
+.fims-packages-page .quarto-listing-container .card .card-text {
+  line-height: 1.35;
+}
+
+/* Optional: make whole card feel clickable */
+.fims-packages-page .quarto-listing-container .card a {
+  text-decoration: none;
+}
+
+.fims-packages-page .quarto-listing-container .card a:hover {
+  text-decoration: underline;
+}

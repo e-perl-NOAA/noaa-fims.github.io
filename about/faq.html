@@ -45,9 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-a2b50c2e4a9fac2e1205bbcfdb4b351c.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-162d9c5e66eb13644f82351b53da3b87.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-c7f7894903d6e2187f6e049529ee96a2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-162d9c5e66eb13644f82351b53da3b87.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5bca210c7b8f52bd43562cb73b8f998e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-dabf027eac5ab6a58e890faf792e317e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-5bca210c7b8f52bd43562cb73b8f998e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -266,7 +266,7 @@ ul.task-list li input[type="checkbox"] {
     <img src="../images/FIMS_logo3.png" alt="FIMS logo" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">FIMS <small>v0.8.1</small></span>
+    <span class="navbar-title">FIMS <small>v0.9.2</small></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -424,11 +424,23 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="why">Why</h2>
 <section id="why-is-fims-being-created" class="level3">
 <h3 class="anchored" data-anchor-id="why-is-fims-being-created">Why is FIMS being created?</h3>
-<p>FIMS was created to increase the pool of developers, designers, and testers that contribute to a commonly-used stock assessment modeling system that can be used across regions. The commitment to build FIMS was made by the National Marine Fisheries Service (NMFS) Science Board in 2020 partly in response to the <a href="https://www.capamresearch.org/">Center for the Advancement of Population Assessment Methodology (CAPAM)</a> workshop on Next Generation Models. New good practices in assessment methods, such as random effects, one-step ahead residuals, and new statistical distributions, can be difficult to add in a performant way to older software systems. FIMS will be written in a way that these new best practices are included at the onset rather than as an afterthought.</p>
+<p>FIMS was created to increase the pool of developers, designers, and testers that contribute to a commonly-used stock assessment modeling system that can be used across regions. The commitment to build FIMS was made by the National Marine Fisheries Service (NMFS) Science Board in 2020 partly in response to the <a href="https://www.capamresearch.org/">Center for the Advancement of Population Assessment Methodology (CAPAM)</a> workshop on Next Generation Models and the recommendations in <a href="https://spo.nmfs.noaa.gov/sites/default/files/TMSPO183.pdf">Implementing a Next Generation Stock Assessment Enterprise</a>, a NOAA Fisheries strategic document that calls for the development of general modeling platforms that facilitate ease of use, robust testing, modular applications, and best practices and to improve the professionalism of model development. New good practices in assessment methods, such as random effects, one-step ahead residuals, and new statistical distributions, can be difficult to add in a performant way to older software systems. FIMS will be written in a way that these new best practices are included at the onset rather than as an afterthought.</p>
 </section>
 <section id="why-build-fims-now" class="level3">
 <h3 class="anchored" data-anchor-id="why-build-fims-now">Why build FIMS now?</h3>
 <p><a href="https://www.admb-project.org/">AD Model Builder (ADMB)</a> is no longer being supported so the ability to compile existing models that use ADMB, e.g., <a href="https://nmfs-ost.github.io/noaa-fit/ASAP">Age Structured Assessment Program (ASAP)</a>, <a href="https://github.com/afsc-assessments/AMAK">Assessment Model for Alaska (AMAK)</a>, Beaufort Assessment Model (BAM), and <a href="https://github.com/nmfs-ost/ss3-source-code">Stock Synthesis 3 (SS3)</a>, will be compromised with future operating system upgrades. Furthermore, development of these models that rely on ADMB to include best practices, such as random effects, is not feasible.</p>
+</section>
+<section id="why-does-fims-use-tmb-instead-of-rtmb" class="level3">
+<h3 class="anchored" data-anchor-id="why-does-fims-use-tmb-instead-of-rtmb">Why does FIMS use TMB instead of RTMB?</h3>
+<p>The <a href="https://github.com/kaskr/RTMB">RTMB</a> documentation describes RTMB as a native R interface to a substantial <strong>subset</strong> of TMB. RTMB improves accessibility and can speed up prototyping, and we see clear value in that. For FIMS, however, we chose a C++ foundation with TMB because our primary requirement is a long-lived, production modeling platform. In our view, this trade-off better supports maintainability, testing, and portability at the scale we need.</p>
+<ul>
+<li>Strong typing in C++ helps catch classes of errors earlier and supports more predictable behavior in large codebases.</li>
+<li>A C++ core keeps the architecture less tied to any single interface layer and supports future portability across automatic-differentiation backends.</li>
+<li>Components are designed for reuse, including use in RTMB workflows (see <a href="https://github.com/NOAA-FIMS/FIMSRTMB">FIMSRTMB</a> and its <a href="https://noaa-fims.github.io/FIMSRTMB/articles/index.html">vignettes</a>).</li>
+<li>The modular C++ design supports future extensions, including potential machine-learning-assisted components where appropriate.</li>
+<li>Explicit sub-model definitions in C++ improve specification clarity for collaboration, review, and external development support.</li>
+</ul>
+<p>In short, RTMB is useful for many applications, but for FIMS we prioritized a C++ architecture to support long-term reliability and extensibility.</p>
 </section>
 </section>
 <section id="transitioning-to-fims" class="level2">
