@@ -113,35 +113,35 @@
   top: 10%;
   left: 4%;
   width: 16%;
-  height: 39%;
+  height: 38%;
 }
 
 #hs-user2 {
   top: 10%;
   left: 23%;
   width: 16%;
-  height: 39%;
+  height: 38%;
 }
 
 #hs-user3 {
   top: 10%;
   left: 42%;
   width: 16%;
-  height: 39%;
+  height: 38%;
 }
 
 #hs-user4 {
   top: 10%;
   left: 61%;
   width: 16%;
-  height: 39%;
+  height: 38%;
 }
 
 #hs-user5 {
   top: 10%;
   left: 80%;
   width: 16%;
-  height: 39%;
+  height: 38%;
 }
 
 /* Since anchor tags <a> are inline elements by default, 
@@ -357,52 +357,101 @@ a.hotspot:hover,
   height: 38%;
 }
 
-
-/* --- FIMS packages: make listing look like "hex cards" --- */
-.fims-packages-page .quarto-listing-container .card {
+/* Scope all styling to your listing */
+#listing-fims-packages .quarto-grid-item.card {
   border: 0;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 0 1px 10px rgba(0,0,0,0.08);
   transition: transform 120ms ease, box-shadow 120ms ease;
-  height: 100%;
+  overflow: hidden; /* keeps rounded corners clean */
 }
 
-.fims-packages-page .quarto-listing-container .card:hover {
+#listing-fims-packages .quarto-grid-item.card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.12);
 }
 
-.fims-packages-page .quarto-listing-container .card img {
-  /* Quarto listing image */
-  object-fit: contain;
-  padding: 18px;
-  background: white;
-}
-
-/* Center the image area (hex) */
-.fims-packages-page .quarto-listing-container .card .card-img-top,
-.fims-packages-page .quarto-listing-container .card .card-image {
+/* Make the image area look like a centered hex badge */
+#listing-fims-packages p.card-img-top {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding: 14px 14px 0 14px;
+  background: #fff;
 }
 
-/* Title styling like a package name */
-.fims-packages-page .quarto-listing-container .card .card-title {
+#listing-fims-packages img.thumbnail-image.card-img {
+  object-fit: contain;
+  padding: 10px;
+  /* You already have inline style height: 250px;
+     this ensures it doesn't blow out wide */
+  max-width: 220px;
+}
+
+/* Tighter, tidyverse-ish typography */
+#listing-fims-packages .card-body.post-contents {
+  padding: 14px 16px 16px 16px;
+}
+
+#listing-fims-packages .card-title.listing-title {
   font-weight: 700;
   margin-bottom: 0.35rem;
 }
 
-/* Description spacing */
-.fims-packages-page .quarto-listing-container .card .card-text {
+/* Description spacing + stop it from inheriting weird link styles */
+#listing-fims-packages .listing-description {
   line-height: 1.35;
 }
 
-/* Optional: make whole card feel clickable */
-.fims-packages-page .quarto-listing-container .card a {
-  text-decoration: none;
+/* Optional: hide categories or make them look like tags */
+#listing-fims-packages .listing-categories {
+  margin-bottom: 0.5rem;
+  gap: 6px;
 }
 
-.fims-packages-page .quarto-listing-container .card a:hover {
+#listing-fims-packages .listing-category {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.06);
+  font-size: 0.8rem;
+}
+
+/* Important: remove underline on the big overlay link */
+#listing-fims-packages a.quarto-grid-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* If your theme underlines titles on hover, keep it subtle */
+#listing-fims-packages .card-title a:hover,
+#listing-fims-packages a.quarto-grid-link:hover .card-title {
   text-decoration: underline;
+}
+
+/* Make each grid card horizontal: image left, text right */
+#listing-fims-packages .quarto-grid-item.card.card-left {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+/* Image container becomes left column */
+#listing-fims-packages .quarto-grid-item.card.card-left p.card-img-top {
+  flex: 0 0 120px;      /* left column width */
+  padding: 14px;
+}
+
+/* Image itself smaller */
+#listing-fims-packages .quarto-grid-item.card.card-left img.thumbnail-image.card-img {
+  height: 92px !important;   /* override inline 250px */
+  width: 92px;
+  max-width: none;
+  padding: 0;
+}
+
+/* Body becomes right column */
+#listing-fims-packages .quarto-grid-item.card.card-left .card-body {
+  flex: 1 1 auto;
 }
