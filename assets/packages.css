@@ -24,7 +24,7 @@
 
 #listing-fims-packages .quarto-grid-item.card.card-left {
   display: flex;
-  flex-direction: flex;
+  flex-direction: row;
   gap: 10px;
   padding: 10px;
   border: 0;
