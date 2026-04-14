@@ -9,14 +9,22 @@
   padding-right: 1rem;
 }
 
-/* Keep Quarto's grid responsive while we style the cards */
+/* --- 2-column grid overall (except featured first item) --- */
 #listing-fims-packages .list.grid {
-  row-gap: 1rem;
+  /* Override Quarto's `quarto-listing-cols-3` */
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+/* --- Featured first card spans full width --- */
+#listing-fims-packages .list.grid > .g-col-1[data-index="0"] {
+  grid-column: 1 / -1; /* span both columns */
 }
 
 #listing-fims-packages .quarto-grid-item.card.card-left {
   display: flex;
-  flex-direction: row;
+  flex-direction: flex;
   gap: 10px;
   padding: 10px;
   border: 0;
@@ -31,6 +39,28 @@
 #listing-fims-packages .quarto-grid-item.card.card-left * {
   position: relative;
   z-index: 1;
+}
+
+.card-img-top {
+  width: 50px
+}
+
+/* Smaller hex/logo for regular cards */
+#listing-fims-packages .g-col-1:not([data-index="0"]) img.thumbnail-image.card-img {
+  width: 72px;
+  height: 72px !important; /* overrides inline height: 250px */
+  object-fit: contain;
+}
+
+/* Bigger hex/logo for featured (optional) */
+#listing-fims-packages .g-col-1[data-index="0"] img.thumbnail-image.card-img {
+  width: 120px;
+  height: 120px !important;
+}
+
+/* Slightly larger title for featured (optional) */
+#listing-fims-packages .g-col-1[data-index="0"] .card-title.listing-title {
+  font-size: 1.35rem;
 }
 
 #listing-fims-packages .quarto-grid-item.card.card-left:hover {
