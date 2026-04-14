@@ -42,6 +42,13 @@
     "text": "Takeaways\nBy incorporating {renv} into our workflows, we’ve tackled three challenges that are common in collaborative, multi-platform development: keeping environments consistent across developers and operating systems, managing multiple versions of an actively-developing dependency, and making all of this happen automatically so that developers and users can focus on the work itself. The result is a codebase that is easier to share, easier to reproduce, and easier to maintain as both projects continue to grow."
   },
   {
+    "objectID": "blog/renv_blog.html#join-the-discussion",
+    "href": "blog/renv_blog.html#join-the-discussion",
+    "title": "R Package Chaos, Solved",
+    "section": "Join the discussion!",
+    "text": "Join the discussion!"
+  },
+  {
     "objectID": "blog/fims-weekly-template.html",
     "href": "blog/fims-weekly-template.html",
     "title": "FIMS",
@@ -1202,6 +1209,13 @@
     "title": "FIMS Code Club",
     "section": "Join Us at the Next Session",
     "text": "Join Us at the Next Session\nYou don’t need to be an expert to walk through the door. You just need to be curious.\n\nWhen: Monthly (Check the FIMS Calendar)\nWhere: Virtual Breakout Rooms via Google Meet\nTooling: We recommend having VS Code and the Live Share extension installed. Even if you don’t, you are still able to interact with the Live Share coding in your browser.\n\n\nReady to Contribute?\nView the FIMS Code Club Project Board on GitHub"
+  },
+  {
+    "objectID": "blog/fims-code-club.html#join-the-discussion",
+    "href": "blog/fims-code-club.html#join-the-discussion",
+    "title": "FIMS Code Club",
+    "section": "Join the discussion!",
+    "text": "Join the discussion!"
   },
   {
     "objectID": "blog/index.html",
