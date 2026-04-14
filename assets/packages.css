@@ -14,7 +14,7 @@
   /* Override Quarto's `quarto-listing-cols-3` */
   display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.9rem;
+  gap: 1rem;
 }
 
 /* --- Featured first card spans full width --- */
@@ -42,7 +42,7 @@
 }
 
 .card-img-top {
-  width: 50px
+  width: 60px
 }
 
 /* Smaller hex/logo for regular cards */
