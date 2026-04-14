@@ -17,14 +17,20 @@
 #listing-fims-packages .quarto-grid-item.card.card-left {
   display: flex;
   flex-direction: row;
-  gap: 14px;
-  padding: 14px;
+  gap: 10px;
+  padding: 10px;
   border: 0;
   border-radius: 10px;
   background: var(--bs-body-bg, #fff);
   box-shadow: 0 1px 10px rgba(0,0,0,0.08);
-
+  position: relative;   /* establish a stacking context */
+  overflow: hidden;     /* prevents weird overlap */
   transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+#listing-fims-packages .quarto-grid-item.card.card-left * {
+  position: relative;
+  z-index: 1;
 }
 
 #listing-fims-packages .quarto-grid-item.card.card-left:hover {
@@ -69,14 +75,15 @@
 }
 
 #listing-fims-packages .card-title.listing-title {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
-  margin: 0 0 6px 0;
+  margin: 0 0 4px 0;
 }
 
 #listing-fims-packages .listing-description {
   margin: 0;
-  line-height: 1.35;
+  font-size: 0.95rem;
+  line-height: 1.25;
 }
 
 /* tidyverse packages page doesn't show categories; hide them (optional) */
@@ -88,6 +95,8 @@
 #listing-fims-packages a.quarto-grid-link {
   text-decoration: none;
   color: inherit;
+  position: static !important;
+  display: block;
 }
 
 /* Feature the first listing item (weight/title sort dependent) */
