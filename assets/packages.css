@@ -117,9 +117,9 @@
 }
 
 /* tidyverse packages page doesn't show categories; hide them (optional) */
-#listing-fims-packages .listing-categories {
+/* #listing-fims-packages .listing-categories {
   display: none;
-}
+} */
 
 /* Make overlay links not mess with styling */
 #listing-fims-packages a.quarto-grid-link {
