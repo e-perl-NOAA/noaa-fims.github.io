@@ -25,7 +25,7 @@
 #listing-fims-packages .quarto-grid-item.card.card-left {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 30px;
   padding: 10px;
   border: 0;
   border-radius: 10px;
@@ -42,7 +42,7 @@
 }
 
 .card-img-top {
-  width: 70px
+  width: 80px
 }
 
 /* Smaller hex/logo for regular cards */
@@ -111,15 +111,16 @@
 }
 
 #listing-fims-packages .listing-description {
+  order: 2;
   margin: 0;
   font-size: 0.95rem;
   line-height: 1.25;
 }
 
 /* tidyverse packages page doesn't show categories; hide them (optional) */
-/* #listing-fims-packages .listing-categories {
-  display: none;
-} */
+#listing-fims-packages .listing-categories {
+  order: 3;
+}
 
 /* Make overlay links not mess with styling */
 #listing-fims-packages a.quarto-grid-link {
