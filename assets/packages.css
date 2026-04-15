@@ -122,6 +122,13 @@
   order: 3;
 }
 
+.quarto-grid-item .listing-categories .listing-category {
+  background-color: #e4f0f1;
+  color:#0e6876;
+  border-color: #4896a1; 
+}
+
+
 /* Make overlay links not mess with styling */
 #listing-fims-packages a.quarto-grid-link {
   text-decoration: none;
