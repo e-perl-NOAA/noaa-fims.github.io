@@ -81,9 +81,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f484811bcdace42d8673824f04da05e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5666c8ee06e32f9a280d2f51418cd824.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-c1b44f8ec06b853ed880d282f63a399d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-5666c8ee06e32f9a280d2f51418cd824.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dc669411c44ba17aa5386758051d054e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-ce2d6cb1d437f59b4f4c00faee980973.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-dc669411c44ba17aa5386758051d054e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -306,7 +306,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <img src="../images/FIMS_logo3.png" alt="FIMS logo" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">FIMS <small>v0.9.2</small></span>
+    <span class="navbar-title">FIMS <small>v0.9.3</small></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -351,21 +351,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">blog</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">resources</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-packages--resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">packages &amp; resources</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-packages--resources">    
         <li>
-    <a class="dropdown-item" href="../resources/resources.html">
- <span class="dropdown-text">resources</span></a>
+    <a class="dropdown-item" href="https://noaa-fims.github.io/FIMS/">
+ <span class="dropdown-text">FIMS package</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../resources/packages.html">
- <span class="dropdown-text">R packages</span></a>
+ <span class="dropdown-text">FIMS-associated R packages</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../resources/projects.html">
- <span class="dropdown-text">projects</span></a>
+    <a class="dropdown-item" href="https://noaa-fims.github.io/case-studies/">
+ <span class="dropdown-text">case studies</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../resources/resources.html">
+ <span class="dropdown-text">development resources</span></a>
   </li>  
     </ul>
   </li>
@@ -539,14 +543,26 @@ HELPFUL RESOURCES
 
 </main> <!-- /main -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  // Select all anchor tags with href starting with http (external links only)
-  document.querySelectorAll("a[href^='http']").forEach(function(link) {
-    // Ignore links to the current site's domain
-    if (!link.href.includes(window.location.hostname)) {
-      link.setAttribute('target', '_blank');
-      link.setAttribute('rel', 'noopener');
-      
+document.addEventListener("DOMContentLoaded", function () {
+  var forceNewTabPaths = [
+    "/case-studies/",
+    "/FIMS/",
+    "/FIMSdiags/",
+    "/FIMSRTMB/",
+    "/fims-pkgdown-template/"
+  ];
+
+  document.querySelectorAll("a[href]").forEach(function (link) {
+    var href = link.getAttribute("href");
+    if (!href) return;
+
+    var url = new URL(href, window.location.origin);
+    var isExternal = url.hostname !== window.location.hostname;
+    var isForcedInternal = forceNewTabPaths.includes(url.pathname);
+
+    if (isExternal || isForcedInternal) {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
     }
   });
 });

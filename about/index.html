@@ -45,9 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f484811bcdace42d8673824f04da05e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5666c8ee06e32f9a280d2f51418cd824.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-c1b44f8ec06b853ed880d282f63a399d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-5666c8ee06e32f9a280d2f51418cd824.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dc669411c44ba17aa5386758051d054e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-ce2d6cb1d437f59b4f4c00faee980973.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-dc669411c44ba17aa5386758051d054e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -269,7 +269,7 @@ ul.task-list li input[type="checkbox"] {
     <img src="../images/FIMS_logo3.png" alt="FIMS logo" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">FIMS <small>v0.9.2</small></span>
+    <span class="navbar-title">FIMS <small>v0.9.3</small></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -314,21 +314,25 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">blog</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">resources</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-packages--resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">packages &amp; resources</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-packages--resources">    
         <li>
-    <a class="dropdown-item" href="../resources/resources.html">
- <span class="dropdown-text">resources</span></a>
+    <a class="dropdown-item" href="https://noaa-fims.github.io/FIMS/">
+ <span class="dropdown-text">FIMS package</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../resources/packages.html">
- <span class="dropdown-text">R packages</span></a>
+ <span class="dropdown-text">FIMS-associated R packages</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../resources/projects.html">
- <span class="dropdown-text">projects</span></a>
+    <a class="dropdown-item" href="https://noaa-fims.github.io/case-studies/">
+ <span class="dropdown-text">case studies</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../resources/resources.html">
+ <span class="dropdown-text">development resources</span></a>
   </li>  
     </ul>
   </li>
@@ -368,11 +372,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#mission" id="toc-mission" class="nav-link active" data-scroll-target="#mission">Mission</a></li>
+  <li><a href="#mission" id="toc-mission" class="nav-link active" data-scroll-target="#mission">Mission</a>
+  <ul class="collapse">
+  <li><a href="#mission-statement" id="toc-mission-statement" class="nav-link" data-scroll-target="#mission-statement">Mission statement</a></li>
+  <li><a href="#vision-statement" id="toc-vision-statement" class="nav-link" data-scroll-target="#vision-statement">Vision statement</a></li>
+  <li><a href="#priorities" id="toc-priorities" class="nav-link" data-scroll-target="#priorities">Priorities</a></li>
+  </ul></li>
   <li><a href="#why-fims" id="toc-why-fims" class="nav-link" data-scroll-target="#why-fims">Why FIMS?</a></li>
   <li><a href="#community" id="toc-community" class="nav-link" data-scroll-target="#community">Community</a>
   <ul class="collapse">
-  <li><a href="#get-involved" id="toc-get-involved" class="nav-link" data-scroll-target="#get-involved">Get involved <i class="fa-solid fa-user-plus" aria-hidden="true"></i></a></li>
+  <li><a href="#get-involved" id="toc-get-involved" class="nav-link" data-scroll-target="#get-involved">Get involved</a></li>
   </ul></li>
   <li><a href="#current-project-status" id="toc-current-project-status" class="nav-link" data-scroll-target="#current-project-status">Current project status</a>
   <ul class="collapse">
@@ -433,8 +442,25 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="mission" class="level1">
 <h1>Mission</h1>
+<section id="mission-statement" class="level2">
+<h2 class="anchored" data-anchor-id="mission-statement">Mission statement</h2>
 <p>The mission of the Fisheries Integrated Modeling System (FIMS) is to <strong>enhance the connection of models used to assess the status of managed fish stocks to ecosystem, climate, and socioeconomic factors while meeting current management needs.</strong></p>
+</section>
+<section id="vision-statement" class="level2">
+<h2 class="anchored" data-anchor-id="vision-statement">Vision statement</h2>
 <p>We aim to accomplish our mission with a <strong>user-friendly stock assessment tool</strong> that <strong>streamlines</strong> the development and application of scientific advice to inform current and future management needs of NOAA Fisheries’ regions.</p>
+</section>
+<section id="priorities" class="level2">
+<h2 class="anchored" data-anchor-id="priorities">Priorities</h2>
+<ol type="1">
+<li>FIMS meets the needs of operational stock assessments across regions, scenarios, and data types and levels to provide scientific advice to management bodies.</li>
+<li>FIMS implements practical and robust methods from ecology, statistics, computer science, and mathematical modeling.</li>
+<li>FIMS estimates and projects population trajectories and can estimate parameters and uncertainty accurately and reliably in simulated conditions.</li>
+<li>Users spanning different levels of expertise can run a model within FIMS.</li>
+<li>FIMS welcomes and incorporates user, developer, and community contributions and feedback to shape design decisions and priorities, in accordance with open source principles, and communicates progress, key findings, and advancements back.</li>
+<li>FIMS is flexible enough to adapt to future management needs, new technical developments and data sources, and observational data types and supports the NOAA Open Science Initiative.</li>
+</ol>
+</section>
 </section>
 <section id="why-fims" class="level1">
 <h1>Why FIMS?</h1>
@@ -445,8 +471,8 @@ ul.task-list li input[type="checkbox"] {
 <p>A team of <a href="../contact/contributors.html">experts</a> within NOAA Fisheries is designing and developing the system, and we are advised by the <a href="../contact/contributors.html#fims-council">FIMS Council</a> which includes academic, industry, and international partners.</p>
 <p>Contributions from individuals of all skill levels are welcome. The codebase and documentation heavily relies of contributions from volunteers and it is imperative that we receive both feedback and contributions from users to ensure the user experience remains true to our aim of being user friendly. The roles of internal and external collaborators are outlined in the <a href="../contact/contributors.html#roles">roles section</a> of this community playbook.</p>
 <section id="get-involved" class="level2">
-<h2 class="anchored" data-anchor-id="get-involved">Get involved <i class="fa-solid fa-user-plus" aria-hidden="true"></i></h2>
-<p>Users and developers are welcome to join the <a href="https://github.com/orgs/NOAA-FIMS/discussions">Discussions board</a> or submit bug reports using GitHub Issues. Please use the issues under <a href="https://github.com/NOAA-FIMS/collaborative_workflow/issues">collaborative workflow</a> to make suggestions about the developer guide and the issues under the FIMS software <a href="https://github.com/NOAA-FIMS/FIMS/issues">repository</a> for software design and development feedback.</p>
+<h2 class="anchored" data-anchor-id="get-involved">Get involved</h2>
+<p>Users and developers are welcome to join the <a href="https://github.com/orgs/NOAA-FIMS/discussions">Discussions board</a> or submit bug reports using GitHub Issues. Please use the issues in the <a href="https://github.com/NOAA-FIMS/noaa-fims.github.io/issues">NOAA-FIMS github.io repository</a> to make suggestions regarding this website and the issues under the <a href="https://github.com/NOAA-FIMS/FIMS/issues">FIMS software repository</a> for software design and development feedback.</p>
 </section>
 </section>
 <section id="current-project-status" class="level1">
@@ -761,14 +787,26 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  // Select all anchor tags with href starting with http (external links only)
-  document.querySelectorAll("a[href^='http']").forEach(function(link) {
-    // Ignore links to the current site's domain
-    if (!link.href.includes(window.location.hostname)) {
-      link.setAttribute('target', '_blank');
-      link.setAttribute('rel', 'noopener');
-      
+document.addEventListener("DOMContentLoaded", function () {
+  var forceNewTabPaths = [
+    "/case-studies/",
+    "/FIMS/",
+    "/FIMSdiags/",
+    "/FIMSRTMB/",
+    "/fims-pkgdown-template/"
+  ];
+
+  document.querySelectorAll("a[href]").forEach(function (link) {
+    var href = link.getAttribute("href");
+    if (!href) return;
+
+    var url = new URL(href, window.location.origin);
+    var isExternal = url.hostname !== window.location.hostname;
+    var isForcedInternal = forceNewTabPaths.includes(url.pathname);
+
+    if (isExternal || isForcedInternal) {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
     }
   });
 });

@@ -1,12 +1,24 @@
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  // Select all anchor tags with href starting with http (external links only)
-  document.querySelectorAll("a[href^='http']").forEach(function(link) {
-    // Ignore links to the current site's domain
-    if (!link.href.includes(window.location.hostname)) {
-      link.setAttribute('target', '_blank');
-      link.setAttribute('rel', 'noopener');
-      
+document.addEventListener("DOMContentLoaded", function () {
+  var forceNewTabPaths = [
+    "/case-studies/",
+    "/FIMS/",
+    "/FIMSdiags/",
+    "/FIMSRTMB/",
+    "/fims-pkgdown-template/"
+  ];
+
+  document.querySelectorAll("a[href]").forEach(function (link) {
+    var href = link.getAttribute("href");
+    if (!href) return;
+
+    var url = new URL(href, window.location.origin);
+    var isExternal = url.hostname !== window.location.hostname;
+    var isForcedInternal = forceNewTabPaths.includes(url.pathname);
+
+    if (isExternal || isForcedInternal) {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
     }
   });
 });

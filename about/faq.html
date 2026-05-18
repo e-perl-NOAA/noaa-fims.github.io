@@ -45,9 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f484811bcdace42d8673824f04da05e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5666c8ee06e32f9a280d2f51418cd824.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-c1b44f8ec06b853ed880d282f63a399d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-5666c8ee06e32f9a280d2f51418cd824.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dc669411c44ba17aa5386758051d054e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-ce2d6cb1d437f59b4f4c00faee980973.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-dc669411c44ba17aa5386758051d054e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -266,7 +266,7 @@ ul.task-list li input[type="checkbox"] {
     <img src="../images/FIMS_logo3.png" alt="FIMS logo" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">FIMS <small>v0.9.2</small></span>
+    <span class="navbar-title">FIMS <small>v0.9.3</small></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -311,21 +311,25 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">blog</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">resources</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-packages--resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">packages &amp; resources</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-packages--resources">    
         <li>
-    <a class="dropdown-item" href="../resources/resources.html">
- <span class="dropdown-text">resources</span></a>
+    <a class="dropdown-item" href="https://noaa-fims.github.io/FIMS/">
+ <span class="dropdown-text">FIMS package</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../resources/packages.html">
- <span class="dropdown-text">R packages</span></a>
+ <span class="dropdown-text">FIMS-associated R packages</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../resources/projects.html">
- <span class="dropdown-text">projects</span></a>
+    <a class="dropdown-item" href="https://noaa-fims.github.io/case-studies/">
+ <span class="dropdown-text">case studies</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../resources/resources.html">
+ <span class="dropdown-text">development resources</span></a>
   </li>  
     </ul>
   </li>
@@ -364,9 +368,24 @@ ul.task-list li input[type="checkbox"] {
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
+  <ul>
+  <li><a href="#why" id="toc-why" class="nav-link active" data-scroll-target="#why">Why</a>
   <ul class="collapse">
-  <li><a href="#why" id="toc-why" class="nav-link active" data-scroll-target="#why">Why</a></li>
-  <li><a href="#transitioning-to-fims" id="toc-transitioning-to-fims" class="nav-link" data-scroll-target="#transitioning-to-fims">Transitioning to FIMS</a></li>
+  <li><a href="#why-is-fims-being-created" id="toc-why-is-fims-being-created" class="nav-link" data-scroll-target="#why-is-fims-being-created">Why is FIMS being created?</a></li>
+  <li><a href="#why-build-fims-now" id="toc-why-build-fims-now" class="nav-link" data-scroll-target="#why-build-fims-now">Why build FIMS now?</a></li>
+  <li><a href="#why-does-fims-use-tmb-instead-of-rtmb" id="toc-why-does-fims-use-tmb-instead-of-rtmb" class="nav-link" data-scroll-target="#why-does-fims-use-tmb-instead-of-rtmb">Why does FIMS use TMB instead of RTMB?</a></li>
+  </ul></li>
+  <li><a href="#transitioning-to-fims" id="toc-transitioning-to-fims" class="nav-link" data-scroll-target="#transitioning-to-fims">Transitioning to FIMS</a>
+  <ul class="collapse">
+  <li><a href="#will-fims-have-all-the-features-of-current-assessment-models" id="toc-will-fims-have-all-the-features-of-current-assessment-models" class="nav-link" data-scroll-target="#will-fims-have-all-the-features-of-current-assessment-models">Will FIMS have all the features of current assessment models?</a></li>
+  <li><a href="#when-will-fims-be-ready-to-transition-to" id="toc-when-will-fims-be-ready-to-transition-to" class="nav-link" data-scroll-target="#when-will-fims-be-ready-to-transition-to">When will FIMS be ready to transition to?</a></li>
+  <li><a href="#i-need-a-new-model.-should-i-wait-for-fims-or-use-wham" id="toc-i-need-a-new-model.-should-i-wait-for-fims-or-use-wham" class="nav-link" data-scroll-target="#i-need-a-new-model.-should-i-wait-for-fims-or-use-wham">I need a new model. Should I wait for FIMS or use WHAM?</a></li>
+  <li><a href="#when-will-fims-trainings-be-offered" id="toc-when-will-fims-trainings-be-offered" class="nav-link" data-scroll-target="#when-will-fims-trainings-be-offered">When will FIMS trainings be offered?</a></li>
+  <li><a href="#how-can-i-prepare-for-the-transition-to-fims" id="toc-how-can-i-prepare-for-the-transition-to-fims" class="nav-link" data-scroll-target="#how-can-i-prepare-for-the-transition-to-fims">How can I prepare for the transition to FIMS?</a></li>
+  <li><a href="#how-long-will-existing-assessment-platforms-be-maintained-and-at-what-level" id="toc-how-long-will-existing-assessment-platforms-be-maintained-and-at-what-level" class="nav-link" data-scroll-target="#how-long-will-existing-assessment-platforms-be-maintained-and-at-what-level">How long will existing assessment platforms be maintained, and at what level?</a></li>
+  <li><a href="#will-there-be-translators-from-current-platforms-to-fims" id="toc-will-there-be-translators-from-current-platforms-to-fims" class="nav-link" data-scroll-target="#will-there-be-translators-from-current-platforms-to-fims">Will there be translators from current platforms to FIMS?</a></li>
+  <li><a href="#how-far-will-fims-scale-towards-data-poor-models" id="toc-how-far-will-fims-scale-towards-data-poor-models" class="nav-link" data-scroll-target="#how-far-will-fims-scale-towards-data-poor-models">How far will FIMS scale towards data-poor models?</a></li>
+  </ul></li>
   </ul>
 </nav>
 </nav>
@@ -488,14 +507,26 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  // Select all anchor tags with href starting with http (external links only)
-  document.querySelectorAll("a[href^='http']").forEach(function(link) {
-    // Ignore links to the current site's domain
-    if (!link.href.includes(window.location.hostname)) {
-      link.setAttribute('target', '_blank');
-      link.setAttribute('rel', 'noopener');
-      
+document.addEventListener("DOMContentLoaded", function () {
+  var forceNewTabPaths = [
+    "/case-studies/",
+    "/FIMS/",
+    "/FIMSdiags/",
+    "/FIMSRTMB/",
+    "/fims-pkgdown-template/"
+  ];
+
+  document.querySelectorAll("a[href]").forEach(function (link) {
+    var href = link.getAttribute("href");
+    if (!href) return;
+
+    var url = new URL(href, window.location.origin);
+    var isExternal = url.hostname !== window.location.hostname;
+    var isForcedInternal = forceNewTabPaths.includes(url.pathname);
+
+    if (isExternal || isForcedInternal) {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
     }
   });
 });
