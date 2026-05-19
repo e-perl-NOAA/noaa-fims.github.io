@@ -84,10 +84,12 @@ ul.task-list li input[type="checkbox"] {
     if (el) el.textContent = '© ' + year;
   });
 </script>
+<link rel="stylesheet" href="../assets/community.css">
 
 
 <link rel="stylesheet" href="../assets/panelset-extras.css">
 <meta property="og:title" content="Community &amp; Collaboration | NOAA FIMS – FIMS">
+<meta property="og:description" content="">
 <meta property="og:site_name" content="FIMS">
 </head>
 
@@ -414,21 +416,21 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="bg-primary text-white p-5 rounded-4 position-relative mb-5 shadow-sm">
-<div class="position-relative z-1 w-75">
-<p><span class="badge bg-light text-primary mb-4 p-2 text-uppercase tracking-wider">FIMS Open Ecosystem</span></p>
-<h1 class="display-4 fw-bold mb-4">
+<div class="fims-giant-card">
+<div class="fims-hero-content">
+<p><span class="fims-badge">FIMS Open Ecosystem</span></p>
+<h1 class="fims-title">
 Collaborating for Sustainable Fisheries
 </h1>
-<p class="lead mb-4 opacity-75">
+<p class="fims-desc">
 Join a global network of scientists, developers, and researchers building the future of fisheries integrated modeling. Open source, collaborative, and peer-reviewed.
 </p>
-<div class="d-flex flex-wrap gap-3">
-<button class="btn btn-danger btn-lg fw-bold d-flex align-items-center gap-2 shadow">
-<span class="material-symbols-outlined">campaign</span> Get Involved Now
+<div class="fims-actions">
+<button onclick="window.location.href='#get-involved'" class="btn btn-danger fims-btn fims-btn-shadow">
+<i class="bi bi-megaphone-fill"></i> Get Involved Now
 </button>
-<button class="btn btn-outline-light btn-lg fw-bold d-flex align-items-center gap-2">
-<span class="material-symbols-outlined">calendar_month</span> Join Next Meeting
+<button onclick="window.location.href='../about/calendar.html'" class="btn btn-outline-light fims-btn">
+<i class="bi bi-calendar-month"></i> Join Next Meeting
 </button>
 </div>
 </div>
@@ -568,78 +570,107 @@ Participate in working groups to validate the mathematical integrity of new mode
 </div>
 </div>
 </div>
-<div class="bg-light rounded-4 p-5 mb-5">
-<div class="row g-5 align-items-center">
-<div class="col-md-5">
-<h2 class="fw-bold text-primary mb-3 anchored">
-Getting Involved
-</h2>
-<p class="text-muted mb-4">
-Follow these 4 simple steps to start contributing to the FIMS project today.
-</p>
-<p><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAltB1R6XBf_Z-Hbsy65xcVFldL_qlcCpBGr6vGh1Mb4B4oVS5Gnb42wXR3ocssBdH1-FCfVJ53sEVeHdSDotx9Iw5innvwTWkUpi2lBUK2TRPbWzAYG52ZW6ch_4sZm49RORlMwairpSUjEOrh1oUkyInvjoq-_RlmDVv8-QEVrNa7bTHCOU8atNZPktTVI8-uosJy3Iv8BCINkYnTssmz2nodBk420ys2VlsThKJ3WM6VJ4g13gRTbMi5eAZr_X0ImlIiPTBqlTA" class="img-fluid rounded-3 border opacity-75" alt="Scientific chart"></p>
+<section id="ways-to-contribute" class="level2 fims-contribute-header">
+<h2 class="anchored" data-anchor-id="ways-to-contribute">Ways to Contribute</h2>
+<p>Whether you’re a seasoned modeler or a first-time open-source contributor, there’s a place for you in the FIMS community.</p>
+</section>
+<div class="fims-card-grid">
+<div class="fims-card">
+<div class="fims-card-icon">
+<p><i class="bi bi-terminal-fill"></i></p>
 </div>
-<div class="col-md-7">
-<div class="d-flex flex-column gap-4">
-<div class="d-flex gap-4">
-<div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
-<p><strong>1</strong></p>
+<section id="code-logic" class="level3">
+<h3 class="anchored" data-anchor-id="code-logic">Code &amp; Logic</h3>
+<p>Help implement new population dynamics features or optimize existing C++ and R libraries.</p>
+<ul>
+<li><i class="bi bi-check-circle-fill fims-text-success"></i> Good first issues</li>
+<li><i class="bi bi-check-circle-fill fims-text-success"></i> Bug triaging</li>
+</ul>
+</section>
 </div>
-<div>
-<h4 class="h5 fw-bold mb-1 anchored">
-Create an Account
-</h4>
-<p class="text-muted small mb-2">
-Join the NOAA FIMS community portal to access member-only forums and working groups.
-</p>
-<p><a href="#" class="text-primary fw-bold small text-decoration-none d-flex align-items-center"> <span class="me-1">Register Now</span> <span class="material-symbols-outlined fs-6">open_in_new</span> </a></p>
+<div class="fims-card">
+<div class="fims-card-icon">
+<p><i class="bi bi-file-earmark-text-fill"></i></p>
 </div>
+<section id="documentation" class="level3">
+<h3 class="anchored" data-anchor-id="documentation">Documentation</h3>
+<p>Clarify scientific methods, write tutorials, or improve our API documentation and guides.</p>
+<ul>
+<li><i class="bi bi-check-circle-fill fims-text-success"></i> Wiki updates</li>
+<li><i class="bi bi-check-circle-fill fims-text-success"></i> Use-case studies</li>
+</ul>
+</section>
 </div>
-<div class="d-flex gap-4">
-<div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
-<p><strong>2</strong></p>
+<div class="fims-card">
+<div class="fims-card-icon">
+<p><i class="bi bi-diagram-3-fill"></i></p>
 </div>
-<div>
-<h4 class="h5 fw-bold mb-1 anchored">
-Review Contribution Guidelines
-</h4>
-<p class="text-muted small mb-2">
-Read our technical and ethical standards for contributing to federal fisheries models.
-</p>
-<p><a href="#" class="text-primary fw-bold small text-decoration-none d-flex align-items-center"> <span class="me-1">Read Guidelines</span> <span class="material-symbols-outlined fs-6">description</span> </a></p>
-</div>
-</div>
-<div class="d-flex gap-4">
-<div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
-<p><strong>3</strong></p>
-</div>
-<div>
-<h4 class="h5 fw-bold mb-1 anchored">
-Join a Working Group
-</h4>
-<p class="text-muted small mb-2">
-Select a technical group that aligns with your expertise (e.g., C++ performance, Stock Assessment).
-</p>
-<p><a href="#" class="text-primary fw-bold small text-decoration-none d-flex align-items-center"> <span class="me-1">Browse Groups</span> <span class="material-symbols-outlined fs-6">groups</span> </a></p>
+<section id="scientific-peer-review" class="level3">
+<h3 class="anchored" data-anchor-id="scientific-peer-review">Scientific Peer Review</h3>
+<p>Participate in working groups to validate the mathematical integrity of new modeling modules.</p>
+<ul>
+<li><i class="bi bi-check-circle-fill fims-text-success"></i> Technical review</li>
+<li><i class="bi bi-check-circle-fill fims-text-success"></i> Algorithm testing</li>
+</ul>
+</section>
 </div>
 </div>
-<div class="d-flex gap-4">
-<div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
-<p><strong>4</strong></p>
+<div class="fims-steps-section">
+<section id="getting-involved" class="level2 fims-steps-intro">
+<h2 class="anchored" data-anchor-id="getting-involved">Getting Involved</h2>
+<p>Follow these 4 simple steps to start contributing to the FIMS project today.</p>
+<p><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAltB1R6XBf_Z-Hbsy65xcVFldL_qlcCpBGr6vGh1Mb4B4oVS5Gnb42wXR3ocssBdH1-FCfVJ53sEVeHdSDotx9Iw5innvwTWkUpi2lBUK2TRPbWzAYG52ZW6ch_4sZm49RORlMwairpSUjEOrh1oUkyInvjoq-_RlmDVv8-QEVrNa7bTHCOU8atNZPktTVI8-uosJy3Iv8BCINkYnTssmz2nodBk420ys2VlsThKJ3WM6VJ4g13gRTbMi5eAZr_X0ImlIiPTBqlTA.png" class="fims-steps-img img-fluid"></p>
+</section>
+<div class="fims-steps-list">
+<div class="fims-step">
+<div class="fims-step-number">
+<p>1</p>
 </div>
-<div>
-<h4 class="h5 fw-bold mb-1 anchored">
-Start Small
-</h4>
-<p class="text-muted small mb-3">
-Pick a ‘Good First Issue’ on GitHub and submit your first pull request for peer review.
-</p>
-<button class="btn btn-dark btn-sm px-4 fw-bold">
-Find First Issue
-</button>
+<section id="introduce-yourself" class="level4 fims-step-content">
+<h4 class="anchored" data-anchor-id="introduce-yourself">Introduce Yourself</h4>
+<p>Introduce yourself on the FIMS discussion board and start following discussions and the FIMS repository.</p>
+<p><a href="https://github.com/orgs/NOAA-FIMS/discussions/801" class="fims-step-link">Introduce Yourself <i class="bi bi-box-arrow-up-right"></i></a></p>
+</section>
 </div>
+<div class="fims-step">
+<div class="fims-step-number">
+<p>2</p>
 </div>
+<section id="go-through-the-fims-vignettes" class="level4 fims-step-content">
+<h4 class="anchored" data-anchor-id="go-through-the-fims-vignettes">Go through the FIMS Vignettes</h4>
+<p>Go through the FIMS vignettes to understand the package’s functionality.</p>
+<p><a href="https://noaa-fims.github.io/FIMS/" class="fims-step-link">Learn Now <i class="bi bi-file-text"></i></a></p>
+</section>
 </div>
+<div class="fims-step">
+<div class="fims-step-number">
+<p>3</p>
+</div>
+<section id="review-contribution-guide" class="level4 fims-step-content">
+<h4 class="anchored" data-anchor-id="review-contribution-guide">Review Contribution Guide</h4>
+<p>Read our technical standards for contributing to FIMS.</p>
+<p><a href="https://github.com/NOAA-FIMS/FIMS/blob/main/CONTRIBUTING.md" class="fims-step-link">Read Guide <i class="bi bi-file-text"></i></a></p>
+</section>
+</div>
+<div class="fims-step">
+<div class="fims-step-number">
+<p>4</p>
+</div>
+<section id="come-to-code-club-and-other-fims-trainings" class="level4 fims-step-content">
+<h4 class="anchored" data-anchor-id="come-to-code-club-and-other-fims-trainings">Come to Code Club and other FIMS trainings</h4>
+<p>Attend FIMS Code Clubs and trainings to learn more about contributing to FIMS and connect with other contributors. You don’t need to be an expert to attend - these are meant to be welcoming spaces for learning and collaboration!</p>
+<p><a href="../about/calendar.html'" class="fims-step-link">Browse Calendar <i class="bi bi-people"></i></a></p>
+</section>
+</div>
+<div class="fims-step">
+<div class="fims-step-number">
+<p>5</p>
+</div>
+<section id="start-small" class="level4 fims-step-content">
+<h4 class="anchored" data-anchor-id="start-small">Start Small</h4>
+<p>Pick a ‘Good First Issue’ on GitHub and submit your first pull request for peer review.</p>
+<p><a href="https://github.com/NOAA-FIMS/FIMS/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22" class="btn btn-dark fims-btn-small">Find First Issue</a></p>
+</section>
 </div>
 </div>
 </div>
@@ -688,8 +719,11 @@ Community Highlights
 .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; }
 .bg-gradient-dark { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); }
 </style>
+<section id="get-involved" class="level2">
+<h2 class="anchored" data-anchor-id="get-involved">Get Involved</h2>
 
 
+</section>
 
 </main> <!-- /main -->
 <script>

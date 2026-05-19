@@ -25,7 +25,28 @@
     "href": "community/index.html",
     "title": "Community & Collaboration | NOAA FIMS",
     "section": "",
-    "text": "Skip to main content\n\n\n\n\n\n\n\nFIMS Open Ecosystem\n\nCollaborating for Sustainable Fisheries\n\n\nJoin a global network of scientists, developers, and researchers building the future of fisheries integrated modeling. Open source, collaborative, and peer-reviewed.\n\n\n\ncampaign Get Involved Now\n\n\ncalendar_month Join Next Meeting\n\n\n\n\n\n\n\n\nEcosystem Pulse\n\n\nLive activity across the FIMS development pipeline.\n\n\n View Full Dashboard arrow_forward \n\n\n\n\n\n\n\n\nterminal\n\n\nRecent GitHub Activity\n\n\nfims / main\n\n\nLoading recent activity…\n\n\n\n\n\n\n\n\n\nNext Meeting\n\n\nTechnical Working Group: Implementation Specs\n\n\n\nevent October 24, 2024\n\n\nschedule 14:00 - 15:30 EST\n\n\n\n\nRegister for Invite\n\n\n\n\n\n\n\n\n\nWays to Contribute\n\n\nWhether you’re a seasoned modeler or a first-time open-source contributor, there’s a place for you in the FIMS community.\n\n\n\n\n\n\nterminal\n\n\nCode & Logic\n\n\nHelp implement new population dynamics features or optimize existing C++ and R libraries.\n\n\n\ncheck_circle Good first issues\n\n\ncheck_circle Bug triaging\n\n\n\n\n\n\n\ndescription\n\n\nDocumentation\n\n\nClarify scientific methods, write tutorials, or improve our API documentation and guides.\n\n\n\ncheck_circle Wiki updates\n\n\ncheck_circle Use-case studies\n\n\n\n\n\n\n\nscience\n\n\nScientific Peer Review\n\n\nParticipate in working groups to validate the mathematical integrity of new modeling modules.\n\n\n\ncheck_circle Technical review\n\n\ncheck_circle Algorithm testing\n\n\n\n\n\n\n\n\n\n\nGetting Involved\n\n\nFollow these 4 simple steps to start contributing to the FIMS project today.\n\n\n\n\n\n\n\n1\n\n\n\nCreate an Account\n\n\nJoin the NOAA FIMS community portal to access member-only forums and working groups.\n\n Register Now open_in_new \n\n\n\n\n2\n\n\n\nReview Contribution Guidelines\n\n\nRead our technical and ethical standards for contributing to federal fisheries models.\n\n Read Guidelines description \n\n\n\n\n3\n\n\n\nJoin a Working Group\n\n\nSelect a technical group that aligns with your expertise (e.g., C++ performance, Stock Assessment).\n\n Browse Groups groups \n\n\n\n\n4\n\n\n\nStart Small\n\n\nPick a ‘Good First Issue’ on GitHub and submit your first pull request for peer review.\n\n\nFind First Issue\n\n\n\n\n\n\n\n\n\nCommunity Highlights\n\n\n\n\n\n\nWorkshop 2024 Seattle, WA\n\n\n\n\n\n\n\nPeer Review session Virtual Session\n\n\n\n\n\n\n\nNew Contributor Day Online Event\n\n\n\n\n\n\n\nGovernance Meeting Washington, DC"
+    "text": "Skip to main content"
+  },
+  {
+    "objectID": "community/index.html#ways-to-contribute",
+    "href": "community/index.html#ways-to-contribute",
+    "title": "Community & Collaboration | NOAA FIMS",
+    "section": "Ways to Contribute",
+    "text": "Ways to Contribute\nWhether you’re a seasoned modeler or a first-time open-source contributor, there’s a place for you in the FIMS community."
+  },
+  {
+    "objectID": "community/index.html#getting-involved",
+    "href": "community/index.html#getting-involved",
+    "title": "Community & Collaboration | NOAA FIMS",
+    "section": "Getting Involved",
+    "text": "Getting Involved\nFollow these 4 simple steps to start contributing to the FIMS project today."
+  },
+  {
+    "objectID": "community/index.html#get-involved",
+    "href": "community/index.html#get-involved",
+    "title": "Community & Collaboration | NOAA FIMS",
+    "section": "Get Involved",
+    "text": "Get Involved"
   },
   {
     "objectID": "blog/index.html",
