@@ -27,14 +27,14 @@
   {
     "objectID": "get-started/power-user.html",
     "href": "get-started/power-user.html",
-    "title": "Power User",
+    "title": "FIMS",
     "section": "",
     "text": "Skip to main content\n:::\n:::"
   },
   {
     "objectID": "get-started/power-user.html#welcome",
     "href": "get-started/power-user.html#welcome",
-    "title": "Power User",
+    "title": "FIMS",
     "section": "Welcome!",
     "text": "Welcome!\n\nLet’s get you ready to dive deeper into FIMS.\n\n\n Power User Pathway"
   },
@@ -43,7 +43,7 @@
     "href": "get-started/index.html",
     "title": "Get Started",
     "section": "",
-    "text": "Skip to main content\n\n\n\n\n\n\nUnsure where to start? Choose your path!\n\nSelect the user pathway that best describes your goals. Click on the button for each pathway to see all of the resources available.\n\n\n\n\n\n\nI am a new(er) user to FIMS\nLearn how to create your own model in FIMS using R.\n\n Introductory vignette\n Diagnostics\n FIMS functions overview\n Transitioning to FIMS\n\n\nStart New User Path \n\n\n\n\n\n\n\n\nI am a power user\nLearn how to use FIMS beyond the R helper functions to configure your models in FIMS.\n\n Advanced vignettes\n Case studies\n Deep dive blog posts\n C++ documentation\n\n\nStart Power User Path \n\n\n\n\n\n\n\n\nI want to contribute to FIMS\nLearn how to contribute to FIMS, including how to contribute code, documentation, testing, etc.!\n\n Contributor guidelines\n Code club blog post\n FIMS good first issues\n FIMS project board\n\n\nStart Contributor Path \n\n\n\n\n\n\n\n\nI am a decision maker or manager\nLearn how to interpret FIMS outputs and use them to inform decision making.\n\n FAQ\n Project milestones\n Diagnostics\n Projects & publications\n\n\nStart Decision Maker Path",
+    "text": "Skip to main content\n\n\n\n\n\n\nUnsure where to start? Choose your path!\n\nSelect the user pathway that best describes your goals. Click on the button for each pathway to see all of the resources available.\n\n\n\n\n\n\nI am a new(er) user to FIMS\nLearn how to create your own model in FIMS using R.\n\n Introductory vignette\n Diagnostics\n Transitioning to FIMS\n\n\nStart New User Path \n\n\n\n\n\n\n\n\nI am a power user\nLearn how to use FIMS beyond the R helper functions to configure your models in FIMS.\n\n Advanced vignettes\n Case studies\n C++ documentation\n\n\nStart Power User Path \n\n\n\n\n\n\n\n\nI want to contribute to FIMS\nLearn how to contribute to FIMS, including how to contribute code, documentation, testing, etc.!\n\n Contributor guidelines\n Good first issues\n FIMS project board\n\n\nStart Contributor Path \n\n\n\n\n\n\n\n\nI am a decision maker or manager\nLearn how to interpret FIMS outputs and use them to inform decision making.\n\n FAQ\n Project milestones\n Projects & publications\n\n\nStart Decision Maker Path",
     "crumbs": [
       "get started",
       "Get Started"
@@ -52,14 +52,14 @@
   {
     "objectID": "get-started/decision-maker.html",
     "href": "get-started/decision-maker.html",
-    "title": "Decision Maker",
+    "title": "FIMS",
     "section": "",
     "text": "Skip to main content\n:::\n:::"
   },
   {
     "objectID": "get-started/decision-maker.html#welcome",
     "href": "get-started/decision-maker.html#welcome",
-    "title": "Decision Maker",
+    "title": "FIMS",
     "section": "Welcome!",
     "text": "Welcome!\n\nLet’s get you ready to make informed decisions using outputs from a FIMS model.\n\n\n Decision Maker Pathway"
   },
@@ -1784,14 +1784,14 @@
   {
     "objectID": "get-started/contributor.html",
     "href": "get-started/contributor.html",
-    "title": "Contributor",
+    "title": "FIMS",
     "section": "",
     "text": "Skip to main content\n:::\n:::"
   },
   {
     "objectID": "get-started/contributor.html#welcome",
     "href": "get-started/contributor.html#welcome",
-    "title": "Contributor",
+    "title": "FIMS",
     "section": "Welcome!",
     "text": "Welcome!\n\nLet’s get you ready to contribute to FIMS.\n\n\n Contributor Pathway"
   },
