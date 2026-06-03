@@ -53,3 +53,17 @@
   path: https://noaa-fims.github.io/fims-pkgdown-template/
   image: ../images/FIMS_hexlogo.png
   categories: [pkgdown, template]
+- title: fishprior
+  weight: 16
+  description: >
+    An R package to generate priors for models that assess the status of marine resources
+  path: https://noaa-fims.github.io/fishprior/
+  image: ../images/FIMS_hexlogo.png
+  categories: []
+- title: ecosystemom
+  weight: 17
+  description: >
+    Ecosystem operating model. Generates data sets from ecosystem model scenarios for stock assessment models.
+  path: https://noaa-fims.github.io/ecosystemom/
+  image: ../images/FIMS_hexlogo.png
+  categories: []
