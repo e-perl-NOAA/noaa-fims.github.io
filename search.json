@@ -43,25 +43,36 @@
     "href": "get-started/index.html",
     "title": "Get Started",
     "section": "",
-    "text": "Skip to main content\n\n\n\n\n\n\nUnsure where to start? Choose your path!\n\nSelect the user pathway that best describes your goals. Click on the button for each pathway to see all of the resources available.\n\n\n\n\n\n\n\nI am a new user\nLearn how to create your own model in FIMS using R.\n\n Introductory vignette\n Diagnostics\n Transitioning to FIMS\n\n\nStart New User Path \n\n\n\n\n\n\n\n\nI am a power user\nLearn how to use FIMS beyond the R helper functions.\n\n Advanced vignettes\n Case studies\n C++ documentation\n\n\nStart Power User Path \n\n\n\n\n\n\n\n\nI want to contribute\nLearn how to contribute contribute code, documentation, testing, etc. to FIMS!\n\n Contributor guidelines\n Good first issues\n FIMS project board\n\n\nStart Contributor Path \n\n\n\n\n\n\n\n\nI am a decision maker or manager\nLearn how to interpret FIMS outputs and use them to inform decision making.\n\n FAQ\n Project milestones\n Projects & publications\n\n\nStart Decision Maker Path",
+    "text": "Skip to main content\n\n\n\n\n\n\nUnsure where to start? Choose your path!\n\nSelect the user pathway that best describes your goals. Click on the button for each pathway to see all of the resources available.\n\n\n\n\n\n\n\nI am a new user\nGet connected to FIMS resources and learn how to run a model in FIMS.\n\n Welcome to FIMS!\n Running a basic FIMS model\n FIMS Input Data\n\n\nStart New User Path \n\n\n\n\n\n\n\n\nI am an emerging user\nGo beyond the default configurations, run diagnostics, etc.\n\n Diagnostics\n Changing model configurations\n Comparing FIMS to other models\n\n\nStart Emerging User Path \n\n\n\n\n\n\n\n\nI am an advanced user\nMove beyond the common wrapper functions to set up custom configurations..\n\n Building FIMS from modules\n Alternative model families\n Running model comparisons\n\n\nStart Advanced User Path \n\n\n\n\n\n\n\n\nI am a power user\nLearn how to use FIMS beyond the R helper functions.\n\n Advanced vignettes\n Case studies\n C++ documentation\n\n\nStart Power User Path \n\n\n\n\n\n\n\n\nI want to contribute\nLearn how to contribute contribute code, documentation, testing, etc. to FIMS!\n\n Contributor guidelines\n Good first issues\n FIMS project board\n\n\nStart Contributor Path \n\n\n\n\n\n\n\n\nI am a decision maker or manager\nLearn how to interpret FIMS outputs and use them to inform decision making.\n\n FAQ\n Project milestones\n Projects & publications\n\n\nStart Decision Maker Path",
     "crumbs": [
       "get started",
       "Get Started"
     ]
   },
   {
-    "objectID": "get-started/decision-maker.html",
-    "href": "get-started/decision-maker.html",
+    "objectID": "get-started/documentation.html",
+    "href": "get-started/documentation.html",
+    "title": "Documentation",
+    "section": "",
+    "text": "Skip to main content",
+    "crumbs": [
+      "get started",
+      "Documentation"
+    ]
+  },
+  {
+    "objectID": "get-started/contributor.html",
+    "href": "get-started/contributor.html",
     "title": "FIMS",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "get-started/decision-maker.html#welcome",
-    "href": "get-started/decision-maker.html#welcome",
+    "objectID": "get-started/contributor.html#welcome",
+    "href": "get-started/contributor.html#welcome",
     "title": "FIMS",
     "section": "Welcome!",
-    "text": "Welcome!\n\nLet’s get you ready to make informed decisions using outputs from a FIMS model.\n\n\n Decision Maker Pathway"
+    "text": "Welcome!\n\nLet’s get you ready to contribute to FIMS.\n\n\n Contributor Pathway"
   },
   {
     "objectID": "community/projects.html",
@@ -1747,29 +1758,39 @@
     ]
   },
   {
-    "objectID": "get-started/contributor.html",
-    "href": "get-started/contributor.html",
+    "objectID": "get-started/advanced-user.html",
+    "href": "get-started/advanced-user.html",
+    "title": "FIMS",
+    "section": "",
+    "text": "Skip to main content\n\n\n\n\n\npage-layout: full header-includes: &gt;  \n\n\n\n\n New User  Emerging User  Advanced User  Power User  Contributor  Decision Maker"
+  },
+  {
+    "objectID": "get-started/decision-maker.html",
+    "href": "get-started/decision-maker.html",
     "title": "FIMS",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "get-started/contributor.html#welcome",
-    "href": "get-started/contributor.html#welcome",
+    "objectID": "get-started/decision-maker.html#welcome",
+    "href": "get-started/decision-maker.html#welcome",
     "title": "FIMS",
     "section": "Welcome!",
-    "text": "Welcome!\n\nLet’s get you ready to contribute to FIMS.\n\n\n Contributor Pathway"
+    "text": "Welcome!\n\nLet’s get you ready to make informed decisions using outputs from a FIMS model.\n\n\n Decision Maker Pathway"
   },
   {
-    "objectID": "get-started/documentation.html",
-    "href": "get-started/documentation.html",
-    "title": "Documentation",
+    "objectID": "get-started/emerging-user.html",
+    "href": "get-started/emerging-user.html",
+    "title": "FIMS",
     "section": "",
-    "text": "Skip to main content",
-    "crumbs": [
-      "get started",
-      "Documentation"
-    ]
+    "text": "Skip to main content"
+  },
+  {
+    "objectID": "get-started/emerging-user.html#you-have-leveled-up",
+    "href": "get-started/emerging-user.html#you-have-leveled-up",
+    "title": "FIMS",
+    "section": "You have leveled up!",
+    "text": "You have leveled up!\n\nTime to move into diagnostics and customizations.\n\n\n Emerging User Pathway"
   },
   {
     "objectID": "get-started/new-user.html",

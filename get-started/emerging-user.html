@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>new-user – FIMS</title>
+<title>emerging-user – FIMS</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -84,7 +84,6 @@ ul.task-list li input[type="checkbox"] {
     if (el) el.textContent = '© ' + year;
   });
 </script>
-<link rel="stylesheet" href="../assets/community.css"> <link rel="stylesheet" href="../assets/pathways.css"> <script src="../assets/pathways.js" defer=""></script>
 
 
 <link rel="stylesheet" href="../assets/panelset-extras.css">
@@ -92,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
 <meta property="og:site_name" content="FIMS">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -328,12 +327,12 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 <!-- Skip to main content link for keyboard accessibility -->
 <a href="#quarto-content" class="skip-link">Skip to main content</a>
@@ -361,17 +360,20 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+page-layout: full header-includes: &gt; <link rel="stylesheet" href="../assets/community.css"> <link rel="stylesheet" href="../assets/pathways.css">
+<script src="../assets/pathways.js" defer=""></script>
+<hr>
 <div class="fims-onboarding-container">
 <div class="fims-pathway-pills">
-<p><a href="../new-user.qmd" class="fims-pill is-active"><i class="bi bi-person-plus"></i> New User</a> <a href="../emerging-user.qmd" class="fims-pill"><i class="bi bi-person-up"></i> Emerging User</a> <a href="../advanced-user.qmd" class="fims-pill"><i class="bi bi-rocket"></i> Advanced User</a> <a href="../power-user.qmd" class="fims-pill"><i class="bi bi-lightning"></i> Power User</a> <a href="../contributor.qmd" class="fims-pill"><i class="bi bi-code-square"></i> Contributor</a> <a href="../decision-maker.qmd" class="fims-pill"><i class="bi bi-file-bar-graph"></i> Decision Maker</a></p>
+<p><a href="../get-started/new-user.html" class="fims-pill"><i class="bi bi-person-plus"></i> New User</a> <a href="../get-started/emerging-user.html" class="fims-pill is-active"><i class="bi bi-person-up"></i> Emerging User</a> <a href="../get-started/advanced-user.html" class="fims-pill"><i class="bi bi-rocket"></i> Advanced User</a> <a href="../get-started/power-user.html" class="fims-pill"><i class="bi bi-lightning"></i> Power User</a> <a href="../get-started/contributor.html" class="fims-pill is-active"><i class="bi bi-code-square"></i> Contributor</a> <a href="../get-started/decision-maker.html" class="fims-pill"><i class="bi bi-file-bar-graph"></i> Decision Maker</a></p>
 </div>
-<section id="welcome" class="level2 fims-onboarding-header">
-<h2 class="anchored" data-anchor-id="welcome">Welcome!</h2>
+<section id="you-have-leveled-up" class="level2 fims-onboarding-header">
+<h2 class="anchored" data-anchor-id="you-have-leveled-up">You have leveled up!</h2>
 <p>
-Let’s get you set up to run your first model in FIMS.
+Time to move into diagnostics and customizations.
 </p>
 <h3 class="anchored">
-<i class="bi bi-signpost-split"></i> New User Pathway
+<i class="bi bi-signpost-split"></i> Emerging User Pathway
 </h3>
 </section>
 <div class="fims-timeline">
@@ -381,13 +383,12 @@ Let’s get you set up to run your first model in FIMS.
 </div>
 <div class="fims-step-content">
 <h4 class="anchored">
-Some info before you start!
+Diagnostics
 </h4>
 <p>
-Use the links below to learn more about FIMS.
+Run diagnostic checks to ensure your model is properly configured.
 </p>
-<p><a href="https://e-perl-noaa.github.io/noaa-fims.github.io/about/faq.html" class="fims-btn-small fims-task-btn" target="_blank"><i class="bi bi-info-circle"></i> FAQs</a></p>
-<p><a href="https://noaa-fims.github.io/blog/index.html" class="fims-btn-small fims-task-btn" target="_blank"><i class="bi bi-layout-text-window"></i> Check out our blog</a></p>
+<p><a href="https://e-perl-noaa.github.io/noaa-fims.github.io/FIMS/FIMSdiags" class="fims-btn-small fims-task-btn" target="_blank">Start <i class="bi bi-arrow-right"></i></a></p>
 </div>
 </div>
 <div class="fims-step fims-timeline-item">
@@ -396,102 +397,17 @@ Use the links below to learn more about FIMS.
 </div>
 <div class="fims-step-content">
 <h4 class="anchored">
-FIMS Community
+FIMS Features Comparison to Other Models
 </h4>
 <p>
-Introduce yourself and get involved in the FIMS community.
+Compare FIMS features with other modeling frameworks.
 </p>
-<p><a href="https://github.com/orgs/NOAA-FIMS/discussions/801" class="fims-btn-small fims-task-btn" target="_blank"><i class="bi bi-person-plus"></i> Introduce yourself to the team</a></p>
-<p><a href="https://github.com/orgs/NOAA-FIMS/discussions/" class="fims-btn-small fims-task-btn" target="_blank"><i class="bi bi-chat-text"></i> Get involved in other discussions</a></p>
-<p><a href="https://noaa-fims.github.io/about/calendar.html" class="fims-btn-small fims-task-btn" target="_blank"><i class="bi bi-calendar-week"></i> View and add the FIMS calendar</a></p>
-<p><a href="https://github.com/orgs/NOAA-FIMS/discussions/1461#discussioncomment-17065818" class="fims-btn-small fims-task-btn" target="_blank"><i class="bi bi-envelope"></i> Subscribe to our weekly newsletter</a></p>
+<p><a href="https://noaa-fims.github.io/about/#comparison-to-other-frameworks" class="fims-btn-small fims-task-btn" target="_blank">Start <i class="bi bi-arrow-right"></i></a></p>
 </div>
 </div>
-<div class="fims-step fims-timeline-item">
-<div class="fims-step-number">
-<p><i class="bi bi-geo-alt-fill"></i></p>
-</div>
-<div class="fims-step-content">
-<h4 class="anchored">
-Build a basic FIMS model
-</h4>
-<p>
-Walk through the model and data initial setup and familiarize yourself with the interface.
-</p>
-<p><a href="https://noaa-fims.github.io/FIMS/articles/fims-demo.html" class="fims-btn-small fims-task-btn" target="_blank"><i class="bi bi-rocket"></i> Introduction to FIMS</a></p>
-<p><a href="https://noaa-fims.github.io/FIMS/articles/fims-input-data.html" class="fims-btn-small fims-task-btn" target="_blank"><i class="bi bi-file-spreadsheet"></i> FIMS Input Data</a></p>
-</div>
-</div>
-<div class="fims-step fims-timeline-item">
-<div class="fims-step-number">
-<p><i class="bi bi-geo-alt-fill"></i></p>
-</div>
-<div class="fims-step-content">
-<h4 class="anchored">
-FIMS Functions Overview
-</h4>
-<p>
-Learn about the different functions available in FIMS and how to use them.
-</p>
-<p><a href="https://noaa-fims.github.io/FIMS/reference/index.html" class="fims-btn-small fims-task-btn" target="_blank">Start <i class="bi bi-arrow-right"></i></a></p>
-</div>
-</div>
-<div class="fims-step fims-timeline-item is-last">
-<div class="fims-step-number">
-<p><i class="bi bi-geo-alt-fill"></i></p>
-</div>
-<div class="fims-step-content">
-<h4 class="anchored">
-Transition to FIMS
-</h4>
-<p>
-Learn about transitioning to FIMS from other frameworks and how to adapt your workflow.
-</p>
-<p><a href="https://e-perl-noaa.github.io/noaa-fims.github.io/get-started/transitioning.html" class="fims-btn-small fims-task-btn" target="_blank">Start <i class="bi bi-arrow-right"></i></a></p>
-</div>
-</div>
-<div class="fims-kb-header">
-<h3 class="anchored">
-Additional Resources &amp; Links
-</h3>
-</div>
-<div class="fims-horizontal-scroll">
-<div class="fims-card position-relative">
-<p><a href="https://noaa-fims.github.io/resources/packages.html" class="stretched-link"></a></p>
-<div class="fims-card-icon bi bi-box-seam">
-
-</div>
-<h4 class="anchored">
-FIMS R Packages
-</h4>
-<p>
-Other R packages for FIMS.
-</p>
-</div>
-<!-- ::: {.fims-card .position-relative}
-
-<a href="https://noaa-fims.github.io/blog/index.html" class="stretched-link"></a>
-
-::: {.fims-card-icon .bi .bi-layout-text-window}
-:::
-
-<h4>FIMS Blog</h4>
-<p>Latest FIMS news and updates.</p>
-::: -->
-<!-- ::: {.fims-card .position-relative}
-
-<a href="https://noaa-fims.github.io/about/calendar.html" class="stretched-link"></a>
-
-::: {.fims-card-icon .bi .bi-calendar-event}
-:::
-
-<h4>FIMS Calendar</h4>
-<p>Upcoming events like Code Clubs, tutorials, etc.</p>
-::: -->
 </div>
 
 
-</div>
 </div>
 
 </main> <!-- /main -->
