@@ -45,9 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-14aad849e97d8950c2760daefbaa3b89.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2ceb02406639006746979d27e17301c4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-4a565cc70d35829269a130dd26b1b8e3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-2ceb02406639006746979d27e17301c4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dfea53706f232d8b1d164479d70bca47.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-7c0a235c8966e5d444d070b57f932bae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-dfea53706f232d8b1d164479d70bca47.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../assets/panelset-extras.css">
 <meta property="og:title" content="Community &amp; Collaboration – FIMS">
-<meta property="og:description" content="">
+<meta property="og:description" content="News and updates from the Fisheries Integrated Modeling System project.">
 <meta property="og:image" content="https://noaa-fims.github.io/images/fims_dashboard.png">
 <meta property="og:site_name" content="FIMS">
 <meta property="og:image:height" content="512">
@@ -480,24 +480,24 @@ FIMS Code Club
 </p>
 <div class="mb-4 small opacity-75" style="display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
 <p>
-<a href="https://github.com/orgs/NOAA-FIMS/projects/28/views/1" target="_blank"><u>GitHub Project Board for Code Club</u></a>
-</p>
-<p>
-Code Club serves as a monthly FIMS community call where <b>ALL</b> community members are welcome regardless of their skill set. Here is the <a href="https://meet.google.com/ica-ieta-ndu" target="_blank">link to join</a>. We will meet and split into breakout groups to work on defined tasks related to code and documentation. This community call will be structured as a mini-hackathon with the goal to complete a pull request for the defined issue. A main issue will be announced ahead of the meeting (see individual calendar invites or the <a href="https://github.com/orgs/NOAA-FIMS/projects/28/views/1">Project Board</a>&nbsp;for topics) and anyone is welcome to come with their own tasks and work quietly in a silent breakout room if the main issue is not of interest.
+Experiment with internal estimation of growth. Adrianne will guide us through the ability to estimate growth within FIMS and how to set things up and fit to your data.
 </p>
 <p>
 <br>
 </p>
 <p>
-This week we will work on getting the case studies repository up to speed.
+<a href="https://github.com/orgs/NOAA-FIMS/projects/28/views/1" target="_blank"><u>GitHub Project Board for Code Club</u></a>
+</p>
+<p>
+Code Club serves as a monthly FIMS community call where <b>ALL</b> community members are welcome regardless of their skill set. Here is the <a href="https://meet.google.com/ica-ieta-ndu" target="_blank">link to join</a>. We will meet and split into breakout groups to work on defined tasks related to code and documentation. This community call will be structured as a mini-hackathon with the goal to complete a pull request for the defined issue. A main issue will be announced ahead of the meeting (see individual calendar invites or the FIMS Weekly for topics) and anyone is welcome to come with their own tasks and work quietly in a silent breakout room if the main issue is not of interest.
 </p>
 </div>
 <div class="fims-meeting-datetime">
 <div class="fims-meeting-row">
-<i class="bi bi-calendar-event-fill fims-icon-danger"></i> <strong>June 25, 2026</strong>
+<i class="bi bi-calendar-event-fill fims-icon-danger"></i> <strong>July 21, 2026</strong>
 </div>
 <div class="fims-meeting-row">
-<i class="bi bi-clock-fill fims-icon-danger"></i> <strong>09:00 EDT</strong>
+<i class="bi bi-clock-fill fims-icon-danger"></i> <strong>16:00 EDT</strong>
 </div>
 </div>
 </div>
@@ -643,21 +643,48 @@ document.addEventListener("DOMContentLoaded", function () {
     "/FIMSdiags/",
     "/FIMSRTMB/",
     "/fims-pkgdown-template/",
-    "/ecosystemom/"
+    "/ecosystemom/",
     "/fishprior/"
   ];
 
   document.querySelectorAll("a[href]").forEach(function (link) {
     var href = link.getAttribute("href");
-    if (!href) return;
+    if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:")) {
+      return;
+    }
 
-    var url = new URL(href, window.location.origin);
-    var isExternal = url.hostname !== window.location.hostname;
-    var isForcedInternal = forceNewTabPaths.includes(url.pathname);
+    try {
+      var url = new URL(href, window.location.origin);
+      var isExternal = url.hostname !== window.location.hostname;
+      var isForcedInternal = forceNewTabPaths.includes(url.pathname);
 
-    if (isExternal || isForcedInternal) {
-      link.setAttribute("target", "_blank");
-      link.setAttribute("rel", "noopener noreferrer");
+      if (isExternal || isForcedInternal) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+
+        // Accessibility Fix: Add a screen-reader-only warning if not already present
+        if (!link.hasAttribute("data-new-tab-warning")) {
+          var srWarning = document.createElement("span");
+          srWarning.textContent = " (opens in a new tab)";
+
+          // Use CSS to hide this text visually, but keep it available to screen readers
+          srWarning.style.position = "absolute";
+          srWarning.style.width = "1px";
+          srWarning.style.height = "1px";
+          srWarning.style.padding = "0";
+          srWarning.style.margin = "-1px";
+          srWarning.style.overflow = "hidden";
+          srWarning.style.clip = "rect(0, 0, 0, 0)";
+          srWarning.style.whiteSpace = "nowrap";
+          srWarning.style.border = "0";
+          
+          link.appendChild(srWarning);
+          // Prevent duplicates
+          link.setAttribute("data-new-tab-warning", "true");
+        }
+      }
+    } catch (error) {
+      console.warn("Skipping invalid link URL:", href, error);
     }
   });
 });
@@ -1085,7 +1112,7 @@ document.addEventListener("DOMContentLoaded", function () {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a class="link-dark" href="https://github.com/NOAA-FIMS" title="FIMS on GitHub" aria-label="Visit FIMS on GitHub" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i></a> <a class="link-dark" href="https://noaa-fims.r-universe.dev" title="FIMS R Universe" aria-label="Visit FIMS R Universe repository" target="_blank" rel="noopener"><i class="fab fa-r-project" aria-hidden="true"></i></a></p>
+<p><a class="link-dark" href="https://github.com/NOAA-FIMS" title="FIMS on GitHub" aria-label="Visit FIMS on GitHub" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i></a> <a class="link-dark" href="https://noaa-fisheries-integrated-toolbox.r-universe.dev" title="FIMS R Universe" aria-label="Visit FIMS R Universe repository" target="_blank" rel="noopener"><i class="fab fa-r-project" aria-hidden="true"></i></a></p>
 </div>
   </div>
 </footer>
