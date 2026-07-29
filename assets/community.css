@@ -321,20 +321,24 @@
 }
 
 .fims-step-content p {
-  color: #6c757d;
+  color: #4a636c; /* Increased contrast from #6c757d to meet WCAG AA */
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
   line-height: 1.4;
 }
 
 .fims-step-link {
-  color: var(--bs-primary, #0d6efd);
+  color: var(--blue-30, #0e6876); /* Increased contrast to meet WCAG AA */
   font-weight: 700;
   font-size: 0.85rem;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
+}
+
+.fims-task-btn {
+  color: var(--blue-30, #0e6876) !important; /* High contrast task link button */
 }
 
 .fims-step-link:hover {
