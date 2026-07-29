@@ -22,3 +22,7 @@ https://docs.google.com/forms/*
 
 # Ignore this C++ resources link, it works, it just keeps giving 403 error
 https://www.positioniseverything.net/category/coding/c/
+
+# Ignore local sitemap.xml because it references the production domain where new/unmerged pages do not yet exist
+_site/sitemap.xml
+sitemap.xml
