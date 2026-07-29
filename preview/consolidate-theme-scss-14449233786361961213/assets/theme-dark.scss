@@ -1,0 +1,575 @@
+/*-- scss:defaults --*/
+
+// =============================================================================
+// COLOR PALETTE (originally from colors.scss)
+// =============================================================================
+$red-100: #fff8f9;
+$red-90: #fee8eb;
+$red-80: #fdc7cd;
+$red-70: #fca4ae;
+$red-60: #fb7e8c;
+$red-50: #f54f61;
+$red-40: #c94150;
+$red-30: #a83643;
+$red-20: #852b35;
+$red-10: #6a222a;
+$orange-100: #fef9f2;
+$orange-90: #fdebd3;
+$orange-80: #f9cd91;
+$orange-70: #f5ae4b;
+$orange-60: #ef8c02;
+$orange-50: #cb7702;
+$orange-40: #a76101;
+$orange-30: #8b5101;
+$orange-20: #6e4001;
+$orange-10: #573301;
+$green-100: #f6fbf7;
+$green-90: #e2f2e3;
+$green-80: #b9deb9;
+$green-70: #93ca8d;
+$green-60: #7ab26f;
+$green-50: #69965d;
+$green-40: #587b4b;
+$green-30: #4b663d;
+$green-20: #3c5130;
+$green-10: #304025;
+$blue-100: #f7fafb;
+$blue-90: #e4f0f1;
+$blue-80: #bed9de;
+$blue-70: #97c4ca;
+$blue-60: #71aeb7;
+$blue-50: #4896a1;
+$blue-40: #1c7d8b;
+$blue-30: #0e6876;
+$blue-20: #0b535d;
+$blue-10: #09414a;
+$purple-100: #fafafb;
+$purple-90: #ededf1;
+$purple-80: #d4d3dd;
+$purple-70: #bcbac9;
+$purple-60: #a4a2b6;
+$purple-50: #8a88a2;
+$purple-40: #716f8e;
+$purple-30: #5e5b7f;
+$purple-20: #4a466f;
+$purple-10: #3a3662;
+$pink-100: #fdf9fb;
+$pink-90: #f9e9f3;
+$pink-80: #f1c9e1;
+$pink-70: #e9a9cf;
+$pink-60: #e088bd;
+$pink-50: #d661a7;
+$pink-40: #b0508a;
+$pink-30: #934373;
+$pink-20: #74355b;
+$pink-10: #5c2a48;
+$slate-100: #f9fafa;
+$slate-90: #ebeeef;
+$slate-80: #cfd5d8;
+$slate-70: #b3bec2;
+$slate-60: #99a6ac;
+$slate-50: #7c8e95;
+$slate-40: #60757e;
+$slate-30: #4a636c;
+$slate-20: #334f5a;
+$slate-10: #213f4b;
+$slate-00: #0e181e;
+
+$theme: "zephyr-dark" !default;
+
+// =============================================================================
+// DARK MODE VARIABLE DEFINITIONS & BOOTSTRAP OVERRIDES (originally from zephyr-dark.scss)
+// =============================================================================
+$white-zephyr:    #fff !default;
+$gray-100-zephyr: #f8f9fa !default;
+$gray-200-zephyr: #e9ecef !default;
+$gray-300-zephyr: #dee2e6 !default;
+$gray-400-zephyr: #ced4da !default;
+$gray-500-zephyr: #adb5bd !default;
+$gray-600-zephyr: #6c757d !default;
+$gray-700-zephyr: #495057 !default;
+$gray-800-zephyr: #343a40 !default;
+$gray-900-zephyr: #212529 !default;
+$black-zephyr:    #000 !default;
+
+$blue-zephyr:    #3459e6 !default;
+$indigo-zephyr:  #6610f2 !default;
+$purple-zephyr:  #6f42c1 !default;
+$pink-zephyr:    #d63384 !default;
+$red-zephyr:     #da292e !default;
+$orange-zephyr:  #f8765f !default;
+$yellow-zephyr:  #f4bd61 !default;
+$green-zephyr:   #2fb380 !default;
+$teal-zephyr:    #20c997 !default;
+$cyan-zephyr:    #287bb5 !default;
+
+// =============================================================================
+// FIMS DARK COLOR SYSTEM OVERRIDES (originally from styles-elm-dark.scss)
+// =============================================================================
+$white:    $slate-100;
+$gray-100: $slate-90;
+$gray-200: $slate-80;
+$gray-300: $slate-70;
+$gray-400: $slate-60;
+$gray-500: $slate-50;
+$gray-600: $slate-40;
+$gray-700: $slate-30;
+$gray-800: $slate-20;
+$gray-900: $slate-10;
+$black:    $slate-00;
+
+$blue:    $blue-50;
+$indigo:  #E574BC !default;
+$purple:  $purple-50;
+$pink:    $pink-60;
+$red:     $red-60;
+$orange:  $orange-60;
+$yellow:  $orange-70;
+$green:   $green-60;
+$teal:    $blue-40;
+$cyan:    $blue-60;
+
+$primary:       $blue !default;
+$secondary:     $blue-10 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+
+$headings-color: $blue-80;
+$title-banner-color: $headings-color;
+
+// Quarto variables
+$navbar-bg: $black;
+$link-color: $blue-50;
+$code-color: $pink-60;
+$code-bg: $black;
+$footer-bg: $black;
+$quarto-border-color: $slate-20;
+
+// Bootstrap Alerts
+$alert-bg-scale: 66%;
+$alert-border-scale: 50%;
+$alert-color-scale: -30%;
+$alert-link-scale: 5%;
+
+$dropdown-link-hover-bg: $blue-20;
+
+$min-contrast-ratio:   1.65 !default;
+$enable-shadows:              true !default;
+
+// Body
+$body-color:     $gray-200 !default;
+$body-bg:        $black;
+
+// Fonts (from zephyr-dark)
+$font-family-sans-serif:      Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-size-base:              1rem !default;
+$font-size-sm:                $font-size-base * .875 !default;
+
+// Components
+$box-shadow:                  0 1px 2px rgba($gray-900, .05) !default;
+$box-shadow-lg:               0 1px 3px 0 rgba($gray-900, .1), 0 1px 2px 0 rgba($gray-900, .06) !default;
+
+// Tables
+$table-cell-padding-y:        1rem !default;
+$table-cell-padding-x:        1rem !default;
+$table-cell-padding-y-sm:     .5rem !default;
+$table-cell-padding-x-sm:     .5rem !default;
+$table-th-font-weight:        500 !default;
+
+// Buttons + Forms
+$input-btn-padding-y:         .5rem !default;
+$input-btn-padding-x:         1rem !default;
+$input-btn-font-size:         $font-size-sm !default;
+
+// Buttons
+$btn-font-weight:             500 !default;
+$btn-box-shadow:              $box-shadow !default;
+$btn-focus-box-shadow:        $box-shadow !default;
+$btn-active-box-shadow:       $box-shadow !default;
+
+// Forms
+$form-label-font-weight:                500 !default;
+$input-box-shadow:                      $box-shadow !default;
+$input-group-addon-bg:                  $gray-900 !default;
+
+// Navs
+$nav-link-color:                    $body-color !default;
+$nav-link-hover-color:              $body-color !default;
+$nav-tabs-border-radius:            0 !default;
+$nav-tabs-link-active-color:        $primary !default;
+
+// Navbar
+$navbar-padding-y:                  .85rem !default;
+$navbar-nav-link-padding-x:         .75rem !default;
+$navbar-dark-color:                 $black !default;
+$navbar-dark-hover-color:           $black !default;
+$navbar-dark-active-color:          $black !default;
+$navbar-light-color:                $white !default;
+$navbar-light-hover-color:          $white !default;
+$navbar-light-active-color:         $white !default;
+
+// Dropdowns
+$dropdown-color:                    $white;
+$dropdown-bg:                       mix($black, $gray-900, 50%);
+$dropdown-font-size:                $font-size-sm !default;
+$dropdown-border-color:             $gray-700 !default;
+$dropdown-divider-bg:               $gray-800 !default;
+$dropdown-link-color:               $light;
+$dropdown-link-hover-color:         $white !default;
+
+// Pagination
+$pagination-padding-y:              .5rem !default;
+$pagination-padding-x:              1rem !default;
+$pagination-color:                  $gray-300 !default;
+$pagination-bg:                     $gray-900;
+$pagination-border-color:           $gray-700;
+$pagination-focus-color:            $pagination-color !default;
+$pagination-focus-background:       $gray-700;
+$pagination-hover-color:            $pagination-color !default;
+$pagination-hover-bg:               $gray-800 !default;
+$pagination-disabled-color:         $gray-600;
+$pagination-disabled-bg:            $gray-900;
+
+// Cards
+$card-spacer-x:                     1.5rem !default;
+$card-cap-padding-y:                1rem !default;
+$card-cap-padding-x:                1.5rem !default;
+$card-border-color:                 rgba($white, .125);
+$card-cap-bg:                       rgba($white, .03);
+$card-cap-color:                    null;
+$card-color:                        null;
+$card-bg:                           $black;
+
+// Accordions
+$accordion-button-bg:               mix($black, $gray-900, 50%);
+$accordion-button-active-bg:        $gray-900;
+$accordion-button-active-color:     $white;
+
+// Toasts
+$toast-header-color:                $headings-color !default;
+
+// Modals
+$modal-content-bg:                  $black;
+$modal-content-border-color:        $gray-700 !default;
+$modal-header-border-width:         0 !default;
+
+// List group
+$list-group-item-padding-y:         1rem !default;
+$list-group-item-padding-x:         1.5rem !default;
+
+// Breadcrumbs
+$breadcrumb-padding-x:              1rem !default;
+$breadcrumb-divider:                quote(">") !default;
+
+// Progress Bars
+$progress-bg:                       $gray-900;
+$progress-bar-color:                $gray-800;
+
+// Toasts
+$toast-color:                       null;
+$toast-background-color:            rgba($black, .85);
+$toast-border-color:                rgba($white, .1);
+$toast-header-color:                $gray-100;
+$toast-header-background-color:     rgba($black, .85);
+$toast-header-border-color:         rgba($white, .05);
+
+
+/*-- scss:mixins --*/
+@mixin alert-variant($background, $border, $color) {
+  color: $color;
+  @include gradient-bg($background);
+  border-color: $border;
+
+  .alert-link {
+    color: shade-color($color, $alert-link-scale);
+  }
+}
+
+
+/*-- scss:rules --*/
+
+// =============================================================================
+// DYNAMIC IMPORTS & FONTS
+// =============================================================================
+$web-font-path-zephyr: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" !default;
+@if $web-font-path-zephyr {
+  @import url($web-font-path-zephyr);
+}
+
+// =============================================================================
+// DARK THEME COMPONENT STYLES (originally from styles-elm-dark.scss)
+// =============================================================================
+:root {
+  --quarto-border-color: var(--slate-20);
+}
+
+.quarto-title-banner {
+  @extend .border-bottom, .border-2, .bg-black, .border-dark;
+}
+
+.quarto-title-banner .quarto-title .title {
+  font-weight: 400 !important;
+  font-size: calc(1.5rem + 1.14vw);
+
+  #title-block-header.quarto-title-block & {
+    margin-bottom: 0.5rem !important;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: calc(2.5rem + 1.14vw);
+  }
+}
+
+h2 {
+  border-bottom: 2px solid (var(--bs-dark));
+}
+
+div.quarto-post .listing-categories .listing-category {
+  color: $slate-50;
+	border: solid 1px $slate-30;
+}
+
+.input-group-text, .form-control, .form-select {
+  border:1px solid $slate-30;
+}
+
+.quarto-listing-default div.quarto-post {
+  border-bottom: 1px solid $slate-30;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  background-color: $black;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: $black;
+}
+
+// about page - trestles template
+@media(min-width: 992px) {
+  div.quarto-about-trestles .about-contents {
+   border-left-color: $slate-30;
+  }
+}
+
+div.quarto-about-trestles .about-entity .about-link {
+	color: $blue-70;
+}
+
+/* Bootstrap Fixups */
+.btn-secondary, .btn-outline-secondary {
+	color: $blue-80;
+}
+
+/* index.html */
+.social-icon-links .link-primary {
+  color: $pink-40;
+  &:hover, &:focus {
+    color: $pink-50;
+    i {
+      transform: scale(1.25);
+      transform-origin: center center;
+    }
+  }
+}
+
+div.quarto-post .listing-categories .listing-category,
+.quarto-title-block .quarto-title .quarto-categories .quarto-category {
+  border-color: $pink-60;
+  color: $pink-90;
+  background-color: $pink-10;
+  opacity: 0.8
+}
+
+div.quarto-post .listing-categories .listing-category {
+  opacity: 0.6;
+}
+
+.quarto-dark .code-with-filename .code-with-filename-file {
+  background-color: var(--slate-10);
+}
+
+
+// =============================================================================
+// BOOTSTRAP ZEPHYR-DARK STYLES (originally from zephyr-dark.scss)
+// =============================================================================
+
+// Navbar
+.navbar {
+  font-size: $font-size-sm;
+  font-weight: 500;
+
+  .nav-item {
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      border-radius: $border-radius;
+    }
+  }
+}
+
+.navbar-dark {
+  .navbar-nav {
+    .nav-link {
+      &:hover {
+        background-color: rgba(255, 255, 255, .1);
+      }
+
+      &.active {
+        background-color: rgba(0, 0, 0, .5);
+      }
+    }
+  }
+}
+
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      &:hover {
+        background-color: rgba(0, 0, 0, .03);
+      }
+
+      &.active {
+        background-color: rgba(0, 0, 0, .05);
+      }
+    }
+  }
+}
+
+// Buttons
+.btn-secondary,
+.btn-light,
+.btn-outline-secondary,
+.btn-outline-light {
+  color: $gray-900;
+
+  &:disabled,
+  &.disabled {
+    border: 1px solid shade-color($secondary, 10%);
+  }
+}
+
+.btn-secondary,
+.btn-outline-secondary {
+  border-color: shade-color($secondary, 10%);
+
+  &:hover,
+  &:active {
+    background-color: shade-color($secondary, 10%);
+    border-color: shade-color($secondary, 10%);
+  }
+}
+
+.btn-light,
+.btn-outline-light {
+  border-color: shade-color($light, 10%);
+
+  &:hover,
+  &:active {
+    background-color: shade-color($light, 10%);
+    border-color: shade-color($light, 10%);
+  }
+}
+
+// Tables
+.table {
+  box-shadow: $box-shadow-lg;
+  font-size: $font-size-sm;
+}
+
+thead th {
+  text-transform: uppercase;
+  font-size: $font-size-sm;
+}
+
+// Forms
+.input-group-text {
+  box-shadow: $box-shadow;
+}
+
+// Navs
+.nav-tabs {
+  font-weight: 500;
+
+  .nav-link {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-width: 0 0 1px;
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    box-shadow: inset 0 -2px 0 $primary;
+  }
+}
+
+.nav-pills {
+  font-weight: 500;
+}
+
+.pagination {
+  font-size: $font-size-sm;
+  font-weight: 500;
+
+  .page-link {
+    box-shadow: $box-shadow;
+  }
+}
+
+.breadcrumb {
+  border: 1px solid $gray-700;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  font-size: $font-size-sm;
+  font-weight: 500;
+
+  &-item {
+    padding: 1rem .5rem 1rem 0;
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  padding-right: 1rem;
+}
+
+// Indicators
+.alert {
+  .btn-close {
+    color: inherit;
+  }
+}
+
+.badge {
+  &.bg-secondary,
+  &.bg-light {
+    color: $gray-100;
+  }
+}
+
+// Containers
+.list-group {
+  box-shadow: $box-shadow-lg;
+}
+
+.card {
+  box-shadow: $box-shadow-lg;
+
+  &-title {
+    color: inherit;
+  }
+}
+
+.modal-footer {
+  background-color: $gray-900;
+}
+
+.modal-content {
+  box-shadow: $box-shadow-lg;
+}
