@@ -78,18 +78,15 @@ Update these files when you need site-wide HTML behavior. Keep changes small and
 
 The site theme is assembled from Quarto theme settings plus custom SCSS files.
 
-- `assets/styles-elm-light.scss`
-- `assets/styles-elm-dark.scss`
-- `assets/styles-elm-base.scss`
-- `assets/colors.scss`
-- `assets/zephyr-dark.scss`
+- `assets/styles-elm-base.scss` (Contains our color palette, base styles, and light mode configuration)
+- `assets/theme-dark.scss` (Contains our dark mode styles and overrides)
 - `assets/panelset-extras.css`
 
 Use these files for shared visual changes. Prefer updating the existing theme layers instead of introducing another standalone stylesheet unless the change is intentionally page-specific.
 
-For styling, please put all changes in the `assets/styles-elm-light.scss` file. However, if you are making changes to the home page styling, please do those in `assets/index.css`.
+For styling, please put all changes in the `assets/styles-elm-base.scss` file (or `assets/theme-dark.scss` for dark mode specifically). However, if you are making changes to the home page styling, please do those in `assets/index.css`.
 
-If you need to assign colors that match the rest of the website theming, you can find all the colors defined in `assets/colors.scss` and assigned further in `assets/styles-elm-light.scss`. 
+If you need to assign colors that match the rest of the website theming, you can find all the colors defined under the `$colors` palette at the top of `assets/styles-elm-base.scss`.
 
 When editing CSS or SCSS:
 
