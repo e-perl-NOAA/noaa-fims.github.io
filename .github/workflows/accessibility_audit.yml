@@ -82,7 +82,8 @@ jobs:
                 "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
                 "frame-tested",
                 "scrollable-region-focusable",
-                "aria-required-children"
+                "aria-required-children",
+                "role-img-alt"
               ]
             }
           }

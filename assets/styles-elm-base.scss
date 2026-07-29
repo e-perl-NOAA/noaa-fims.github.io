@@ -1,11 +1,287 @@
 /*-- scss:defaults --*/
+
+// =============================================================================
+// COLOR PALETTE (originally from colors.scss)
+// =============================================================================
+$red-100: #fff8f9;
+$red-90: #fee8eb;
+$red-80: #fdc7cd;
+$red-70: #fca4ae;
+$red-60: #fb7e8c;
+$red-50: #f54f61;
+$red-40: #c94150;
+$red-30: #a83643;
+$red-20: #852b35;
+$red-10: #6a222a;
+$orange-100: #fef9f2;
+$orange-90: #fdebd3;
+$orange-80: #f9cd91;
+$orange-70: #f5ae4b;
+$orange-60: #ef8c02;
+$orange-50: #cb7702;
+$orange-40: #a76101;
+$orange-30: #8b5101;
+$orange-20: #6e4001;
+$orange-10: #573301;
+$green-100: #f6fbf7;
+$green-90: #e2f2e3;
+$green-80: #b9deb9;
+$green-70: #93ca8d;
+$green-60: #7ab26f;
+$green-50: #69965d;
+$green-40: #587b4b;
+$green-30: #4b663d;
+$green-20: #3c5130;
+$green-10: #304025;
+$blue-100: #f7fafb;
+$blue-90: #e4f0f1;
+$blue-80: #bed9de;
+$blue-70: #97c4ca;
+$blue-60: #71aeb7;
+$blue-50: #4896a1;
+$blue-40: #1c7d8b;
+$blue-30: #0e6876;
+$blue-20: #0b535d;
+$blue-10: #09414a;
+$purple-100: #fafafb;
+$purple-90: #ededf1;
+$purple-80: #d4d3dd;
+$purple-70: #bcbac9;
+$purple-60: #a4a2b6;
+$purple-50: #8a88a2;
+$purple-40: #716f8e;
+$purple-30: #5e5b7f;
+$purple-20: #4a466f;
+$purple-10: #3a3662;
+$pink-100: #fdf9fb;
+$pink-90: #f9e9f3;
+$pink-80: #f1c9e1;
+$pink-70: #e9a9cf;
+$pink-60: #e088bd;
+$pink-50: #d661a7;
+$pink-40: #b0508a;
+$pink-30: #934373;
+$pink-20: #74355b;
+$pink-10: #5c2a48;
+$slate-100: #f9fafa;
+$slate-90: #ebeeef;
+$slate-80: #cfd5d8;
+$slate-70: #b3bec2;
+$slate-60: #99a6ac;
+$slate-50: #7c8e95;
+$slate-40: #60757e;
+$slate-30: #4a636c;
+$slate-20: #334f5a;
+$slate-10: #213f4b;
+$slate-00: #0e181e;
+
+// =============================================================================
+// TYPOGRAPHY (originally from styles-elm-base.scss)
+// =============================================================================
 $web-font-path: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,300;1,500&family=Outfit:wght@200;400;500;700&display=swap";
 
 $font-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 $font-family-monospace: "IBM Plex Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-heading: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+// =============================================================================
+// BOOTSTRAP MAPS (originally from styles-elm-light.scss)
+// =============================================================================
+$white:    #FFFFFF;
+$gray-100: $slate-90;
+$gray-200: $slate-80;
+$gray-300: $slate-70;
+$gray-400: $slate-60;
+$gray-500: $slate-50;
+$gray-600: $slate-40;
+$gray-700: $slate-30;
+$gray-800: $slate-20;
+$gray-900: $slate-10;
+$black:    $slate-00;
+
+$blue:    $blue-30;
+$indigo:  #E574BC !default;
+$purple:  $purple-30;
+$pink:    $pink-40;
+$red:     $red-30;
+$orange:  $orange-30;
+$yellow:  $orange-70;
+$green:   $green-50;
+$teal:    $blue-50;
+$cyan:    $blue-70;
+
+$primary:       $blue !default;
+$secondary:     $blue-50 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+
+// Quarto variables
+$body-color: $slate-10;
+$navbar-bg: $white;
+$code-color: $purple-30;
+$code-bg: $white;
+$footer-bg: $white;
+$heading-color: $blue-20;
+$title-banner-color: $heading-color;
+
+// Bootstrap fixups
+$text-muted: $gray-700;
+
+
 /*-- scss:rules --*/
+
+// =============================================================================
+// CSS CUSTOM PROPERTIES (originally from colors.scss)
+// =============================================================================
+:root {
+  --red-100: #{$red-100};
+  --red-90: #{$red-90};
+  --red-80: #{$red-80};
+  --red-70: #{$red-70};
+  --red-60: #{$red-60};
+  --red-50: #{$red-50};
+  --red-40: #{$red-40};
+  --red-30: #{$red-30};
+  --red-20: #{$red-20};
+  --red-10: #{$red-10};
+  --orange-100: #{$orange-100};
+  --orange-90: #{$orange-90};
+  --orange-80: #{$orange-80};
+  --orange-70: #{$orange-70};
+  --orange-60: #{$orange-60};
+  --orange-50: #{$orange-50};
+  --orange-40: #{$orange-40};
+  --orange-30: #{$orange-30};
+  --orange-20: #{$orange-20};
+  --orange-10: #{$orange-10};
+  --green-100: #{$green-100};
+  --green-90: #{$green-90};
+  --green-80: #{$green-80};
+  --green-70: #{$green-70};
+  --green-60: #{$green-60};
+  --green-50: #{$green-50};
+  --green-40: #{$green-40};
+  --green-30: #{$green-30};
+  --green-20: #{$green-20};
+  --green-10: #{$green-10};
+  --blue-100: #{$blue-100};
+  --blue-90: #{$blue-90};
+  --blue-80: #{$blue-80};
+  --blue-70: #{$blue-70};
+  --blue-60: #{$blue-60};
+  --blue-50: #{$blue-50};
+  --blue-40: #{$blue-40};
+  --blue-30: #{$blue-30};
+  --blue-20: #{$blue-20};
+  --blue-10: #{$blue-10};
+  --purple-100: #{$purple-100};
+  --purple-90: #{$purple-90};
+  --purple-80: #{$purple-80};
+  --purple-70: #{$purple-70};
+  --purple-60: #{$purple-60};
+  --purple-50: #{$purple-50};
+  --purple-40: #{$purple-40};
+  --purple-30: #{$purple-30};
+  --purple-20: #{$purple-20};
+  --purple-10: #{$purple-10};
+  --pink-100: #{$pink-100};
+  --pink-90: #{$pink-90};
+  --pink-80: #{$pink-80};
+  --pink-70: #{$pink-70};
+  --pink-60: #{$pink-60};
+  --pink-50: #{$pink-50};
+  --pink-40: #{$pink-40};
+  --pink-30: #{$pink-30};
+  --pink-20: #{$pink-20};
+  --pink-10: #{$pink-10};
+  --slate-100: #{$slate-100};
+  --slate-90: #{$slate-90};
+  --slate-80: #{$slate-80};
+  --slate-70: #{$slate-70};
+  --slate-60: #{$slate-60};
+  --slate-50: #{$slate-50};
+  --slate-40: #{$slate-40};
+  --slate-30: #{$slate-30};
+  --slate-20: #{$slate-20};
+  --slate-10: #{$slate-10};
+  --slate-00: #{$slate-00};
+}
+
+.fansi-color-001 {
+  /* red */
+  color: var(--red-50);
+}
+.fansi-color-002 {
+  /* green */
+  color: var(--green-40);
+}
+.fansi-color-003 {
+  /* yellow */
+  color: var(--orange-50);
+}
+.fansi-color-004 {
+  /* blue */
+  color: var(--blue-40);
+}
+.fansi-color-005 {
+  /* purple */
+  color: var(--purple-50);
+}
+.fansi-color-006 {
+  /* cyan */
+  color: var(--pink-50);
+}
+.fansi-color-007 {
+  /* silver */
+  color: var(--slate-30);
+}
+.fansi-color-008 {
+  /* silver */
+  color: var(--slate-50);
+}
+
+.quarto-dark {
+  .fansi-color-001 {
+    /* red */
+    color: var(--red-60);
+  }
+  .fansi-color-002 {
+    /* green */
+    color: var(--green-60);
+  }
+  .fansi-color-003 {
+    /* yellow */
+    color: var(--orange-70);
+  }
+  .fansi-color-004 {
+    /* blue */
+    color: var(--blue-50);
+  }
+  .fansi-color-005 {
+    /* purple */
+    color: var(--purple-50);
+  }
+  .fansi-color-006 {
+    /* cyan */
+    color: var(--pink-70);
+  }
+  .fansi-color-007 {
+    /* silver */
+    color: var(--slate-30);
+  }
+  .fansi-color-008 {
+    /* silver */
+    color: var(--slate-50);
+  }
+}
+
+// =============================================================================
+// MAIN BASE STYLES & LAYOUT (originally from styles-elm-base.scss)
+// =============================================================================
 :root {
   --bs-font-family-heading: #{$font-family-heading};
   --font-outfit: #{$font-family-heading};
@@ -46,7 +322,6 @@ h2, h3, h4, h5, h6 {
   margin-top: 1.3em !important;
   margin-bottom: 0.66em;
 }
-
 
 .navbar-title, .navbar-nav .nav-item {
   font-family: $font-family-heading;
@@ -598,4 +873,74 @@ div.quarto-post .metadata {
 .quarto-dark .quarto-listing .card,
 .quarto-dark .quarto-listing div.quarto-post .metadata {
   background-color: #0e181e !important; /* Maps to slate-00 */
+}
+
+// =============================================================================
+// LIGHT MODE EXTRA STYLES (originally from styles-elm-light.scss)
+// =============================================================================
+.quarto-title-banner {
+  @extend .border-bottom, .border-2, .bg-white, .border-light;
+}
+
+.quarto-title-banner .quarto-title .title {
+  font-weight: 400;
+  font-size: calc(1.5rem + 1.14vw);
+
+  #title-block-header.quarto-title-block & {
+    margin-bottom: 0.5rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: calc(2.5rem + 1.14vw);
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+	background-color: $white;
+}
+
+h2 {
+  border-bottom: 2px solid (var(--bs-light));
+}
+
+.header-wrap {
+  height: 3em; /* or whatever fits your tallest h2 */
+  display: flex;
+  align-items: flex-end;
+}
+.header-wrap h2 {
+  width: 100%;
+  border-bottom: 2px solid var(--bs-light);
+  margin-top: 4em;
+}
+
+.social-icon-links .link-primary {
+  color: $pink-30;
+  &:hover, &:focus {
+    color: $pink-20;
+    i {
+      transform: scale(1.25);
+      transform-origin: center center;
+    }
+  }
+}
+
+div.quarto-post .listing-categories .listing-category,
+.quarto-title-block .quarto-title .quarto-categories .quarto-category {
+  border-color: $pink-30;
+  color: $pink-10;
+  background-color: $pink-90;
+  opacity: 0.9;
+}
+
+div.quarto-post .listing-categories .listing-category {
+  opacity: 0.6;
+}
+
+.blockquote {
+  color: $text-muted;
+}
+
+.code-with-filename .code-with-filename-file {
+  background-color: var(--slate-90);
 }
